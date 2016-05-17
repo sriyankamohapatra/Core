@@ -122,12 +122,18 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Net.Http" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Core.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
-  <Target Name="AfterBuild">
-  </Target>
   -->
+ <Target Name="AfterBuild" Condition=" '$(Configuration)' == 'Release'">
+
+    <Exec Command="..\nuget pack -sym Core.csproj -IncludeReferencedProjects -Prop Configuration=Release"></Exec>
+
+</Target>
 </Project>

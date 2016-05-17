@@ -11,5 +11,8 @@
 
 using System.Reflection;
 
+[assembly: AssemblyCopyright("SFA ©  2016")]
+[assembly: AssemblyCompany("Skills Funding Agency")]
+
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

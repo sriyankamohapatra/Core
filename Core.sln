@@ -58,6 +58,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Xml.Linq.Tests", "Core.Xml.Linq.Tests\Core.Xml.Linq.Tests.csproj", "{CC4EA252-FBBB-46A4-A0DA-A43B68F10318}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E03F9FED-7FBA-4AC2-BEAE-B36A6652A0F6}"
+	ProjectSection(SolutionItems) = preProject
+		CommonAssemblyInfo.cs = CommonAssemblyInfo.cs
+		nuget.exe = nuget.exe
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{D9DD292F-738D-46FF-9E9A-8004B3095D3B}"
 EndProject
