@@ -1,0 +1,13 @@
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.ActiveDirectory\bin\Debug\Sfa.Core.Net.Http.ActiveDirectory.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.ActiveDirectory\bin\Debug\Sfa.Core.Net.Http.ActiveDirectory.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.ActiveDirectory\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.ActiveDirectory\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.ActiveDirectory\bin\Debug\Sfa.Core.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.ActiveDirectory\bin\Debug\Sfa.Core.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.ActiveDirectory\bin\Debug\Sfa.Core.IdentityModel.Clients.ActiveDirectory.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.ActiveDirectory\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.ActiveDirectory\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.ActiveDirectory\bin\Debug\Sfa.Core.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.ActiveDirectory\obj\Debug\Core.Net.Http.ActiveDirectory.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.ActiveDirectory\obj\Debug\Sfa.Core.Net.Http.ActiveDirectory.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.ActiveDirectory\obj\Debug\Sfa.Core.Net.Http.ActiveDirectory.pdb

@@ -1,0 +1,12 @@
+C:\Users\Anthony\Source\Repos\Core\Core.Testing.NSubstitute\bin\Debug\Sfa.Core.Testing.NSubstitute.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Testing.NSubstitute\bin\Debug\Sfa.Core.Testing.NSubstitute.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Testing.NSubstitute\bin\Debug\NSubstitute.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Testing.NSubstitute\bin\Debug\Sfa.Core.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Testing.NSubstitute\bin\Debug\Sfa.Core.Testing.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Testing.NSubstitute\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Testing.NSubstitute\bin\Debug\Sfa.Core.Testing.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Testing.NSubstitute\bin\Debug\Sfa.Core.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Testing.NSubstitute\bin\Debug\NSubstitute.xml
+C:\Users\Anthony\Source\Repos\Core\Core.Testing.NSubstitute\obj\Debug\Core.Testing.NSubstitute.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Source\Repos\Core\Core.Testing.NSubstitute\obj\Debug\Sfa.Core.Testing.NSubstitute.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Testing.NSubstitute\obj\Debug\Sfa.Core.Testing.NSubstitute.pdb

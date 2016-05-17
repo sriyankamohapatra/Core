@@ -1,0 +1,11 @@
+C:\Users\Anthony\Source\Repos\Core\Core.IdentityModel.Clients.ActiveDirectory\bin\Debug\Sfa.Core.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Anthony\Source\Repos\Core\Core.IdentityModel.Clients.ActiveDirectory\bin\Debug\Sfa.Core.IdentityModel.Clients.ActiveDirectory.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.IdentityModel.Clients.ActiveDirectory\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Anthony\Source\Repos\Core\Core.IdentityModel.Clients.ActiveDirectory\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\Anthony\Source\Repos\Core\Core.IdentityModel.Clients.ActiveDirectory\bin\Debug\Sfa.Core.dll
+C:\Users\Anthony\Source\Repos\Core\Core.IdentityModel.Clients.ActiveDirectory\bin\Debug\Sfa.Core.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.IdentityModel.Clients.ActiveDirectory\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\Anthony\Source\Repos\Core\Core.IdentityModel.Clients.ActiveDirectory\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+C:\Users\Anthony\Source\Repos\Core\Core.IdentityModel.Clients.ActiveDirectory\obj\Debug\Core.IdentityModel.Clients.ActiveDirectory.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Source\Repos\Core\Core.IdentityModel.Clients.ActiveDirectory\obj\Debug\Sfa.Core.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Anthony\Source\Repos\Core\Core.IdentityModel.Clients.ActiveDirectory\obj\Debug\Sfa.Core.IdentityModel.Clients.ActiveDirectory.pdb

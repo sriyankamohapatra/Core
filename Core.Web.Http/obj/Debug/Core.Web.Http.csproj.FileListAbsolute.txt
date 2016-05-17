@@ -1,0 +1,13 @@
+C:\Users\Anthony\Source\Repos\Core\Core.Web.Http\bin\Debug\Sfa.Core.Web.Http.dll.config
+C:\Users\Anthony\Source\Repos\Core\Core.Web.Http\bin\Debug\Sfa.Core.Web.Http.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Web.Http\bin\Debug\Sfa.Core.Web.Http.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Web.Http\bin\Debug\Sfa.Core.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Web.Http\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Web.Http\bin\Debug\System.Web.Http.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Web.Http\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Web.Http\bin\Debug\Sfa.Core.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Web.Http\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Anthony\Source\Repos\Core\Core.Web.Http\bin\Debug\System.Web.Http.xml
+C:\Users\Anthony\Source\Repos\Core\Core.Web.Http\obj\Debug\Core.Web.Http.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Source\Repos\Core\Core.Web.Http\obj\Debug\Sfa.Core.Web.Http.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Web.Http\obj\Debug\Sfa.Core.Web.Http.pdb

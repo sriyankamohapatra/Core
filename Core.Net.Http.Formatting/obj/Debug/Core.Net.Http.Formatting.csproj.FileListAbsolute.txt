@@ -1,0 +1,16 @@
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\bin\Debug\Sfa.Core.Net.Http.Formatting.dll.config
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\bin\Debug\Sfa.Core.Net.Http.Formatting.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\bin\Debug\Sfa.Core.Net.Http.Formatting.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\bin\Debug\Sfa.Core.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\bin\Debug\Sfa.Core.Xml.Linq.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\bin\Debug\System.Web.Http.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\bin\Debug\Sfa.Core.Xml.Linq.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\bin\Debug\Sfa.Core.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\bin\Debug\System.Web.Http.xml
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\obj\Debug\Core.Net.Http.Formatting.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\obj\Debug\Sfa.Core.Net.Http.Formatting.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http.Formatting\obj\Debug\Sfa.Core.Net.Http.Formatting.pdb

@@ -1,0 +1,10 @@
+C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\bin\Debug\Sfa.Core.IoC.Unity.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\bin\Debug\Sfa.Core.IoC.Unity.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\obj\Debug\Sfa.Core.IoC.Unity.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\obj\Debug\Sfa.Core.IoC.Unity.pdb
