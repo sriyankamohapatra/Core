@@ -25,7 +25,7 @@ elseif (-not (Test-Path $Env:BUILD_SOURCESDIRECTORY))
     Write-Error "BUILD_SOURCESDIRECTORY does not exist: $Env:BUILD_SOURCESDIRECTORY"
     exit 1
 }
-Write-Verbose "BUILD_SOURCESDIRECTORY: $Env:BUILD_SOURCESDIRECTORY"
+Write-Warning "BUILD_SOURCESDIRECTORY: $Env:BUILD_SOURCESDIRECTORY"
 
 # Make sure path to source code directory is available
 if (-not $Env:BUILD_SOURCEVERSION)
@@ -38,12 +38,11 @@ elseif (-not $Env:BUILD_SOURCEVERSION)
     Write-Error "BUILD_SOURCEVERSION does not exist: $Env:BUILD_SOURCEVERSION"
     exit 1
 }
-Write-Verbose "BUILD_SOURCEVERSION: $Env:BUILD_SOURCEVERSION"
+Write-Warning "BUILD_SOURCEVERSION: $Env:BUILD_SOURCEVERSION"
 
 $sourceVersion = $Env:BUILD_SOURCEVERSION -replace "[\D]", ""
 
 # Apply the version to the assembly property files
-#$files = gci $Env:BUILD_SOURCESDIRECTORY -recurse -include "*Properties*","My Project" | 
 $files = gci $Env:BUILD_SOURCESDIRECTORY -recurse | 
     ?{ $_.PSIsContainer } | 
     foreach { gci -Path $_.FullName -Recurse -include CommonAssemblyInfo.* }
