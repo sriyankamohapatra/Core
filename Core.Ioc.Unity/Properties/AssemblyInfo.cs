@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Sfa.Core.Ioc.Unity")]
+[assembly: AssemblyTitle("Sfa.Core.Unity")]
 [assembly: AssemblyDescription("Adds consistent patterns for working with Unity when using the common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Sfa.Core.Ioc.Unity")]
+[assembly: AssemblyProduct("Sfa.Core.Unity")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
