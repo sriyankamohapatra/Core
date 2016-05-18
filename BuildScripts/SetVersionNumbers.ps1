@@ -49,12 +49,12 @@ $files = gci $Env:BUILD_SOURCESDIRECTORY -recurse |
 if($files)
 {
     Write-Verbose "Will apply update to $($files.count) files."
-    Write-Verbose "Build number is '$buildNumber[0]'."
+    Write-Verbose "Build number is '$buildNumber'."
 
     foreach ($file in $files) {
         $filecontent = Get-Content($file)
         attrib $file -r
-        $filecontent -ireplace $regex, "`${1}$buildNumber[0]`${3}" | Out-File $file
+        $filecontent -ireplace $regex, "`${1}$buildNumber`${3}" | Out-File $file
         Write-Verbose "$file - version applied"
     }
 }
