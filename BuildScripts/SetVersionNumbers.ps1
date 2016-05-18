@@ -25,7 +25,7 @@ elseif (-not (Test-Path $Env:BUILD_SOURCESDIRECTORY))
     Write-Error "BUILD_SOURCESDIRECTORY does not exist: $Env:BUILD_SOURCESDIRECTORY"
     exit 1
 }
-Write-Warning "BUILD_SOURCESDIRECTORY: $Env:BUILD_SOURCESDIRECTORY"
+Write-Debug "BUILD_SOURCESDIRECTORY: $Env:BUILD_SOURCESDIRECTORY"
 
 # Make sure path to source code directory is available
 if (-not $Env:BUILD_SOURCEVERSION)
@@ -38,12 +38,13 @@ elseif (-not $Env:BUILD_SOURCEVERSION)
     Write-Error "BUILD_SOURCEVERSION does not exist: $Env:BUILD_SOURCEVERSION"
     exit 1
 }
-Write-Warning "BUILD_SOURCEVERSION: $Env:BUILD_SOURCEVERSION"
+Write-Debug "BUILD_SOURCEVERSION: $Env:BUILD_SOURCEVERSION"
 
 $sourceVersion = $Env:BUILD_SOURCEVERSION -replace "[\D]", ""
 
 # Apply the version to the assembly property files
-$files = gci $dir CommonAssemblyInfo.* -recurse
+$files = gci $Env:BUILD_SOURCESDIRECTORY -recurse | 
+    foreach { gci -Path $_.FullName -Recurse -include CommonAssemblyInfo.* }
 
 if($files)
 {
@@ -53,7 +54,7 @@ if($files)
         $filecontent = Get-Content($file)
         attrib $file -r
         $filecontent -ireplace $regex, "`${1}$sourceVersion[0]`${3}" | Out-File $file
-        Write-Verbose "$file.FullName - version applied"
+        Write-Verbose "$file - version applied"
     }
 }
 else
