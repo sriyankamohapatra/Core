@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Sfa.Core.Tests.EntityFramework")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Core Testing libraries to help when using the Core.EntityFramework libraries.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyProduct("Sfa.Core.Tests.EntityFramework")]
 [assembly: AssemblyTrademark("")]

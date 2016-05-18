@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Core.Drawing")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Extends the System.Drawing namespace with common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyProduct("Core.Drawing")]
 [assembly: AssemblyTrademark("")]

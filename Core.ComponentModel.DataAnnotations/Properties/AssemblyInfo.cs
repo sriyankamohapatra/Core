@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Core.ComponentModel.DataAnnotations")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Extends the System.ComponentModel.DataAnnotations namespace with common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyProduct("Core.ComponentModel.DataAnnotations")]
 [assembly: AssemblyCulture("")]

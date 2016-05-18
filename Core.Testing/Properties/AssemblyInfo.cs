@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Sfa.Core.Tests")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Core Testing libraries for consistent frameworks")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyProduct("Sfa.Core.Tests")]
 [assembly: AssemblyTrademark("")]

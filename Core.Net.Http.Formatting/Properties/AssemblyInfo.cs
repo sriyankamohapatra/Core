@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Core.Net.Http.Formatting")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Extends the System.Net.Http.Formatting namespace with common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyProduct("Core.Net.Http.Formatting")]
 [assembly: AssemblyTrademark("")]

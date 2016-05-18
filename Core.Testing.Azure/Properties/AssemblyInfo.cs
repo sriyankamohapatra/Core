@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Core.Data.Azure.Testing")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Core Testing libraries to help when using the Core.Azure libraries.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyProduct("Core.Data.Azure.Testing")]
 [assembly: AssemblyTrademark("")]

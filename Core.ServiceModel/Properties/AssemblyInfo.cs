@@ -1,12 +1,11 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Core.ServiceModel")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Extends the System.ServiceModel namespace with common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyProduct("Core.ServiceModel")]
 [assembly: AssemblyTrademark("")]

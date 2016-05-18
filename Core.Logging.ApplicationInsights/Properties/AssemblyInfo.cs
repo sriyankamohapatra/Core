@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Core.Logging.ApplicationInsights2")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Core.Logging.ApplicationInsights")]
+[assembly: AssemblyDescription("Adds Logging adapters for Application Insights when using the common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Core.Logging.ApplicationInsights2")]
+[assembly: AssemblyProduct("Core.Logging.ApplicationInsights")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

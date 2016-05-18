@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Core.IdentityModel.Clients.ActiveDirectory")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Adds consistent patterns for working with the Identity Model and Active Directory when using the common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyProduct("Core.IdentityModel.Clients.ActiveDirectory")]
 [assembly: AssemblyTrademark("")]

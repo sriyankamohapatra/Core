@@ -131,9 +131,4 @@
   <Target Name="BeforeBuild">
   </Target>
   -->
- <Target Name="AfterBuild" Condition=" '$(Configuration)' == 'Release'">
-
-    <Exec Command="..\nuget pack -sym Core.csproj -IncludeReferencedProjects -Prop Configuration=Release"></Exec>
-
-</Target>
 </Project>

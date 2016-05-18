@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Sfa.Core.Logging.EnterpriseLibrary")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Adds Logging adapters for Enterprise Library when using the common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyProduct("Sfa.Core.Logging.EnterpriseLibrary")]
 [assembly: AssemblyTrademark("")]

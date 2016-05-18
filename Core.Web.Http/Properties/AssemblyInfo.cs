@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Core.Web.Http")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Extends the System.Web.Http namespace with common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyProduct("Core.Web.Http")]
 [assembly: AssemblyTrademark("")]

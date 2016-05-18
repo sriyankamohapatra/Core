@@ -5,9 +5,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Sfa.Core")]
+[assembly: AssemblyDescription("Core libraries for consistent frameworks")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyProduct("Core")]
-[assembly: AssemblyDescription("Core libraries for consitent frameworks")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
