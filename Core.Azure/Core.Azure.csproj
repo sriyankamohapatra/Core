@@ -92,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Core.Azure.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

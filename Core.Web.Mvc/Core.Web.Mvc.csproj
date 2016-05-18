@@ -87,6 +87,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Core.Web.Mvc.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

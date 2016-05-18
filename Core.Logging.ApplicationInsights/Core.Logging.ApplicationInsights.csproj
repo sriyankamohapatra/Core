@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Core.Logging.ApplicationInsights.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

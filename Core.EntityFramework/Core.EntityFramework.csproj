@@ -75,6 +75,7 @@
     <Compile Include="Reflection\EntityFrameworkObjectExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Core.EntityFramework.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

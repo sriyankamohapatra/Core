@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Core.Web.Http.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
