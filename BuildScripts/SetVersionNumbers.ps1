@@ -1,11 +1,11 @@
 # Enable -Verbose option
 [CmdletBinding()]
 
-[Regex] $regex = '(AssemblyFileVersion\(\".\..\..\.)(.)(\"\))'
+[Regex] $regex = '(AssemblyFileVersion\(\"\d+\.\d+\.\d+\.)(\d+)([\S]*\"\))'
 
 # If this script is not running on a build server, remind user to 
 # set environment variables so that this script can be debugged
-if(-not ($Env:BUILD_SOURCESDIRECTORY -and $ENV:BUILD_SOURCEVERSION ))
+if(-not ($Env:BUILD_SOURCESDIRECTORY -and $ENV:BUILD_BUILDNUMBER ))
 {
     Write-Error "You must set the following environment variables"
     Write-Error "to test this script interactively."
@@ -28,19 +28,19 @@ elseif (-not (Test-Path $Env:BUILD_SOURCESDIRECTORY))
 Write-Debug "BUILD_SOURCESDIRECTORY: $Env:BUILD_SOURCESDIRECTORY"
 
 # Make sure path to source code directory is available
-if (-not $Env:BUILD_SOURCEVERSION)
+if (-not $Env:BUILD_BUILDNUMBER)
 {
-    Write-Error ("BUILD_SOURCEVERSION environment variable is missing.")
+    Write-Error ("BUILD_BUILDNUMBER environment variable is missing.")
     exit 1
 }
-elseif (-not $Env:BUILD_SOURCEVERSION)
+elseif (-not $Env:BUILD_BUILDNUMBER)
 {
-    Write-Error "BUILD_SOURCEVERSION does not exist: $Env:BUILD_SOURCEVERSION"
+    Write-Error "BUILD_SOURCEVERSION does not exist: $Env:BUILD_BUILDNUMBER"
     exit 1
 }
-Write-Debug "BUILD_SOURCEVERSION: $Env:BUILD_SOURCEVERSION"
+Write-Debug "BUILD_BUILDNUMBER: $Env:BUILD_BUILDNUMBER"
 
-$sourceVersion = $Env:BUILD_SOURCEVERSION -replace "[\D]", ""
+$buildNumber = $Env:BUILD_BUILDNUMBER -replace "[\D]", ""
 
 # Apply the version to the assembly property files
 $files = gci $Env:BUILD_SOURCESDIRECTORY -recurse | 
@@ -48,12 +48,13 @@ $files = gci $Env:BUILD_SOURCESDIRECTORY -recurse |
 
 if($files)
 {
-    Write-Verbose "Will apply update of assembly version '$sourceVersion' to $($files.count) files."
+    Write-Verbose "Will apply update to $($files.count) files."
+    Write-Verbose "Build number is '$buildNumber[0]'."
 
     foreach ($file in $files) {
         $filecontent = Get-Content($file)
         attrib $file -r
-        $filecontent -ireplace $regex, "`${1}$sourceVersion[0]`${3}" | Out-File $file
+        $filecontent -ireplace $regex, "`${1}$buildNumber[0]`${3}" | Out-File $file
         Write-Verbose "$file - version applied"
     }
 }
