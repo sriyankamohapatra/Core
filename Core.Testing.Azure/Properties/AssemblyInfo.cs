@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Sfa.Core.Data.Azure.Testing")]
+[assembly: AssemblyTitle("Sfa.Core.Azure.Testing")]
 [assembly: AssemblyDescription("Core Testing libraries to help when using the Core.Azure libraries.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Sfa.Core.Data.Azure.Testing")]
+[assembly: AssemblyProduct("Sfa.Core.Azure.Testing")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

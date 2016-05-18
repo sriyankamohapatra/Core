@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Sfa.Core.Data.EntityFramework")]
+[assembly: AssemblyTitle("Sfa.Core.EntityFramework")]
 [assembly: AssemblyDescription("Adds consistent patterns for working with Entity Framework when using the common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Sfa.Core.Data.EntityFramework")]
+[assembly: AssemblyProduct("Sfa.Core.EntityFramework")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
