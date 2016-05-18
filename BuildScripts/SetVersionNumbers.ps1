@@ -43,13 +43,11 @@ Write-Warning "BUILD_SOURCEVERSION: $Env:BUILD_SOURCEVERSION"
 $sourceVersion = $Env:BUILD_SOURCEVERSION -replace "[\D]", ""
 
 # Apply the version to the assembly property files
-$files = gci $Env:BUILD_SOURCESDIRECTORY -recurse | 
-    ?{ $_.PSIsContainer } | 
-    foreach { gci -Path $_.FullName -Recurse -include CommonAssemblyInfo.* }
+$files = gci $dir CommonAssemblyInfo.* -recurse
 
 if($files)
 {
-    Write-Verbose "Will apply $NewAssemblyVersion and $NewAssemblyFileVersion to $($files.count) files."
+    Write-Verbose "Will apply update of assembly version '$sourceVersion' to $($files.count) files."
 
     foreach ($file in $files) {
         $filecontent = Get-Content($file)
