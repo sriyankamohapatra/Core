@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Core.Web.Http")]
+[assembly: AssemblyTitle("Sfa.Core.Web.Http")]
 [assembly: AssemblyDescription("Extends the System.Web.Http namespace with common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Core.Web.Http")]
+[assembly: AssemblyProduct("Sfa.Core.Web.Http")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

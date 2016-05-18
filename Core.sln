@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.EntityFramework", "Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.IdentityModel.Clients.ActiveDirectory", "Core.IdentityModel.Clients.ActiveDirectory\Core.IdentityModel.Clients.ActiveDirectory.csproj", "{3E035975-6464-48CE-B924-FA53DB9A7A90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.IoC.Unity", "Core.Ioc.Unity\Core.IoC.Unity.csproj", "{AFBC6B5C-39D0-4701-BC63-C637221EBCFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Unity", "Core.Ioc.Unity\Core.Unity.csproj", "{AFBC6B5C-39D0-4701-BC63-C637221EBCFF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Logging.ApplicationInsights", "Core.Logging.ApplicationInsights\Core.Logging.ApplicationInsights.csproj", "{E303FD10-13A2-4523-B5E0-BAF489F0090F}"
 EndProject

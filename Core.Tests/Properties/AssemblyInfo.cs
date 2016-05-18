@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Core.Tests")]
+[assembly: AssemblyTitle("Sfa.Core.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Core.Tests")]
+[assembly: AssemblyProduct("Sfa.Core.Tests")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Core.Azure.ServiceBus")]
+[assembly: AssemblyTitle("Sfa.Core.Azure.ServiceBus")]
 [assembly: AssemblyDescription("Adds common functionality for working with Azure ServiceBus and using the Core Framework.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Core.Azure.ServiceBus")]
+[assembly: AssemblyProduct("Sfa.Core.Azure.ServiceBus")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

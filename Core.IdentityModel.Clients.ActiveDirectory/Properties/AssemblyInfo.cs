@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Core.IdentityModel.Clients.ActiveDirectory")]
+[assembly: AssemblyTitle("Sfa.Core.IdentityModel.Clients.ActiveDirectory")]
 [assembly: AssemblyDescription("Adds consistent patterns for working with the Identity Model and Active Directory when using the common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Core.IdentityModel.Clients.ActiveDirectory")]
+[assembly: AssemblyProduct("Sfa.Core.IdentityModel.Clients.ActiveDirectory")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Core.Drawing")]
+[assembly: AssemblyTitle("Sfa.Core.Drawing")]
 [assembly: AssemblyDescription("Extends the System.Drawing namespace with common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Core.Drawing")]
+[assembly: AssemblyProduct("Sfa.Core.Drawing")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

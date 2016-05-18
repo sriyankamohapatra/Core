@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sfa.Core</RootNamespace>
-    <AssemblyName>Sfa.Core.Data.Testing.EntityFramework</AssemblyName>
+    <AssemblyName>Sfa.Core.Testing.EntityFramework</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>

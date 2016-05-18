@@ -4,10 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Core.ComponentModel.DataAnnotations")]
+[assembly: AssemblyTitle("Sfa.Core.ComponentModel.DataAnnotations")]
 [assembly: AssemblyDescription("Extends the System.ComponentModel.DataAnnotations namespace with common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Core.ComponentModel.DataAnnotations")]
+[assembly: AssemblyProduct("Sfa.Core.ComponentModel.DataAnnotations")]
+[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

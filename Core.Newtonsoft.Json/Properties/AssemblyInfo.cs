@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Core.Newtonsoft.Json")]
+[assembly: AssemblyTitle("Sfa.Core.Newtonsoft.Json")]
 [assembly: AssemblyDescription("Adds consistent patterns for working with Newtonsoft.Json when using the common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Core.Newtonsoft.Json")]
+[assembly: AssemblyProduct("Sfa.Core.Newtonsoft.Json")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

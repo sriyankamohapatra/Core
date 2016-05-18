@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Sfa.Core")]
 [assembly: AssemblyDescription("Core libraries for consistent frameworks")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Core")]
+[assembly: AssemblyProduct("Sfa.Core")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

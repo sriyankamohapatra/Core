@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Core.Testing.LumiSoft.Net")]
+[assembly: AssemblyTitle("Sfa.Core.Testing.LumiSoft.Net")]
 [assembly: AssemblyDescription("Core Testing libraries to help when using the Core.LumiSoft.Net libraries.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Core.Testing.LumiSoft.Net")]
+[assembly: AssemblyProduct("Sfa.Core.Testing.LumiSoft.Net")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

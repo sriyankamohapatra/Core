@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Core.Net.Http.ActiveDirectory")]
+[assembly: AssemblyTitle("Sfa.Core.Net.Http.ActiveDirectory")]
 [assembly: AssemblyDescription("Extends the System.Net.Http.ActiveDirectory namespace with common Core Functionality.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Core.Net.Http.ActiveDirectory")]
+[assembly: AssemblyProduct("Sfa.Core.Net.Http.ActiveDirectory")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

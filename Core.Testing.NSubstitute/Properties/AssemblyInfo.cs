@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Core.Testing.NSubstitute")]
+[assembly: AssemblyTitle("Sfa.Core.Testing.NSubstitute")]
 [assembly: AssemblyDescription("Core Testing libraries to help when using the Core.NSubstitute libraries.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("Core.Testing.NSubstitute")]
+[assembly: AssemblyProduct("Sfa.Core.Testing.NSubstitute")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
