@@ -1,7 +1,8 @@
 # Enable -Verbose option
 [CmdletBinding()]
 
-[Regex] $regex = '(AssemblyFileVersion\(\"\d+\.\d+\.\d+\.)(\d+)([\S]*\"\))'
+[Regex] $AssemblyFileVersionRegEx = '(AssemblyFileVersion\(\"\d+\.\d+\.\d+\.)(\d+)(\"\))'
+[Regex] $AssemblyInformationalVersionRegEx = '(AssemblyInformationalVersion\(\"\d+\.\d+\.\d+\.\d+)([\S]+)(\"\))'
 
 # If this script is not running on a build server, remind user to 
 # set environment variables so that this script can be debugged
@@ -54,7 +55,15 @@ if($files)
     foreach ($file in $files) {
         $filecontent = Get-Content($file)
         attrib $file -r
-        $filecontent -ireplace $regex, "`${1}$buildNumber`${3}" | Out-File $file
+        $filecontent -ireplace $AssemblyFileVersionRegEx, "`${1}$buildNumber`${3}" | Out-File $file
+        $filecontent = Get-Content($file)
+
+        # Check for pre-release version
+        if($filecontent -match $AssemblyInformationalVersionRegEx)
+        {
+            $filecontent -ireplace $AssemblyInformationalVersionRegEx, "`${1}`${2}-$buildNumber`${3}" | Out-File $file
+        }
+
         Write-Verbose "$file - version applied"
     }
 }
