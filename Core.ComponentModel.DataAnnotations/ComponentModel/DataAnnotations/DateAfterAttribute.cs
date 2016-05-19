@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.Globalization;
 
 namespace Sfa.Core.ComponentModel.DataAnnotations
 {
@@ -42,14 +41,12 @@ namespace Sfa.Core.ComponentModel.DataAnnotations
             DateTime otherVaueAsDate;
             DateTime myValueAsDate;
 
-            if (!DateTime.TryParseExact(myValue.ToString(), "d/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out myValueAsDate)
-                ||!DateTime.TryParseExact(otherValue.ToString(), "d/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out otherVaueAsDate))
+            if (myValue == null || otherValue == null || !DateTime.TryParse(myValue.ToString(), out myValueAsDate) || !DateTime.TryParse(otherValue.ToString(), out otherVaueAsDate))
             {
                 return null;
             }
 
-            if (myValue != null && otherValue != null 
-                && DateTime.ParseExact(myValue.ToString(), "d/M/yyyy", CultureInfo.InvariantCulture) <= DateTime.ParseExact(otherValue.ToString(), "d/M/yyyy", CultureInfo.InvariantCulture))
+            if (myValueAsDate <= otherVaueAsDate)
             {
                 return new ValidationResult(ErrorMessage);
             }

@@ -18,14 +18,14 @@
             return true;
         });
 
-        $.validator.unobtrusive.adapters.addSingleVal("isvaliddate");
-
-        $.validator.addMethod("isvaliddate", function (value, element, otherName) {
-
-            if(isNaN(Date.parse(value))){
-                return false;
-            }
-            return true;
-        });
+        $.validator.addMethod(
+            "date",
+            function (value, element) {
+                var dateParts = value.split("-");
+                var date = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+                return this.optional(element) || (date.getFullYear() == dateParts[0] && date.getMonth() + 1 == dateParts[1] && date.getDate() == dateParts[2]);
+            },
+            "Please enter a valid date."
+        );
     }
 });

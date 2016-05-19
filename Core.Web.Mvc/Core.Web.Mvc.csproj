@@ -66,6 +66,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Web\Mvc\ControllerContextExtensions.cs" />
     <Compile Include="Web\Mvc\DateAfterAttributeAdapter.cs" />
+    <Compile Include="Web\Mvc\DateTimeModelBinder.cs" />
     <Compile Include="Web\Mvc\HtmlHelperExtensions.cs" />
     <Compile Include="Web\Mvc\LoggingActionFilterAttribute.cs" />
     <Compile Include="Web\Mvc\ModelStateCheckFilterAttribute.cs" />
@@ -91,7 +92,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\DataAnnotationsExtensions.js">
+    <Content Include="Scripts\sfa.validate.unobtrusive.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
