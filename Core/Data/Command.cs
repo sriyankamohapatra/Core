@@ -137,8 +137,8 @@ namespace Sfa.Core.Data
         {
             get
             {
-                yield return "Target";
-                yield return "Result";
+                yield return nameof(Target);
+                yield return nameof(Result);
             }
         }
 
