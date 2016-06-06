@@ -1,5 +1,5 @@
-C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\bin\Debug\Sfa.Core.Data.EntityFramework.dll
-C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\bin\Debug\Sfa.Core.Data.EntityFramework.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\bin\Debug\Sfa.Core.EntityFramework.dll
+C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\bin\Debug\Sfa.Core.EntityFramework.pdb
 C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\bin\Debug\EntityFramework.dll
 C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\bin\Debug\Sfa.Core.dll
@@ -7,5 +7,5 @@ C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\bin\Debug\Sfa.Core.pdb
 C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\bin\Debug\EntityFramework.xml
 C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\obj\Debug\Core.EntityFramework.csprojResolveAssemblyReference.cache
-C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\obj\Debug\Sfa.Core.Data.EntityFramework.dll
-C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\obj\Debug\Sfa.Core.Data.EntityFramework.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\obj\Debug\Sfa.Core.EntityFramework.dll
+C:\Users\Anthony\Source\Repos\Core\Core.EntityFramework\obj\Debug\Sfa.Core.EntityFramework.pdb

@@ -11,7 +11,7 @@ namespace Sfa.Core.Context
     {
         #region CurrentDateTime
 
-        [TestMethod]
+        [TestMethod, TestCategory("Unit")]
         public void CurrentDateTime()
         {
             using (ShimsContext.Create())
@@ -34,7 +34,7 @@ namespace Sfa.Core.Context
 
         #region CurrentDate
 
-        [TestMethod]
+        [TestMethod, TestCategory("Unit")]
         public void CurrentDate()
         {
             using (ShimsContext.Create())
@@ -57,7 +57,7 @@ namespace Sfa.Core.Context
 
         #region CurrentUtcDateTime
 
-        [TestMethod]
+        [TestMethod, TestCategory("Unit")]
         public void CurrentUtcDateTime()
         {
             using (ShimsContext.Create())
@@ -80,7 +80,7 @@ namespace Sfa.Core.Context
 
         #region NewGuid
 
-        [TestMethod]
+        [TestMethod, TestCategory("Unit")]
         public void NewGuid()
         {
             using (ShimsContext.Create())
@@ -103,7 +103,7 @@ namespace Sfa.Core.Context
 
         #region ToBytes
 
-        [TestMethod]
+        [TestMethod, TestCategory("Unit")]
         public void ToBytes()
         {
             // Arrange

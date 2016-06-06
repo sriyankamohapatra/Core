@@ -1,4 +1,5 @@
 C:\Users\Anthony\Source\Repos\Core\Core.Drawing\bin\Debug\Sfa.Core.Drawing.dll
 C:\Users\Anthony\Source\Repos\Core\Core.Drawing\bin\Debug\Sfa.Core.Drawing.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Drawing\obj\Debug\Core.Drawing.csprojResolveAssemblyReference.cache
 C:\Users\Anthony\Source\Repos\Core\Core.Drawing\obj\Debug\Sfa.Core.Drawing.dll
 C:\Users\Anthony\Source\Repos\Core\Core.Drawing\obj\Debug\Sfa.Core.Drawing.pdb

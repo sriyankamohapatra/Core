@@ -2,5 +2,6 @@ C:\Users\Anthony\Source\Repos\Core\Core.Newtonsoft.Json\bin\Debug\Sfa.Core.Newto
 C:\Users\Anthony\Source\Repos\Core\Core.Newtonsoft.Json\bin\Debug\Sfa.Core.Newtonsoft.Json.pdb
 C:\Users\Anthony\Source\Repos\Core\Core.Newtonsoft.Json\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Anthony\Source\Repos\Core\Core.Newtonsoft.Json\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Anthony\Source\Repos\Core\Core.Newtonsoft.Json\obj\Debug\Core.Newtonsoft.Json.csprojResolveAssemblyReference.cache
 C:\Users\Anthony\Source\Repos\Core\Core.Newtonsoft.Json\obj\Debug\Sfa.Core.Newtonsoft.Json.dll
 C:\Users\Anthony\Source\Repos\Core\Core.Newtonsoft.Json\obj\Debug\Sfa.Core.Newtonsoft.Json.pdb
