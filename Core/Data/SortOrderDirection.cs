@@ -1,5 +1,8 @@
 ﻿namespace Sfa.Core.Data
 {
+    /// <summary>
+    /// Adds an enumeration for sorting direction.
+    /// </summary>
     public enum SortDirection
     {
         /// <summary>
@@ -12,5 +15,4 @@
         /// </summary>
         Descending = 1
     }
-
 }
