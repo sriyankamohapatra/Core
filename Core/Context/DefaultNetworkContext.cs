@@ -9,6 +9,29 @@ namespace Sfa.Core.Context
     [Serializable]
     public class DefaultNetworkContext : INetworkContext
     {
+        #region Fields
+
+        private Func<MemoryStream> _memoryStreamfactory = () => new MemoryStream();
+
+        #endregion
+
+
+        #region Factory Helpers
+
+        /// <summary>
+        /// Override the default factory implementation.
+        /// </summary>
+        /// <param name="memoryStreamfactory"></param>
+        public void SetMemoryStreamFactory(Func<MemoryStream> memoryStreamfactory)
+        {
+            _memoryStreamfactory = memoryStreamfactory;
+        }
+
+        #endregion
+
+
+        #region INetworkContext Api
+
         /// <summary>
         /// Get current datetime.
         /// </summary>
@@ -26,7 +49,6 @@ namespace Sfa.Core.Context
         /// <value>The current date.</value>
         public virtual DateTime CurrentDate => DateTime.Today;
 
-
         /// <summary>
         /// Gets a new GUID.
         /// </summary>
@@ -39,11 +61,13 @@ namespace Sfa.Core.Context
         /// <returns>The byte array representation of the contents of the stream.</returns>
         public byte[] ToBytes(Stream stream)
         {
-            using (var ms = new MemoryStream())
+            using (var ms = _memoryStreamfactory())
             {
                 stream.CopyTo(ms);
                 return ms.ToArray();
             }
         }
+
+        #endregion
     }
 }
