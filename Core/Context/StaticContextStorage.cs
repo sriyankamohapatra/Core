@@ -8,7 +8,28 @@ namespace Sfa.Core.Context
     /// </summary>
     public class StaticContextStorage : IContextStorage
     {
-        private static readonly Dictionary<string, object> Storage = new Dictionary<string, object>();
+        #region Fields
+
+        private static IDictionary<string, object> _storage = new Dictionary<string, object>();
+
+        #endregion
+
+
+        #region Constructor
+
+        /// <summary>
+        /// Default constructor.
+        /// </summary>
+        /// <param name="storage">The implementation of the static storage. Can be left <c>null</c> to use a default <see cref="Dictionary{TKey,TValue}"/></param>
+        public StaticContextStorage(IDictionary<string, object> storage = null)
+        {
+            _storage = storage ?? new Dictionary<string, object>();
+        }
+
+        #endregion
+
+
+        #region IContextStorage Api
 
         /// <summary>
         /// Returns the strongly typed data for the given name.
@@ -18,7 +39,7 @@ namespace Sfa.Core.Context
         /// <returns>The object that was defined using <see cref="SetData{T}"/>.</returns>
         public T GetData<T>(string name)
         {
-            return (T)Storage[name];
+            return (T)_storage[name];
         }
 
         /// <summary>
@@ -29,7 +50,7 @@ namespace Sfa.Core.Context
         /// <param name="instance">The instance to store.</param>
         public void SetData<T>(string name, T instance)
         {
-            Storage[name] = instance;
+            _storage[name] = instance;
         }
 
         /// <summary>
@@ -44,8 +65,10 @@ namespace Sfa.Core.Context
                 var item = GetData<object>(name);
                 (item as IDisposable)?.Dispose();
                 SetData<object>(name, null);
-                Storage.Remove(name);
+                _storage.Remove(name);
             }
-        }
+        } 
+
+        #endregion
     }
 }

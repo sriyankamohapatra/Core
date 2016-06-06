@@ -316,8 +316,8 @@
         <member name="P:Sfa.Core.Context.Fakes.ShimStaticContextStorage.CleanAndDisposeStringArray">
             <summary>Sets the shim of StaticContextStorage.CleanAndDispose(String[] names)</summary>
         </member>
-        <member name="P:Sfa.Core.Context.Fakes.ShimStaticContextStorage.Constructor">
-            <summary>Sets the shim of StaticContextStorage.StaticContextStorage()</summary>
+        <member name="P:Sfa.Core.Context.Fakes.ShimStaticContextStorage.ConstructorIDictionaryOfStringObject">
+            <summary>Sets the shim of StaticContextStorage.StaticContextStorage(IDictionary`2&lt;String,Object&gt; storage)</summary>
         </member>
         <member name="M:Sfa.Core.Context.Fakes.ShimStaticContextStorage.GetDataOf1String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,``0})">
             <summary>Sets the shim of StaticContextStorage.GetData(String name)</summary>
@@ -553,7 +553,7 @@
         <member name="T:Sfa.Core.Context.Fakes.StubStaticContextStorage">
             <summary>Stub type of Sfa.Core.Context.StaticContextStorage</summary>
         </member>
-        <member name="M:Sfa.Core.Context.Fakes.StubStaticContextStorage.#ctor">
+        <member name="M:Sfa.Core.Context.Fakes.StubStaticContextStorage.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})">
             <summary>Initializes a new instance</summary>
         </member>
         <member name="P:Sfa.Core.Context.Fakes.StubStaticContextStorage.CallBase">
