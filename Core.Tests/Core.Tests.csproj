@@ -78,6 +78,7 @@
     </Compile>
     <Compile Include="Context\AdjustableNetworkContextTests.cs" />
     <Compile Include="Context\CallContextStorageTests.cs" />
+    <Compile Include="Context\DefaultGuidProviderTests.cs" />
     <Compile Include="Context\DefaultNetworkContextTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Text\StringBuilderExtensionsUnitTest.cs" />
