@@ -13,6 +13,8 @@ namespace Sfa.Core.Data
     /// to set the result.</typeparam>
     public abstract class AsyncCommand<TTarget, TResult> : IAsyncCommand
     {
+        #region Main Api
+
         /// <summary>
         /// The target of the command.
         /// </summary>
@@ -61,6 +63,11 @@ namespace Sfa.Core.Data
             }
         }
 
+        #endregion
+
+
+        #region Internal Implementations
+        
         /// <summary>
         /// Should be implemented as the actual execution step of the command.
         /// </summary>
@@ -109,5 +116,7 @@ namespace Sfa.Core.Data
         {
             return Task.FromResult(0);
         }
+
+        #endregion
     }
 }
