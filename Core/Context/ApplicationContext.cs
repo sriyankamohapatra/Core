@@ -48,6 +48,7 @@ namespace Sfa.Core.Context
 
             _contextStorage.SetData(StorageKeyLogger, logger);
             _contextStorage.SetData(StorageKeyNetworkContext, networkContext);
+            Keys.Clear();
             Keys.Add(StorageKeyLogger);
             Keys.Add(StorageKeyNetworkContext);
         }
@@ -80,6 +81,7 @@ namespace Sfa.Core.Context
         public static void TearDown()
         {
             _contextStorage.CleanAndDispose(Keys.ToArray());
+            Keys.Clear();
         }
 
         #endregion

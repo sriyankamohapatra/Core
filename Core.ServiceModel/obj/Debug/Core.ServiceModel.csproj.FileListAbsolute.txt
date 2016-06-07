@@ -2,6 +2,6 @@ C:\Users\Anthony\Source\Repos\Core\Core.ServiceModel\bin\Debug\Sfa.Core.ServiceM
 C:\Users\Anthony\Source\Repos\Core\Core.ServiceModel\bin\Debug\Sfa.Core.ServiceModel.pdb
 C:\Users\Anthony\Source\Repos\Core\Core.ServiceModel\bin\Debug\Sfa.Core.dll
 C:\Users\Anthony\Source\Repos\Core\Core.ServiceModel\bin\Debug\Sfa.Core.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.ServiceModel\obj\Debug\Core.ServiceModel.csprojResolveAssemblyReference.cache
 C:\Users\Anthony\Source\Repos\Core\Core.ServiceModel\obj\Debug\Sfa.Core.ServiceModel.dll
 C:\Users\Anthony\Source\Repos\Core\Core.ServiceModel\obj\Debug\Sfa.Core.ServiceModel.pdb
-C:\Users\Anthony\Source\Repos\Core\Core.ServiceModel\obj\Debug\Core.ServiceModel.csprojResolveAssemblyReference.cache

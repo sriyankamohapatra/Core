@@ -6,6 +6,5 @@ C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\bin\Debug\Microsoft.Practices.
 C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\bin\Debug\Microsoft.Practices.Unity.xml
 C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
-C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\obj\Debug\Core.Unity.csprojResolveAssemblyReference.cache
 C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\obj\Debug\Sfa.Core.Unity.dll
 C:\Users\Anthony\Source\Repos\Core\Core.Ioc.Unity\obj\Debug\Sfa.Core.Unity.pdb

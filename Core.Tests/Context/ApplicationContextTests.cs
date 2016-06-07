@@ -154,6 +154,7 @@ namespace Sfa.Core.Context
 
             // Act
             ApplicationContext.TearDown();
+            ApplicationContext.TearDown(); // Call twice to show this won't cause an issue
 
             // Assert
             keysToDispose.ShouldHaveSameValueAs(new List<string> { "logger", "network", typeof(string).FullName});
