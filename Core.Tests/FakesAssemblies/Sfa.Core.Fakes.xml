@@ -202,9 +202,6 @@
         <member name="P:Sfa.Core.Context.Fakes.ShimDefaultNetworkContext.AllInstances.NewGuidGet">
             <summary>Sets the shim of DefaultNetworkContext.get_NewGuid()</summary>
         </member>
-        <member name="P:Sfa.Core.Context.Fakes.ShimDefaultNetworkContext.AllInstances.SetMemoryStreamFactoryFuncOfMemoryStream">
-            <summary>Sets the shim of DefaultNetworkContext.SetMemoryStreamFactory(Func`1&lt;MemoryStream&gt; memoryStreamfactory)</summary>
-        </member>
         <member name="P:Sfa.Core.Context.Fakes.ShimDefaultNetworkContext.AllInstances.ToBytesStream">
             <summary>Sets the shim of DefaultNetworkContext.ToBytes(Stream stream)</summary>
         </member>
@@ -234,9 +231,6 @@
         </member>
         <member name="P:Sfa.Core.Context.Fakes.ShimDefaultNetworkContext.NewGuidGet">
             <summary>Sets the shim of DefaultNetworkContext.get_NewGuid()</summary>
-        </member>
-        <member name="P:Sfa.Core.Context.Fakes.ShimDefaultNetworkContext.SetMemoryStreamFactoryFuncOfMemoryStream">
-            <summary>Sets the shim of DefaultNetworkContext.SetMemoryStreamFactory(Func`1&lt;MemoryStream&gt; memoryStreamfactory)</summary>
         </member>
         <member name="P:Sfa.Core.Context.Fakes.ShimDefaultNetworkContext.ToBytesStream">
             <summary>Sets the shim of DefaultNetworkContext.ToBytes(Stream stream)</summary>

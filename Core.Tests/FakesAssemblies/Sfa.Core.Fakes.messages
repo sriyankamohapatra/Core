@@ -1,0 +1,69 @@
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for <>f__AnonymousType0`2: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.ByteArrayExtensions: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.EnumAttributeMaps: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.EnumDescriptor: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.EnumTranslator: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Threading.TaskExtensions: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Text.StringBuilderExtensions: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Text.StringExtensions: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Security.Claims.ClaimsPrincipalExtensions: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Reflection.CustomAttributeProviderExtensions: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Reflection.ExpressionExtensions: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Reflection.MemberInfoExtensions: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Reflection.ObjectExtensions: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Reflection.TypeExtensions: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Logging.LoggingLevel: type is a value type.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.IO.StreamExtensions: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Data.SortDirection: type is a value type.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Context.ApplicationContext: type is sealed.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for <>f__AnonymousType0`2: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.EnumAttributeMaps+<>c__DisplayClass1_0: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.EnumAttributeMap+<>c__9`1: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Security.Claims.ClaimsPrincipalExtensions+<>c__DisplayClass1_0: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Reflection.TypeExtensions+<>c__1`1: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Messaging.IMessage: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Messaging.IMessagingClient: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Logging.AsyncLoggingWrapper+<>c__DisplayClass12_0: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Logging.AsyncLoggingWrapper+<>c__DisplayClass7_0: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Logging.AsyncLoggingWrapper+QueueLoggingParams: type is not visible to exported or assembly(Sfa.Core.Fakes).
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Logging.BaseLogger+<>c: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Logging.BaseLogger+<>c__DisplayClass8_0: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Logging.ILogger: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Logging.LoggingLevel: type is an enum.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Logging.MultiLogger+<>c__DisplayClass5_0: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Equality.FieldValueEqualityComparer+<>c: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Equality.FieldValueEqualityComparer+<>c__DisplayClass13_0: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Equality.FieldValueEqualityComparer+<>c__DisplayClass15_0: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Equality.FieldValueEqualityComparer+<>c__DisplayClass25_0: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Equality.FieldValueEqualityComparer+<>c__DisplayClass27_0: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Equality.FieldValueEqualityComparer+<>c__DisplayClass7_0: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Equality.FieldValueEqualityComparer+<>c__DisplayClass8_0: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Equality.FieldValueEqualityComparer+ObjectReferenceDictionary: type is not visible to exported or assembly(Sfa.Core.Fakes).
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Equality.IFieldValueEqualityComparer: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Equality.IFieldValueTypeEqualityComparer: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Entities.IEntity: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Entities.IEntity`1: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Diagnostics.HealthCheck+<>c: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Diagnostics.HealthCheck+<>c__DisplayClass3_0: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Diagnostics.HealthCheck+<>c__DisplayClass4_0: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.AsyncCommand`2+<AuthoriseAsync>d__8: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.AsyncCommand`2+<ExecuteAsync>d__9: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.Command`2+<get_PropertiesToIgnoreForToString>d__18: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.IAsyncCommand: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.IAsyncRepository: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.ICommand: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.IIdCommand`1: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.IMaxEntityId: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.IProjection: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.IQuery`1: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.IReadOnlyRepository: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.IRepository: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.IResultList`1: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.IResultList: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.ITransactional: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.QueryableMapper+<>c__1`2: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.SortDirection: type is an enum.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Context.AdjustableNetworkContext+<>c: type is not supported because of internal limitations.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Context.IContextStorage: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Context.IGuidProvider: type is an interface.
+C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Context.INetworkContext: type is an interface.

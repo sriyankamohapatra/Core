@@ -9,27 +9,6 @@ namespace Sfa.Core.Context
     [Serializable]
     public class DefaultNetworkContext : INetworkContext
     {
-        #region Fields
-
-        private Func<MemoryStream> _memoryStreamfactory = () => new MemoryStream();
-
-        #endregion
-
-
-        #region Factory Helpers
-
-        /// <summary>
-        /// Override the default factory implementation.
-        /// </summary>
-        /// <param name="memoryStreamfactory"></param>
-        public void SetMemoryStreamFactory(Func<MemoryStream> memoryStreamfactory)
-        {
-            _memoryStreamfactory = memoryStreamfactory;
-        }
-
-        #endregion
-
-
         #region INetworkContext Api
 
         /// <summary>
@@ -61,7 +40,7 @@ namespace Sfa.Core.Context
         /// <returns>The byte array representation of the contents of the stream.</returns>
         public byte[] ToBytes(Stream stream)
         {
-            using (var ms = _memoryStreamfactory())
+            using (var ms = new MemoryStream())
             {
                 stream.CopyTo(ms);
                 return ms.ToArray();
