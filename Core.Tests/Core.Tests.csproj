@@ -89,6 +89,7 @@
     <Compile Include="Data\ResultListTests.cs" />
     <Compile Include="Diagnostics\DebugTextWriterTests.cs" />
     <Compile Include="Diagnostics\HealthCheckTests.cs" />
+    <Compile Include="Equality\FieldValueEqualityComparerTests.cs" />
     <Compile Include="Equality\ReferenceEqualityComparerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Text\StringBuilderExtensionsUnitTest.cs" />

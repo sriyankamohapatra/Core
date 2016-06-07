@@ -74,15 +74,24 @@ namespace Sfa.Core.Equality
         /// <summary>
         /// Determines whether the specified objects are equal.
         /// </summary>
+        /// <param name="x">The first object to compare.</param>
+        /// <param name="y">The second object to compare.</param>
         /// <returns>
-        /// true if the specified objects are equal; otherwise, false.
+        /// <c>true</c> if the specified objects are equal; otherwise, <c>false</c>.
         /// </returns>
-        /// <param name="x">The first object to compare.</param><param name="y">The second object to compare.</param><exception cref="T:System.ArgumentException"><paramref name="x"/> and <paramref name="y"/> are of different types and neither one can handle comparisons with the other.</exception>
         public new bool Equals(object x, object y)
         {
             return Compare(x, y, new ObjectReferenceDictionary());
         }
 
+        /// <summary>
+        /// Determines whether the specified objects are equal.
+        /// </summary>
+        /// <param name="x">The first object to compare.</param>
+        /// <param name="y">The second object to compare.</param>
+        /// <returns>
+        /// <c>true</c> if the specified objects are equal; otherwise, <c>false</c>.
+        /// </returns>
         public static bool AreEqual(object x, object y)
         {
             return new FieldValueEqualityComparer().Equals(x, y);
@@ -139,7 +148,7 @@ namespace Sfa.Core.Equality
                     {
                         var dictionary2 = (IDictionary)obj2;
 
-                        equals = AlreadyCompared(dictionary1, obj2, recursiveObjects) ||
+                        equals = AlreadyCompared(dictionary1, dictionary2, recursiveObjects) ||
                             (PerformListFieldComparison(dictionary1.Keys, dictionary2.Keys, recursiveObjects) &&
                             (PerformListFieldComparison(dictionary1.Values, dictionary2.Values, recursiveObjects)));
                     }
@@ -236,24 +245,24 @@ namespace Sfa.Core.Equality
                 var fieldValue2 = currentField.GetValue(obj2);
 
                 IFieldValueEqualityComparer comparer;
+
                 if (MatchesComparer(ref fieldValue1, ref fieldValue2, obj1, obj2, currentField, out comparer))
                 {
                     equals = comparer.Equals(fieldValue1, fieldValue2);
                 }
-                else if (typeof(IDictionary).IsAssignableFrom(currentField.FieldType)) // Will not pass if null and can just use normal null checking
+                else if (fieldValue1 as IDictionary != null) // Will not pass if null and can just use normal null checking
                 {
-                    var dictionary1 = fieldValue1 as IDictionary;
+                    var dictionary1 = (IDictionary) fieldValue1;
                     var dictionary2 = fieldValue2 as IDictionary;
-
                     if (dictionary2 == null)
                     {
                         equals = false;
                     }
                     else
                     {
-                        equals = AlreadyCompared(obj1, obj2, recursiveObjects) ||
-                            (PerformListFieldComparison(dictionary1.Keys, dictionary1.Keys, recursiveObjects) &&
-                            (PerformListFieldComparison(dictionary2.Values, dictionary2.Values, recursiveObjects)));
+                        equals = AlreadyCompared(dictionary1, dictionary2, recursiveObjects) ||
+                            (PerformListFieldComparison(dictionary1.Keys, dictionary2.Keys, recursiveObjects) &&
+                            (PerformListFieldComparison(dictionary1.Values, dictionary2.Values, recursiveObjects)));
                     }
                 }
                 else if (typeof(IEnumerable).IsAssignableFrom(currentField.FieldType) && typeof(string) != currentField.FieldType) // Will not pass if null and can just use normal null checking
@@ -424,9 +433,6 @@ namespace Sfa.Core.Equality
         {
             ApplicationContext.Logger.Log(LoggingLevel.Debug, LoggerCategory, () =>
             {
-
-                //var value1AsString = value1 == null ? "null" : value1.IsProxy() ? String.Format("[{0}, Id:{1}]", value1.GetType(), ((BusinessObject)value1).Id) : (value1.IsMock() ? "Mock" : value1.ToString());
-                //var value2AsString = value2 == null ? "null" : value2.IsProxy() ? String.Format("[{0}, Id:{1}]", value2.GetType(), ((BusinessObject)value2).Id) : (value2.IsMock() ? "Mock" : value2.ToString());
                 var value1AsString = value1?.ToString() ?? "null";
                 var value2AsString = value2?.ToString() ?? "null";
                 var message = $"Field '{fieldName}' of Type '{fieldType}' fails equality test.\nObject 1 has value: '{value1AsString}'\nObject 2 has value: '{value2AsString}'";
@@ -441,7 +447,7 @@ namespace Sfa.Core.Equality
             return ShouldFieldHaveValueSemanticEqualityPerformed(fieldInfo.FieldType);
         }
 
-        public static bool ShouldFieldHaveValueSemanticEqualityPerformed(Type typeToFind)
+        private static bool ShouldFieldHaveValueSemanticEqualityPerformed(Type typeToFind)
         {
             var shouldFieldHaveValueSemanticEqualityPerformed = false;
 
