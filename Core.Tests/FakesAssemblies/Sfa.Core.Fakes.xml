@@ -2053,51 +2053,6 @@
         <member name="F:Sfa.Core.Entities.Fakes.StubIEntity`1.IdGet">
             <summary>Sets the stub of IEntity`1.get_Id()</summary>
         </member>
-        <member name="T:Sfa.Core.Environment.Fakes.ShimDataDictionaryHelper">
-            <summary>Shim type of Sfa.Core.Environment.DataDictionaryHelper</summary>
-        </member>
-        <member name="M:Sfa.Core.Environment.Fakes.ShimDataDictionaryHelper.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:Sfa.Core.Environment.Fakes.ShimDataDictionaryHelper.#ctor(Sfa.Core.Environment.DataDictionaryHelper)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="T:Sfa.Core.Environment.Fakes.ShimDataDictionaryHelper.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="M:Sfa.Core.Environment.Fakes.ShimDataDictionaryHelper.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:Sfa.Core.Environment.Fakes.ShimDataDictionaryHelper.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:Sfa.Core.Environment.Fakes.ShimDataDictionaryHelper.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:Sfa.Core.Environment.Fakes.ShimDataDictionaryHelper.Constructor">
-            <summary>Sets the shim of DataDictionaryHelper.DataDictionaryHelper()</summary>
-        </member>
-        <member name="P:Sfa.Core.Environment.Fakes.ShimDataDictionaryHelper.SetDataDictionaryLocationRelativeToAppSettingsString">
-            <summary>Sets the shim of DataDictionaryHelper.SetDataDictionaryLocationRelativeToAppSettings(String appSettingKey)</summary>
-        </member>
-        <member name="T:Sfa.Core.Environment.Fakes.StubDataDictionaryHelper">
-            <summary>Stub type of Sfa.Core.Environment.DataDictionaryHelper</summary>
-        </member>
-        <member name="M:Sfa.Core.Environment.Fakes.StubDataDictionaryHelper.#ctor">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="P:Sfa.Core.Environment.Fakes.StubDataDictionaryHelper.CallBase">
-            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
-        </member>
-        <member name="M:Sfa.Core.Environment.Fakes.StubDataDictionaryHelper.InitializeStub">
-            <summary>Initializes a new instance of type StubDataDictionaryHelper</summary>
-        </member>
-        <member name="P:Sfa.Core.Environment.Fakes.StubDataDictionaryHelper.InstanceBehavior">
-            <summary>Gets or sets the instance behavior.</summary>
-        </member>
-        <member name="P:Sfa.Core.Environment.Fakes.StubDataDictionaryHelper.InstanceObserver">
-            <summary>Gets or sets the instance observer.</summary>
-        </member>
         <member name="T:Sfa.Core.Equality.Fakes.ShimFieldValueEqualityComparer">
             <summary>Shim type of Sfa.Core.Equality.FieldValueEqualityComparer</summary>
         </member>

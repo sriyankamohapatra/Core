@@ -22,6 +22,8 @@ namespace Sfa.Core.Testing
         /// </summary>
         public static int DateTimeSecondsThreshold = 60;
 
+        private const string FailedTestMessage = "Try using EnableComparisonLogging(); to see where the objects are different.";
+        private const string FailedTestMessageForSingleValues = FailedTestMessage + " Expected {0}, Received {1}";
 
         #region Repository Comparison
 
@@ -73,7 +75,7 @@ namespace Sfa.Core.Testing
         /// </summary>
         /// <typeparam name="T">The type of the entity to load.</typeparam>
         /// <param name="entity">The entity to check against.</param>
-        /// <param name="afterload">An action that can be performed once the load from the repo has taken place, but before the equality check is performed.</param>
+        /// <param name="afterload">An action that can be performed once the load from the repository has taken place, but before the equality check is performed.</param>
         /// <returns>The instance.</returns>
         public static T ShouldBeInTheRespository<T>(this T entity, Action<T> afterload = null)
             where T : class, IEntity<int>
@@ -88,7 +90,7 @@ namespace Sfa.Core.Testing
         /// <typeparam name="T">The type of the entity to load.</typeparam>
         /// <typeparam name="TId">The type of the Id property on the entity.</typeparam>
         /// <param name="entity">The entity to check against.</param>
-        /// <param name="afterload">An action that can be performed once the load from the repo has taken place, but before the equality check is performed.</param>
+        /// <param name="afterload">An action that can be performed once the load from the repository has taken place, but before the equality check is performed.</param>
         /// <returns>The instance.</returns>
         public static T ShouldBeInTheRespository<T, TId>(this T entity, Action<T> afterload = null)
             where T : class, IEntity<TId>
@@ -353,13 +355,13 @@ namespace Sfa.Core.Testing
         /// Asserts that the instances have the same field values.
         /// </summary>
         /// <typeparam name="T">The type of the instances.</typeparam>
-        /// <param name="actualVo">The instance to check.</param>
-        /// <param name="expectedVo">The expected instance to test against.</param>
+        /// <param name="actual">The instance to check.</param>
+        /// <param name="expected">The expected instance to test against.</param>
         /// <returns>The actual instance supplied.</returns>
-        public static T ShouldHaveSameValueAs<T>(this T actualVo, T expectedVo)
+        public static T ShouldHaveSameValueAs<T>(this T actual, T expected)
         {
-            Assert.IsTrue(FieldValueEqualityComparer.AreEqual(expectedVo, actualVo), "Try using EnableComparisonLogging(); to see where the objects are different");
-            return actualVo;
+            Assert.IsTrue(FieldValueEqualityComparer.AreEqual(expected, actual), FailedTestMessageForSingleValues, expected, actual);
+            return actual;
         }
 
 
@@ -367,15 +369,15 @@ namespace Sfa.Core.Testing
         /// Asserts that the instances have the same field values.
         /// </summary>
         /// <typeparam name="T">The type of the instances.</typeparam>
-        /// <param name="actualVo">The instance to check.</param>
-        /// <param name="expectedVo">The expected instance to test against.</param>
+        /// <param name="actual">The instance to check.</param>
+        /// <param name="expected">The expected instance to test against.</param>
         /// <param name="dateTimeProperties">Any date time properties to fuzzy check against.</param>
         /// <returns>The actual instance supplied. If any fuzzy date times were supplied, they will now be set to match those of the entity in the database.</returns>
-        public static T ShouldHaveSameValueAs<T>(this T actualVo, T expectedVo, params Expression<Func<T, DateTime>>[] dateTimeProperties)
+        public static T ShouldHaveSameValueAs<T>(this T actual, T expected, params Expression<Func<T, DateTime>>[] dateTimeProperties)
         {
-            AssertFuzzyDateEquals(actualVo, expectedVo, dateTimeProperties);
-            Assert.IsTrue(FieldValueEqualityComparer.AreEqual(expectedVo, actualVo), "Try using EnableComparisonLogging(); to see where the objects are different");
-            return actualVo;
+            AssertFuzzyDateEquals(actual, expected, dateTimeProperties);
+            Assert.IsTrue(FieldValueEqualityComparer.AreEqual(expected, actual), FailedTestMessageForSingleValues, expected, actual);
+            return actual;
         }
 
 
@@ -383,15 +385,15 @@ namespace Sfa.Core.Testing
         /// Asserts that the instances have the same field values.
         /// </summary>
         /// <typeparam name="T">The type of the instances.</typeparam>
-        /// <param name="actualVo">The instance to check.</param>
-        /// <param name="expectedVo">The expected instance to test against.</param>
+        /// <param name="actual">The instance to check.</param>
+        /// <param name="expected">The expected instance to test against.</param>
         /// <param name="dateTimeProperties">Any date time properties to fuzzy check against.</param>
         /// <returns>The actual instance supplied. If any fuzzy date times were supplied, they will now be set to match those of the entity in the database.</returns>
-        public static T ShouldHaveSameValueAs<T>(this T actualVo, T expectedVo, params Expression<Func<T, DateTime?>>[] dateTimeProperties)
+        public static T ShouldHaveSameValueAs<T>(this T actual, T expected, params Expression<Func<T, DateTime?>>[] dateTimeProperties)
         {
-            AssertFuzzyDateEquals(actualVo, expectedVo, dateTimeProperties);
-            Assert.IsTrue(FieldValueEqualityComparer.AreEqual(expectedVo, actualVo), "Try using EnableComparisonLogging(); to see where the objects are different");
-            return actualVo;
+            AssertFuzzyDateEquals(actual, expected, dateTimeProperties);
+            Assert.IsTrue(FieldValueEqualityComparer.AreEqual(expected, actual), FailedTestMessageForSingleValues, expected, actual);
+            return actual;
         }
 
 
@@ -399,29 +401,29 @@ namespace Sfa.Core.Testing
         /// Asserts that the instances have the same field values.
         /// </summary>
         /// <typeparam name="T">The type of the instances.</typeparam>
-        /// <param name="actualVo">The instance to check.</param>
-        /// <param name="expectedVo">The expected instance to test against.</param>
+        /// <param name="actual">The instance to check.</param>
+        /// <param name="expected">The expected instance to test against.</param>
         /// <param name="nullableDateTimeProperties">Any nullable date time properties to fuzzy check against.</param>
         /// <param name="dateTimeProperties">Any date time properties to fuzzy check against.</param>
         /// <returns>The actual instance supplied. If any fuzzy date times were supplied, they will now be set to match those of the entity in the database.</returns>
-        public static T ShouldHaveSameValueAs<T>(this T actualVo, T expectedVo, Expression<Func<T, DateTime?>>[] nullableDateTimeProperties, Expression<Func<T, DateTime>>[] dateTimeProperties)
+        public static T ShouldHaveSameValueAs<T>(this T actual, T expected, Expression<Func<T, DateTime?>>[] nullableDateTimeProperties, Expression<Func<T, DateTime>>[] dateTimeProperties)
         {
-            AssertFuzzyDateEquals(actualVo, expectedVo, nullableDateTimeProperties, dateTimeProperties);
-            Assert.IsTrue(FieldValueEqualityComparer.AreEqual(expectedVo, actualVo), "Try using EnableComparisonLogging(); to see where the objects are different");
-            return actualVo;
+            AssertFuzzyDateEquals(actual, expected, nullableDateTimeProperties, dateTimeProperties);
+            Assert.IsTrue(FieldValueEqualityComparer.AreEqual(expected, actual), FailedTestMessageForSingleValues, expected, actual);
+            return actual;
         }
 
         /// <summary>
         /// Asserts that the instances do not have the same field values.
         /// </summary>
         /// <typeparam name="T">The type of the instances.</typeparam>
-        /// <param name="actualVo">The instance to check.</param>
-        /// <param name="expectedVo">The expected instance to test against.</param>
+        /// <param name="actual">The instance to check.</param>
+        /// <param name="expected">The expected instance to test against.</param>
         /// <returns>The actual instance supplied.</returns>
-        public static T ShouldNotHaveSameValueAs<T>(this T actualVo, T expectedVo)
+        public static T ShouldNotHaveSameValueAs<T>(this T actual, T expected)
         {
-            Assert.IsFalse(FieldValueEqualityComparer.AreEqual(expectedVo, actualVo), "Try using EnableComparisonLogging(); to see where the objects are different");
-            return actualVo;
+            Assert.IsFalse(FieldValueEqualityComparer.AreEqual(expected, actual), FailedTestMessageForSingleValues, expected, actual);
+            return actual;
         }
         
         #endregion
@@ -445,7 +447,7 @@ namespace Sfa.Core.Testing
                 expectedCollection = sortOrder.Compile().Invoke(expectedCollection);
             }
 
-            Assert.IsTrue(FieldValueEqualityComparer.AreEqual(expectedCollection, actualCollection), "Try using EnableComparisonLogging (); to see where the objects are different");
+            Assert.IsTrue(FieldValueEqualityComparer.AreEqual(expectedCollection, actualCollection), FailedTestMessage);
             return actualCollection;
         }
 
@@ -459,7 +461,7 @@ namespace Sfa.Core.Testing
         /// <returns>The actual list.</returns>
         public static IList<T> ShouldHaveSameValuesAs<T>(this IList<T> actualCollection, IList<T> expectedCollection)
         {
-            Assert.IsTrue(FieldValueEqualityComparer.AreEqual(expectedCollection, actualCollection), "Try using EnableComparisonLogging (); to see where the objects are different");
+            Assert.IsTrue(FieldValueEqualityComparer.AreEqual(expectedCollection, actualCollection), FailedTestMessage);
             return actualCollection;
         }
         

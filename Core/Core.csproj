@@ -84,7 +84,6 @@
     <Compile Include="EnumDescriptorAttribute.cs" />
     <Compile Include="EnumDisplayAttribute.cs" />
     <Compile Include="EnumTranslator.cs" />
-    <Compile Include="Environment\DataDictionaryHelper.cs" />
     <Compile Include="Equality\FieldValueEqualityComparer.cs" />
     <Compile Include="Equality\IFieldValueEqualityComparer.cs" />
     <Compile Include="Equality\IFieldValueTypeEqualityComparer.cs" />
