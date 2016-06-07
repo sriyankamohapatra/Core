@@ -50,6 +50,31 @@ namespace Sfa.Core.Context
         #endregion
 
 
+        #region ClearAdditionalDateTimeAdjuster
+
+        [TestMethod, TestCategory("Unit")]
+        public void ClearAdditionalDateTimeAdjuster()
+        {
+            using (ShimsContext.Create())
+            {
+                // Arrange
+                var expected = new DateTime(2000, 1, 2, 3, 4, 5);
+                var componentUnderTest = new AdjustableNetworkContext(o => o.AddHours(1), null);
+                System.Fakes.ShimDateTime.NowGet = () => expected;
+                componentUnderTest.SetAdditionalDateTimeAdjuster(o => o.AddMinutes(2));
+
+                // Act
+                componentUnderTest.ClearAdditionalDateTimeAdjuster();
+                var actual = componentUnderTest.CurrentDateTime;
+
+                // Assert
+                actual.ShouldHaveSameValueAs(new DateTime(2000, 1, 2, 4, 4, 5));
+            }
+        }
+
+        #endregion
+
+
         #region CurrentDate
 
         [TestMethod, TestCategory("Unit")]
