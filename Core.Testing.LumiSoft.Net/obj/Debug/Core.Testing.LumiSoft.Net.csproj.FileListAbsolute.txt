@@ -1,9 +1,0 @@
-C:\Users\Anthony\Source\Repos\Core\Core.Testing.LumiSoft.Net\bin\Debug\Sfa.Core.Testing.LumiSoft.Net.dll
-C:\Users\Anthony\Source\Repos\Core\Core.Testing.LumiSoft.Net\bin\Debug\Sfa.Core.Testing.LumiSoft.Net.pdb
-C:\Users\Anthony\Source\Repos\Core\Core.Testing.LumiSoft.Net\bin\Debug\LumiSoft.Net.dll
-C:\Users\Anthony\Source\Repos\Core\Core.Testing.LumiSoft.Net\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\Anthony\Source\Repos\Core\Core.Testing.LumiSoft.Net\bin\Debug\Sfa.Core.dll
-C:\Users\Anthony\Source\Repos\Core\Core.Testing.LumiSoft.Net\bin\Debug\Sfa.Core.pdb
-C:\Users\Anthony\Source\Repos\Core\Core.Testing.LumiSoft.Net\obj\Debug\Core.Testing.LumiSoft.Net.csprojResolveAssemblyReference.cache
-C:\Users\Anthony\Source\Repos\Core\Core.Testing.LumiSoft.Net\obj\Debug\Sfa.Core.Testing.LumiSoft.Net.dll
-C:\Users\Anthony\Source\Repos\Core\Core.Testing.LumiSoft.Net\obj\Debug\Sfa.Core.Testing.LumiSoft.Net.pdb

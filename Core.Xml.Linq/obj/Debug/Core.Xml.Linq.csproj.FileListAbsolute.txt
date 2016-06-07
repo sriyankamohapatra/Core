@@ -1,4 +1,0 @@
-C:\Users\Anthony\Source\Repos\Core\Core.Xml.Linq\bin\Debug\Sfa.Core.Xml.Linq.dll
-C:\Users\Anthony\Source\Repos\Core\Core.Xml.Linq\bin\Debug\Sfa.Core.Xml.Linq.pdb
-C:\Users\Anthony\Source\Repos\Core\Core.Xml.Linq\obj\Debug\Sfa.Core.Xml.Linq.dll
-C:\Users\Anthony\Source\Repos\Core\Core.Xml.Linq\obj\Debug\Sfa.Core.Xml.Linq.pdb

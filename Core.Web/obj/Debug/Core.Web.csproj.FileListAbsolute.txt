@@ -1,7 +1,0 @@
-C:\Users\Anthony\Source\Repos\Core\Core.Web\bin\Debug\Sfa.Core.Web.dll
-C:\Users\Anthony\Source\Repos\Core\Core.Web\bin\Debug\Sfa.Core.Web.pdb
-C:\Users\Anthony\Source\Repos\Core\Core.Web\bin\Debug\Sfa.Core.dll
-C:\Users\Anthony\Source\Repos\Core\Core.Web\bin\Debug\Sfa.Core.pdb
-C:\Users\Anthony\Source\Repos\Core\Core.Web\obj\Debug\Core.Web.csprojResolveAssemblyReference.cache
-C:\Users\Anthony\Source\Repos\Core\Core.Web\obj\Debug\Sfa.Core.Web.dll
-C:\Users\Anthony\Source\Repos\Core\Core.Web\obj\Debug\Sfa.Core.Web.pdb
