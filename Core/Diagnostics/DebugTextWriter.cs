@@ -5,7 +5,7 @@ using System.Text;
 namespace Sfa.Core.Diagnostics
 {
     /// <summary>
-    /// Writes buffered text out to the using the debug diagnostics utility.
+    /// Writes buffered text out using the debug diagnostics utility.
     /// </summary>
     public class DebugTextWriter : TextWriter
     {
@@ -15,7 +15,7 @@ namespace Sfa.Core.Diagnostics
         public override Encoding Encoding => Encoding.Default;
 
         /// <summary>
-        /// Writes a subarray of characters.
+        /// Writes a sub-array of characters.
         /// </summary>
         /// <param name="buffer">The character array to write data from.</param>
         /// <param name="index">The character position in the buffer at which to start retrieving data. </param>

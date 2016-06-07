@@ -23,7 +23,7 @@ namespace Sfa.Core.Web.Http.Controllers
             
             runHealthCheckTests(healthCheck);
 
-            if (healthCheck.AllPAssed)
+            if (healthCheck.AllPassed)
             {
 
                 var assembly = Assembly.GetExecutingAssembly();

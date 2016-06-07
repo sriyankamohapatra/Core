@@ -1717,8 +1717,8 @@
         <member name="T:Sfa.Core.Diagnostics.Fakes.ShimHealthCheck.AllInstances">
             <summary>Define shims for all instances members</summary>
         </member>
-        <member name="P:Sfa.Core.Diagnostics.Fakes.ShimHealthCheck.AllInstances.AllPAssedGet">
-            <summary>Sets the shim of HealthCheck.get_AllPAssed()</summary>
+        <member name="P:Sfa.Core.Diagnostics.Fakes.ShimHealthCheck.AllInstances.AllPassedGet">
+            <summary>Sets the shim of HealthCheck.get_AllPassed()</summary>
         </member>
         <member name="P:Sfa.Core.Diagnostics.Fakes.ShimHealthCheck.AllInstances.RunHealthCheckServiceTestStringStringString">
             <summary>Sets the shim of HealthCheck.RunHealthCheckServiceTest(String baseUri, String serviceHealthCheckPath, String name)</summary>
@@ -1726,8 +1726,8 @@
         <member name="P:Sfa.Core.Diagnostics.Fakes.ShimHealthCheck.AllInstances.RunTestActionString">
             <summary>Sets the shim of HealthCheck.RunTest(Action test, String name)</summary>
         </member>
-        <member name="P:Sfa.Core.Diagnostics.Fakes.ShimHealthCheck.AllPAssedGet">
-            <summary>Sets the shim of HealthCheck.get_AllPAssed()</summary>
+        <member name="P:Sfa.Core.Diagnostics.Fakes.ShimHealthCheck.AllPassedGet">
+            <summary>Sets the shim of HealthCheck.get_AllPassed()</summary>
         </member>
         <member name="M:Sfa.Core.Diagnostics.Fakes.ShimHealthCheck.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
