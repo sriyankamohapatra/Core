@@ -760,17 +760,11 @@
         <member name="M:Sfa.Core.Data.Fakes.ShimQuery`2.#ctor(Sfa.Core.Data.Query{`0,`1})">
             <summary>Initializes a new shim for the given instance</summary>
         </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.ActualPageSizeGet">
-            <summary>Sets the shim of Query`2.get_ActualPageSize()</summary>
-        </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AddProjectionIQueryableOfT1">
             <summary>Sets the shim of Query`2.AddProjection(IQueryable`1&lt;!1&gt; query)</summary>
         </member>
         <member name="T:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances">
             <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.ActualPageSizeGet">
-            <summary>Sets the shim of Query`2.get_ActualPageSize()</summary>
         </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.CreateGetListQueryIQueryableOfT1">
             <summary>Sets the shim of Query`2.CreateGetListQuery(IQueryable`1&lt;!1&gt; queryable)</summary>
@@ -780,9 +774,6 @@
         </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.ExecuteGetListSizeIQueryableOfT1">
             <summary>Sets the shim of Query`2.ExecuteGetListSize(IQueryable`1&lt;!1&gt; queryable)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.ExecuteGetListSumIQueryableOfT1">
-            <summary>Sets the shim of Query`2.ExecuteGetListSum(IQueryable`1&lt;!1&gt; queryable)</summary>
         </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.ExecuteResultListIQueryableOfT1">
             <summary>Sets the shim of Query`2.ExecuteResultList(IQueryable`1&lt;!1&gt; queryable)</summary>
@@ -795,9 +786,6 @@
         </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.GetExists">
             <summary>Sets the shim of Query`2.GetExists()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.GetExistsAsync">
-            <summary>Sets the shim of Query`2.GetExistsAsync()</summary>
         </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.GetList">
             <summary>Sets the shim of Query`2.GetList()</summary>
@@ -816,12 +804,6 @@
         </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.GetSingleIfExists">
             <summary>Sets the shim of Query`2.GetSingleIfExists()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.GetUnderlyingQuery">
-            <summary>Sets the shim of Query`2.GetUnderlyingQuery()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.NewResultListIListOfT0">
-            <summary>Sets the shim of Query`2.NewResultList(IList`1&lt;!0&gt; list)</summary>
         </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.PageNumberGet">
             <summary>Sets the shim of Query`2.get_PageNumber()</summary>
@@ -862,9 +844,6 @@
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.ExecuteGetListSizeIQueryableOfT1">
             <summary>Sets the shim of Query`2.ExecuteGetListSize(IQueryable`1&lt;!1&gt; queryable)</summary>
         </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.ExecuteGetListSumIQueryableOfT1">
-            <summary>Sets the shim of Query`2.ExecuteGetListSum(IQueryable`1&lt;!1&gt; queryable)</summary>
-        </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.ExecuteResultListIQueryableOfT1">
             <summary>Sets the shim of Query`2.ExecuteResultList(IQueryable`1&lt;!1&gt; queryable)</summary>
         </member>
@@ -876,9 +855,6 @@
         </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.GetExists">
             <summary>Sets the shim of Query`2.GetExists()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.GetExistsAsync">
-            <summary>Sets the shim of Query`2.GetExistsAsync()</summary>
         </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.GetList">
             <summary>Sets the shim of Query`2.GetList()</summary>
@@ -898,14 +874,8 @@
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.GetSingleIfExists">
             <summary>Sets the shim of Query`2.GetSingleIfExists()</summary>
         </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.GetUnderlyingQuery">
-            <summary>Sets the shim of Query`2.GetUnderlyingQuery()</summary>
-        </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.IsProjectionGet">
             <summary>Sets the shim of Query`2.get_IsProjection()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.NewResultListIListOfT0">
-            <summary>Sets the shim of Query`2.NewResultList(IList`1&lt;!0&gt; list)</summary>
         </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.PageNumberGet">
             <summary>Sets the shim of Query`2.get_PageNumber()</summary>
@@ -921,39 +891,6 @@
         </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.ShouldBeTruncatedGet">
             <summary>Sets the shim of Query`2.get_ShouldBeTruncated()</summary>
-        </member>
-        <member name="T:Sfa.Core.Data.Fakes.ShimQueryableMapper">
-            <summary>Shim type of Sfa.Core.Data.QueryableMapper</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimQueryableMapper.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimQueryableMapper.#ctor(Sfa.Core.Data.QueryableMapper)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="T:Sfa.Core.Data.Fakes.ShimQueryableMapper.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimQueryableMapper.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimQueryableMapper.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQueryableMapper.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQueryableMapper.Constructor">
-            <summary>Sets the shim of QueryableMapper.QueryableMapper()</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimQueryableMapper.MapOf2IQueryableOfM0``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Linq.IQueryable{``0},System.Linq.IQueryable{``1}})">
-            <summary>Sets the shim of QueryableMapper.Map(IQueryable`1&lt;!!0&gt; from)</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimQueryableMapper.RegisterOf2FuncOfIQueryableOfM0IQueryableOfM1``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Func{System.Linq.IQueryable{``0},System.Linq.IQueryable{``1}}})">
-            <summary>Sets the shim of QueryableMapper.Register(Func`2&lt;IQueryable`1&lt;!!0&gt;,IQueryable`1&lt;!!1&gt;&gt; mappingFunction)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQueryableMapper.StaticConstructor">
-            <summary>Sets the shim of QueryableMapper.QueryableMapper()</summary>
         </member>
         <member name="T:Sfa.Core.Data.Fakes.ShimResultList`1">
             <summary>Shim type of Sfa.Core.Data.ResultList`1</summary>
@@ -1384,9 +1321,6 @@
         <member name="F:Sfa.Core.Data.Fakes.StubIQuery`1.GetSingleIfExists">
             <summary>Sets the stub of IQuery`1.GetSingleIfExists()</summary>
         </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIQuery`1.GetUnderlyingQuery">
-            <summary>Sets the stub of IQuery`1.GetUnderlyingQuery()</summary>
-        </member>
         <member name="M:Sfa.Core.Data.Fakes.StubIQuery`1.Sfa#Core#Data#IQuery{T}#GetCount">
             <summary>Sets the stub of IQuery`1.GetCount()</summary>
         </member>
@@ -1404,9 +1338,6 @@
         </member>
         <member name="M:Sfa.Core.Data.Fakes.StubIQuery`1.Sfa#Core#Data#IQuery{T}#GetSingleIfExists">
             <summary>Sets the stub of IQuery`1.GetSingleIfExists()</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubIQuery`1.Sfa#Core#Data#IQuery{T}#GetUnderlyingQuery">
-            <summary>Sets the stub of IQuery`1.GetUnderlyingQuery()</summary>
         </member>
         <member name="T:Sfa.Core.Data.Fakes.StubIReadOnlyRepository">
             <summary>Stub type of Sfa.Core.Data.IReadOnlyRepository</summary>
@@ -1627,12 +1558,6 @@
         <member name="F:Sfa.Core.Data.Fakes.StubQuery`2.ExecuteGetListSizeIQueryableOfT1">
             <summary>Sets the stub of Query`2.ExecuteGetListSize(IQueryable`1&lt;!1&gt; queryable)</summary>
         </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubQuery`2.ExecuteGetListSum(System.Linq.IQueryable{`1})">
-            <summary>Sets the stub of Query`2.ExecuteGetListSum(IQueryable`1&lt;!1&gt; queryable)</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubQuery`2.ExecuteGetListSumIQueryableOfT1">
-            <summary>Sets the stub of Query`2.ExecuteGetListSum(IQueryable`1&lt;!1&gt; queryable)</summary>
-        </member>
         <member name="M:Sfa.Core.Data.Fakes.StubQuery`2.ExecuteResultList(System.Linq.IQueryable{`1})">
             <summary>Sets the stub of Query`2.ExecuteResultList(IQueryable`1&lt;!1&gt; queryable)</summary>
         </member>
@@ -1650,12 +1575,6 @@
         </member>
         <member name="F:Sfa.Core.Data.Fakes.StubQuery`2.GetAnyItemsExist01">
             <summary>Sets the stub of Query`2.GetAnyItemsExist()</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubQuery`2.GetExistsAsync">
-            <summary>Sets the stub of Query`2.GetExistsAsync()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubQuery`2.GetExistsAsync01">
-            <summary>Sets the stub of Query`2.GetExistsAsync()</summary>
         </member>
         <member name="M:Sfa.Core.Data.Fakes.StubQuery`2.GetList">
             <summary>Sets the stub of Query`2.GetList()</summary>
@@ -1707,24 +1626,6 @@
         </member>
         <member name="F:Sfa.Core.Data.Fakes.StubQuery`2.QueryableGet">
             <summary>Sets the stub of Query`2.get_Queryable()</summary>
-        </member>
-        <member name="T:Sfa.Core.Data.Fakes.StubQueryableMapper">
-            <summary>Stub type of Sfa.Core.Data.QueryableMapper</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubQueryableMapper.#ctor">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubQueryableMapper.CallBase">
-            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubQueryableMapper.InitializeStub">
-            <summary>Initializes a new instance of type StubQueryableMapper</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubQueryableMapper.InstanceBehavior">
-            <summary>Gets or sets the instance behavior.</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubQueryableMapper.InstanceObserver">
-            <summary>Gets or sets the instance observer.</summary>
         </member>
         <member name="T:Sfa.Core.Data.Fakes.StubResultList`1">
             <summary>Stub type of Sfa.Core.Data.ResultList`1</summary>

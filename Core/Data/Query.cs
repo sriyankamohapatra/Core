@@ -27,12 +27,6 @@ namespace Sfa.Core.Data
         public int PageNumber { get; protected set; }
 
         /// <summary>
-        /// Gets the actual size of the page.
-        /// </summary>
-        /// <value>The actual size of the page.</value>
-        protected int ActualPageSize => PageSize + 1;
-
-        /// <summary>
         /// Gets a value indicating whether [should be truncated].
         /// </summary>
         /// <value><c>true</c> if [should be truncated]; otherwise, <c>false</c>.</value>
@@ -81,24 +75,6 @@ namespace Sfa.Core.Data
         public int GetCount()
         {
             return ExecuteGetListSize(Queryable);
-        }
-
-        /// <summary>
-        /// Constructs the query but doesn't execute it.
-        /// </summary>
-        /// <returns>The underlying query.</returns>
-        public IQueryable<TReturn> GetUnderlyingQuery()
-        {
-            return CreateGetListQuery(Queryable);
-        }
-
-        /// <summary>
-        /// Executes the query to find out whether any items exist or not.
-        /// </summary>
-        /// <returns><c>true</c> if there are items that match the query; otherwise, <c>false</c>.</returns>
-        public virtual bool GetExistsAsync()
-        {
-            return ExecuteGetListSize(Queryable) > 0;
         }
 
         /// <summary>
@@ -206,13 +182,6 @@ namespace Sfa.Core.Data
         }
 
         /// <summary>
-        /// Executes the sum of the get collection.
-        /// </summary>
-        /// <param name="queryable">The queryable to query against.</param>
-        /// <returns>The total sum of the numbers returned by the query.</returns>
-        protected virtual decimal ExecuteGetListSum(IQueryable<TQuery> queryable) { throw new NotImplementedException("override to retrieve a sum"); }
-
-        /// <summary>
         /// Gets the collection.
         /// </summary>
         /// <param name="queryable">The queryable to query against.</param>
@@ -235,41 +204,7 @@ namespace Sfa.Core.Data
                 return (new ResultList<TReturn>(executeGetList, PageNumber < totalNumberOfPages, totalNumberOfRecords, totalNumberOfPages + 1, PageSize, PageNumber));
             }
 
-            return NewResultList(ExecuteGetList(queryable));
-        }
-
-        #endregion
-
-
-        #region Truncation
-
-        /// <summary>
-        /// Creates a new Result list based on whether the query results should be truncated.
-        /// </summary>
-        /// <param name="list">The list returned from the query execution.</param>
-        /// <returns>The new list.</returns>
-        protected ResultList<TReturn> NewResultList(IList<TReturn> list)
-        {
-            ResultList<TReturn> boCollection;
-
-            if (ShouldBeTruncated)
-            {
-                if (list.Count == PageSize + 1)
-                {
-                    list.RemoveAt(list.Count - 1);
-                    boCollection = new ResultList<TReturn>(list, true);
-                }
-                else
-                {
-                    boCollection = new ResultList<TReturn>(list, false);
-                }
-            }
-            else
-            {
-                boCollection = new ResultList<TReturn>(list);
-            }
-
-            return boCollection;
+            return new ResultList<TReturn>(ExecuteGetList(queryable));
         }
 
         #endregion
@@ -295,7 +230,7 @@ namespace Sfa.Core.Data
         {
             try
             {
-                return (IQueryable<TReturn>)typeof(TReturn).InvokeMember("AddProjection", BindingFlags.InvokeMethod, null, null, new[] { query });
+                return (IQueryable<TReturn>)typeof(TReturn).InvokeMember("AddProjection", BindingFlags.InvokeMethod, null, null, new object[] { query });
             }
             catch (Exception exception)
             {

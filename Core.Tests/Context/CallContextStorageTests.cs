@@ -60,12 +60,14 @@ namespace Sfa.Core.Context
             {
                 Dispose = () => called = true
             };
+            var simpleObject = new DateTime(2000, 1, 1);
             var componentUnderTest = new CallContextStorage();
 
             CallContext.LogicalSetData("shouldBeDisposed", shouldBeDisposed);
+            CallContext.LogicalSetData("shouldNotBeDisposed", simpleObject);
 
             // Act
-            componentUnderTest.CleanAndDispose("shouldBeDisposed");
+            componentUnderTest.CleanAndDispose("shouldBeDisposed", "shouldNotBeDisposed");
 
             // Assert
             called.ShouldHaveSameValueAs(true);

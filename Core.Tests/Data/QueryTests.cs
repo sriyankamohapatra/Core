@@ -126,6 +126,40 @@ namespace Sfa.Core.Data
 
 
         [TestMethod, TestCategory("Unit")]
+        public void GetResultList_NotPaged()
+        {
+            // Arrange
+            var componentUnderTest = new DefaultQuery();
+            var expected = new ResultList<string>(new[] { "one", "two", "three" }, true, 3, 0, 0, 0);
+
+            // Act
+            var actual = componentUnderTest.GetResultList(0, 0);
+
+            // Assert
+            actual.ShouldHaveSameValueAs(expected);
+            componentUnderTest.PageNumber.ShouldHaveSameValueAs(0);
+            componentUnderTest.PageSize.ShouldHaveSameValueAs(0);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void GetResultList_Page1_NoResults()
+        {
+            // Arrange
+            var componentUnderTest = new MatchQuery("xxx");
+            var expected = new ResultList<string>(new string[0], true, 0, 0, 2, 0);
+
+            // Act
+            var actual = componentUnderTest.GetResultList(0, 2);
+
+            // Assert
+            actual.ShouldHaveSameValueAs(expected);
+            componentUnderTest.PageNumber.ShouldHaveSameValueAs(0);
+            componentUnderTest.PageSize.ShouldHaveSameValueAs(2);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
         public void GetResultList_Page1()
         {
             // Arrange
@@ -151,6 +185,23 @@ namespace Sfa.Core.Data
 
             // Act
             var actual = componentUnderTest.GetResultList(1, 2);
+
+            // Assert
+            actual.ShouldHaveSameValueAs(expected);
+            componentUnderTest.PageNumber.ShouldHaveSameValueAs(1);
+            componentUnderTest.PageSize.ShouldHaveSameValueAs(2);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void GetResultList_Page10of2()
+        {
+            // Arrange
+            var componentUnderTest = new DefaultQuery();
+            var expected = new ResultList<string>(new[] { "three" }, true, 3, 2, 2, 1);
+
+            // Act
+            var actual = componentUnderTest.GetResultList(10, 2);
 
             // Assert
             actual.ShouldHaveSameValueAs(expected);
@@ -364,6 +415,27 @@ namespace Sfa.Core.Data
                     ChildValue1 = "v4.1"
                 },
             });
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void Paged_Projections()
+        {
+            // Arrange
+            var componentUnderTest = new SimplePocoQuery<SimplePocoProjection>();
+
+            // Act
+            var actual = componentUnderTest.GetResultList(0, 1);
+
+            // Assert
+            actual.ShouldHaveSameValueAs(new ResultList<SimplePocoProjection>(new[]
+            {
+                new SimplePocoProjection
+                {
+                    Value1 = "v1.1",
+                    ChildValue1 = "v2.1"
+                }
+            }));
         }
 
         #endregion

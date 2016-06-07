@@ -61,7 +61,6 @@ C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : C
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.IResultList`1: type is an interface.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.IResultList: type is an interface.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.ITransactional: type is an interface.
-C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.QueryableMapper+<>c__1`2: type is not supported because of internal limitations.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.SortDirection: type is an enum.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Context.AdjustableNetworkContext+<>c: type is not supported because of internal limitations.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Context.IContextStorage: type is an interface.

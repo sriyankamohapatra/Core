@@ -57,10 +57,6 @@ namespace Sfa.Core.Data
         /// </summary>
         public ResultList()
         {
-            IsPopulated = false;
-            IsTruncated = false;
-            CurrentPage = 0;
-            PageSize = 0;
         }
 
         /// <summary>
@@ -72,9 +68,6 @@ namespace Sfa.Core.Data
             : base(list)
         {
             IsPopulated = true;
-            IsTruncated = false;
-            CurrentPage = 0;
-            PageSize = 0;
         }
 
         /// <summary>
@@ -116,7 +109,6 @@ namespace Sfa.Core.Data
         public ResultList(T obj)
         {
             IsPopulated = true;
-            IsTruncated = false;
             Add(obj);
         }
 

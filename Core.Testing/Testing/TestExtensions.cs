@@ -6,7 +6,6 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sfa.Core.Context;
 using Sfa.Core.Entities;
 using Sfa.Core.Equality;
-using Sfa.Core.Logging;
 using Sfa.Core.Reflection;
 using TestContext = Sfa.Core.Context.TestContext;
 

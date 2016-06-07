@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 namespace Sfa.Core.Data
 {
@@ -45,11 +44,5 @@ namespace Sfa.Core.Data
         /// </summary>
         /// <returns><c>true</c> if there exists any entities that match the query; otherwise, <c>false</c>.</returns>
         bool GetExists();
-
-        /// <summary>
-        /// Returns the underlying query from the query object.
-        /// </summary>
-        /// <returns>The <see cref="IQueryable{T}"/> from the query.</returns>
-        IQueryable<T> GetUnderlyingQuery();
     }
 }

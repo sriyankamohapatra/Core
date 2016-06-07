@@ -73,7 +73,6 @@
     <Compile Include="Data\IResultList.cs" />
     <Compile Include="Data\ITransactional.cs" />
     <Compile Include="Data\Query.cs" />
-    <Compile Include="Data\QueryableMapper.cs" />
     <Compile Include="Data\ResultList.cs" />
     <Compile Include="Data\SortOrderDirection.cs" />
     <Compile Include="Diagnostics\DebugTextWriter.cs" />
