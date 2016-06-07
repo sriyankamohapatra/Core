@@ -152,6 +152,7 @@ namespace Sfa.Core.Data
         {
             // Arrange
             var componentUnderTest = new ExceptionInExecuteAsyncCommand();
+            var exceptionThrown = false;
 
             // Act
             try
@@ -160,9 +161,11 @@ namespace Sfa.Core.Data
             }
             catch (Exception)
             {
+                exceptionThrown = true;
             }
 
             // Assert
+            Assert.IsTrue(exceptionThrown);
             componentUnderTest.OnBeforeInitialiseTargetAsyncCalled.ShouldHaveSameValueAs(true);
             componentUnderTest.OnInitialiseTargetAsyncCalled.ShouldHaveSameValueAs(true);
             componentUnderTest.OnAuthoriseAsyncCalled.ShouldHaveSameValueAs(true);
@@ -170,6 +173,39 @@ namespace Sfa.Core.Data
             componentUnderTest.OnExecuteAsyncCalled.ShouldHaveSameValueAs(true);
             componentUnderTest.OnAfterExecuteAsyncCalled.ShouldHaveSameValueAs(true);
             componentUnderTest.OnAfterExecuteAsyncCalledWithException.ShouldHaveSameValueAs(true);
+        }
+
+        #endregion
+
+
+        #region Property Access
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void Target()
+        {
+            // Arrange
+            var componentUnderTest = new DefaultAsyncCommand();
+
+            // Act
+            componentUnderTest.Target = "target";
+
+            // Assert
+            componentUnderTest.Target.ShouldHaveSameValueAs("target");
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void Result()
+        {
+            // Arrange
+            var componentUnderTest = new DefaultAsyncCommand();
+
+            // Act
+            componentUnderTest.Result = "result";
+
+            // Assert
+            componentUnderTest.Result.ShouldHaveSameValueAs("result");
         }
 
         #endregion

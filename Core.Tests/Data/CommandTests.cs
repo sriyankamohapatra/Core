@@ -186,6 +186,39 @@ namespace Sfa.Core.Data
         #endregion
 
 
+        #region Property Access
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void Target()
+        {
+            // Arrange
+            var componentUnderTest = new DefaultCommand();
+
+            // Act
+            componentUnderTest.Target = "target";
+
+            // Assert
+            componentUnderTest.Target.ShouldHaveSameValueAs("target");
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void Result()
+        {
+            // Arrange
+            var componentUnderTest = new DefaultCommand();
+
+            // Act
+            componentUnderTest.Result = "result";
+
+            // Assert
+            componentUnderTest.Result.ShouldHaveSameValueAs("result");
+        }
+
+        #endregion
+
+
         #region ToString
 
 
