@@ -104,7 +104,7 @@ namespace Sfa.Core.Reflection
         /// <typeparam name="T">The <see ref="System.Type"/> of the <see ref="System.Attribute"> to find.</see></typeparam>
         /// <param name="target">The target.</param>
         /// <returns>A list of all the fields within the targets hierarchy that don't have the attribute defined.</returns>
-        public static IList<FieldInfo> GetAllFieldsWithoutAttribute<T>(this object target)
+        public static IEnumerable<FieldInfo> GetAllFieldsWithoutAttribute<T>(this object target)
             where T : Attribute
         {
             return (target.GetType().GetAllFieldsWithoutAttribute<T>());
@@ -136,7 +136,7 @@ namespace Sfa.Core.Reflection
         /// <summary>
         /// Gets the value from a private field for an object instance.
         /// </summary>
-        /// <param name="owner">The instance whos value we want to find from a private field.</param>
+        /// <param name="owner">The instance whose value we want to find from a private field.</param>
         /// <param name="fieldName">The name of the private field to get the value from.</param>
         /// <returns>The value from the matching field.</returns>
         public static object GetPrivateFieldValue(this object owner, string fieldName)

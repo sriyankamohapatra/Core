@@ -15,8 +15,14 @@ namespace Sfa.Core.Reflection
         /// </summary>
         /// <param name="targetType">The type whose fields are to be returned</param>
         /// <returns>A list of all the fields within the Types hierarchy.</returns>
+        /// <exception cref="ArgumentNullException">Thrown when <paramref name="targetType"/> is <c>null</c>.</exception>
         public static IList<FieldInfo> GetAllFields(this Type targetType)
         {
+            if (targetType == null)
+            {
+                throw new ArgumentNullException(nameof(targetType));
+            }
+
             var fieldList = new List<FieldInfo>();
             while (targetType != null)
             {
@@ -24,7 +30,7 @@ namespace Sfa.Core.Reflection
                 targetType = targetType.BaseType;
             }
 
-            return (fieldList);
+            return fieldList;
         }
 
         /// <summary>
@@ -33,9 +39,11 @@ namespace Sfa.Core.Reflection
         /// <typeparam name="T">The <see ref="System.Type"/> of the <see ref="System.Attribute"> to find.</see></typeparam>
         /// <param name="targetType">Type of the target.</param>
         /// <returns>A list of all the fields within the Types hierarchy that don't have the attribute defined.</returns>
-        public static IList<FieldInfo> GetAllFieldsWithoutAttribute<T>(this Type targetType) where T : Attribute
+        /// <exception cref="ArgumentNullException">Thrown when <paramref name="targetType"/> is <c>null</c>.</exception>
+        public static IEnumerable<FieldInfo> GetAllFieldsWithoutAttribute<T>(this Type targetType) 
+            where T : Attribute
         {
-            return targetType.GetAllFields().Where(field => !field.IsDefined<T>()).ToList();
+            return targetType.GetAllFields().Where(field => !field.IsDefined<T>());
         } 
     }
 }

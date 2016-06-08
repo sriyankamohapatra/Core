@@ -4369,7 +4369,7 @@
         <member name="P:Sfa.Core.Reflection.Fakes.ShimObjectExtensions.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="M:Sfa.Core.Reflection.Fakes.ShimObjectExtensions.GetAllFieldsWithoutAttributeOf1Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Object,System.Collections.Generic.IList{System.Reflection.FieldInfo}})">
+        <member name="M:Sfa.Core.Reflection.Fakes.ShimObjectExtensions.GetAllFieldsWithoutAttributeOf1Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Object,System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}})">
             <summary>Sets the shim of ObjectExtensions.GetAllFieldsWithoutAttribute(Object target)</summary>
         </member>
         <member name="P:Sfa.Core.Reflection.Fakes.ShimObjectExtensions.GetPrivateFieldTypeString">
@@ -4405,7 +4405,7 @@
         <member name="P:Sfa.Core.Reflection.Fakes.ShimTypeExtensions.GetAllFieldsType">
             <summary>Sets the shim of TypeExtensions.GetAllFields(Type targetType)</summary>
         </member>
-        <member name="M:Sfa.Core.Reflection.Fakes.ShimTypeExtensions.GetAllFieldsWithoutAttributeOf1Type``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Type,System.Collections.Generic.IList{System.Reflection.FieldInfo}})">
+        <member name="M:Sfa.Core.Reflection.Fakes.ShimTypeExtensions.GetAllFieldsWithoutAttributeOf1Type``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Type,System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}})">
             <summary>Sets the shim of TypeExtensions.GetAllFieldsWithoutAttribute(Type targetType)</summary>
         </member>
         <member name="T:Sfa.Core.Security.Claims.Fakes.ShimClaimsPrincipalExtensions">
