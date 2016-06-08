@@ -377,14 +377,14 @@ namespace Sfa.Core.Equality
 
         private static bool CompareListElements(IEnumerable enumerable1, IEnumerable enumerable2, ObjectReferenceDictionary recursiveObjects, ref string failMessage)
         {
-            var areTheSame = true;
+            var equal = true;
 
             var list1 = enumerable1 as IList<object> ?? enumerable1.Cast<object>().ToList();
             var list2 = enumerable2 as IList<object> ?? enumerable2.Cast<object>().ToList();
 
             if (list1.Count() != list2.Count())
             {
-                areTheSame = false;
+                equal = false;
                 failMessage = $"Expected length {list1.Count} but was {list2.Count}";
             }
             else
@@ -402,22 +402,22 @@ namespace Sfa.Core.Equality
                     IFieldValueEqualityComparer comparer;
                     if (instance1 == null)
                     {
-                        areTheSame = (instance2 == null);
+                        equal = (instance2 == null);
                     }
                     else if (MatchesComparer(instance1, instance2, out comparer))
                     {
-                        areTheSame = comparer.Equals(instance1, instance2);
+                        equal = comparer.Equals(instance1, instance2);
                     }
                     else if (ShouldFieldHaveValueSemanticEqualityPerformed(instance1.GetType()))
                     {
-                        areTheSame = Compare(instance1, instance2, recursiveObjects);
+                        equal = Compare(instance1, instance2, recursiveObjects);
                     }
                     else
                     {
-                        areTheSame = instance1.Equals(instance2);
+                        equal = instance1.Equals(instance2);
                     }
 
-                    if (!areTheSame)
+                    if (!equal)
                     {
                         failMessage = $"Item's at index:{index} in the lists are not the same";
                         break;
@@ -426,7 +426,7 @@ namespace Sfa.Core.Equality
                 }
             }
 
-            return (areTheSame);
+            return (equal);
         }
 
         private static void LogFailedComparison(string fieldName, Type fieldType, object value1, object value2)
