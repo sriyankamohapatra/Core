@@ -19,8 +19,14 @@ namespace Sfa.Core.Reflection
         /// <param name="instance">The instance.</param>
         /// <param name="expression">The property.</param>
         /// <returns>The property info for the expression provided.</returns>
+        /// <exception cref="ArgumentNullException">Thrown if <paramref name="expression"/> is <c>null</c>.</exception>
         public static PropertyInfo GetPropertyInfo<TInstance, TProperty>(this TInstance instance, Expression<Func<TInstance, TProperty>> expression)
         {
+            if (expression == null)
+            {
+                throw new ArgumentNullException(nameof(expression));
+            }
+
             var body = expression.Body as MemberExpression;
             if (body == null)
             {
