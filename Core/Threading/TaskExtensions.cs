@@ -1,19 +1,19 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace Sfa.Core.Threading
 {
     /// <summary>
-    ///     Extension available of the <see cref="Task" /> class.
+    /// Extensions for <see cref="Task" />.
     /// </summary>
     public static class TaskExtensions
     {
         /// <summary>
-        ///     Gets the name of the property.
+        /// Gets the result of the <see cref="Task"/>, but handles where a <see cref="TaskCanceledException"/> is thrown 
+        /// and there is an inner exception. In this scenario, the inner exception is the exception that is thrown.
         /// </summary>
         /// <typeparam name="T">The type of the object.</typeparam>
         /// <param name="task">The task.</param>
-        /// <returns>The type of the object.</returns>
+        /// <returns>The result of running the <see cref="Task"/>.</returns>
         public static T GetSafeResult<T>(this Task<T> task)
         {
             try

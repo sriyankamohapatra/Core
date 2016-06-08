@@ -114,7 +114,9 @@
   <ItemGroup>
     <Fakes Include="Fakes\Sfa.Core.fakes" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Threading\" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
