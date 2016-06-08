@@ -170,7 +170,7 @@ namespace Sfa.Core.Net.Http.Formatting
             {
                 using (var dataStream = await fileContent.ReadAsStreamAsync())
                 {
-                    var imagebuffer = dataStream.ReadFully();
+                    var imagebuffer = StreamExtensions.ToByteArray(dataStream);
                     _addData(value, imagebuffer);
                 }
             }

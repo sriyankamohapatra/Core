@@ -3016,8 +3016,8 @@
         <member name="P:Sfa.Core.IO.Fakes.ShimStreamExtensions.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="P:Sfa.Core.IO.Fakes.ShimStreamExtensions.ReadFullyStream">
-            <summary>Sets the shim of StreamExtensions.ReadFully(Stream stream)</summary>
+        <member name="P:Sfa.Core.IO.Fakes.ShimStreamExtensions.ToByteArrayStream">
+            <summary>Sets the shim of StreamExtensions.ToByteArray(Stream stream)</summary>
         </member>
         <member name="T:Sfa.Core.Logging.Fakes.ShimAsyncLoggingWrapper">
             <summary>Shim type of Sfa.Core.Logging.AsyncLoggingWrapper</summary>

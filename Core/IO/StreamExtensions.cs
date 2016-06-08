@@ -13,7 +13,7 @@ namespace Sfa.Core.IO
         /// </summary>
         /// <param name="stream">The stream to read from.</param>
         /// <returns>The full byte array that the stream represents.</returns>
-        public static byte[] ReadFully(this Stream stream)
+        public static byte[] ToByteArray(this Stream stream)
         {
             if (stream == null)
             {
