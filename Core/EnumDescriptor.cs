@@ -17,13 +17,15 @@ namespace Sfa.Core
         /// <param name="value">The enum to get the attribute and value from.</param>
         /// <param name="property">The property to get the value from.</param>
         /// <returns>The value from the attribute.</returns>
-        /// <exception cref="ArgumentNullException">Thrown if <paramref name="value"/> or <paramref name="property"/> are <c>null</c>.</exception>
+        /// <exception cref="ArgumentException">Thrown if <paramref name="value"/> is not an <see cref="Enum"/>.</exception>
+        /// <exception cref="ArgumentNullException">Thrown if <paramref name="property"/> is <c>null</c>.</exception>
         public static string GetPropertyValue<TEnum, TAttribute>(this TEnum value, Func<TAttribute, string> property)
             where TAttribute : Attribute
+            where TEnum : struct
         {
-            if (value == null)
+            if (!(value is Enum))
             {
-                throw new ArgumentNullException();
+                throw new ArgumentException();
             }
             if (property == null)
             {
@@ -39,20 +41,22 @@ namespace Sfa.Core
         /// <param name="value">The enum to get the attribute and value from.</param>
         /// <param name="property">The property to get the value from.</param>
         /// <returns>The value from the attribute.</returns>
-        /// <exception cref="ArgumentNullException">Thrown if <paramref name="value"/> or <paramref name="property"/> are <c>null</c>.</exception>
+        /// <exception cref="ArgumentException">Thrown if <paramref name="value"/> is not an <see cref="Enum"/>.</exception>
+        /// <exception cref="ArgumentNullException">Thrown if <paramref name="property"/> is <c>null</c>.</exception>
         public static TValue GetPropertyValue<TEnum, TAttribute, TValue>(this TEnum value, Func<TAttribute, TValue> property)
             where TAttribute : Attribute
+            where TEnum : struct
         {
-            if (value == null)
+            if (!(value is Enum))
             {
-                throw new ArgumentNullException();
+                throw new ArgumentException();
             }
             if (property == null)
             {
                 throw new ArgumentNullException();
             }
 
-            var attribute = value.GetEnumValueAttribute<TAttribute>();
+            var attribute = (value as Enum).GetEnumValueAttribute<TAttribute>();
 
             if (attribute == null)
             {
@@ -109,7 +113,7 @@ namespace Sfa.Core
         /// <param name="enumValue">The target.</param>
         /// <returns>The first attribute if any to match from the enum value; otherwise, <c>null</c>.</returns>
         /// <exception cref="ArgumentNullException">Thrown if <paramref name="enumValue"/> is <c>null</c>.</exception>
-        public static T GetEnumValueAttribute<T>(this object enumValue) 
+        public static T GetEnumValueAttribute<T>(this Enum enumValue) 
             where T : Attribute
         {
             if (enumValue == null)
@@ -120,7 +124,7 @@ namespace Sfa.Core
             return enumValue.GetEnumCustomAttributes<T>().FirstOrDefault();
         }
 
-        private static IEnumerable<T> GetEnumCustomAttributes<T>(this object enumValue) where T : Attribute
+        private static IEnumerable<T> GetEnumCustomAttributes<T>(this Enum enumValue) where T : Attribute
         {
             return enumValue
                 .GetType()

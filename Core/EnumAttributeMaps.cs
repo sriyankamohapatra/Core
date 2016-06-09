@@ -26,7 +26,7 @@ namespace Sfa.Core
         /// <param name="maps">The maps.</param>
         /// <param name="enumValue">The enum value.</param>
         /// <returns>The <see cref="EnumAttributeMap"/>.</returns>
-        public static EnumAttributeMap For(this IEnumerable<EnumAttributeMap> maps, object enumValue)
+        public static EnumAttributeMap For(this IEnumerable<EnumAttributeMap> maps, Enum enumValue)
         {
             return maps.First(m => m.EnumValue.Equals(enumValue));
         }

@@ -33,6 +33,10 @@ namespace Sfa.Core
             Value3 = 3
         }
 
+        public struct SimpleStruct
+        {
+        }
+
         #endregion
 
 
@@ -109,6 +113,20 @@ namespace Sfa.Core
 
             // Assert
             actual.ShouldHaveSameValueAs(expected);
+        }
+
+        #endregion
+
+
+        #region GetPropertyValue
+
+
+        [TestMethod, TestCategory("Unit")]
+        [ExpectedException(typeof(ArgumentException))]
+        public void GetPropertyValue_NotAnEnum()
+        {
+            // Act
+            EnumDescriptor.GetPropertyValue<SimpleStruct, SimpleAttribute, string>(new SimpleStruct(), attribute => attribute.MyString);
         }
 
         #endregion
