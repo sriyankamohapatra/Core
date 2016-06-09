@@ -22,13 +22,7 @@ namespace Sfa.Core.Reflection
         /// <exception cref="ArgumentException">Thrown if the expression is not for a property.</exception>
         public static PropertyInfo GetPropertyInfo<TInstance, TProperty>(this TInstance instance, Expression<Func<TInstance, TProperty>> expression)
         {
-            var member = expression.EnsureProperty().Member as PropertyInfo;
-            if (member == null)
-            {
-                throw new ArgumentException("The provided lambda expression must refer to a property of : " + typeof(TInstance).Name);
-            }
-
-            return member;
+            return expression.EnsureProperty().Member as PropertyInfo;
         }
 
         /// <summary>
@@ -44,8 +38,6 @@ namespace Sfa.Core.Reflection
         /// <exception cref="ArgumentException">Thrown if the expression is not for a property.</exception>
         public static TInstance SetPropertyValue<TInstance, TProperty>(this TInstance instance, Expression<Func<TInstance, TProperty>> propertyGetExpression, TProperty value)
         {
-            propertyGetExpression.EnsureProperty();
-
             // if the property is nested, i.e. target.level1.level2...levelN.Property
             // then we need to recurse through the property to get to LevelN so the we can see the value on this 
             // instance to the property value.

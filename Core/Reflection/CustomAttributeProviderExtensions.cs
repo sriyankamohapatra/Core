@@ -10,7 +10,7 @@ namespace Sfa.Core.Reflection
     public static class CustomAttributeProviderExtensions
     {
         /// <summary>
-        /// Returns a flag stating whther or not the member has the specified attribute applied to it.
+        /// Returns a flag stating whether or not the member has the specified attribute applied to it.
         /// </summary>
         /// <typeparam name="T">The type of the attribute to find.</typeparam>
         /// <param name="customAttributeProvider">The member to look on for the attribute.</param>

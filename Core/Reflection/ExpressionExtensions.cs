@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 
@@ -34,7 +35,7 @@ namespace Sfa.Core.Reflection
         /// <exception cref="ArgumentException">Thrown if the expression is not for a property.</exception>
         public static PropertyInfo GetProperty<TInstance, TProperty>(this Expression<Func<TInstance, TProperty>> propertyExpression)
         {
-            return typeof(TInstance).GetProperty(propertyExpression.GetPropertyName());
+            return EnsureProperty(propertyExpression).Member as PropertyInfo;
         }
 
         /// <summary>
@@ -52,14 +53,31 @@ namespace Sfa.Core.Reflection
             propertyExpression.EnsureProperty();
 
             var propertyInfo = propertyExpression.GetProperty();
-            var propertyName = propertyInfo.Name;   
+            var propertyName = propertyInfo.Name;
 
-            var fieldName = $"_{propertyName.Substring(0, 1).ToLower()}{propertyName.Substring(1)}";
-            var field = typeof(TInstance).GetField(fieldName, BindingFlags.Instance | BindingFlags.NonPublic);
+            var lowercasedName = $"{propertyName.Substring(0, 1).ToLower()}{propertyName.Substring(1)}";
+            var fieldNamesToTry = new[]
+            {
+                lowercasedName,
+                $"_{lowercasedName}",
+                $"m_{lowercasedName}",
+                $"<{propertyName}>k__BackingField"
+            };
+
+            FieldInfo field = null;
+            
+            foreach (var fieldName in fieldNamesToTry)
+            {
+                field = typeof(TInstance).GetField(fieldName, BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
+                if (field != null)
+                {
+                    break;
+                }
+            }
 
             if (field == null)
             {
-                throw new Exception($"The backing field {fieldName} for Property {propertyName} can not be found. Have you given the backing field a different name to the property?");
+                throw new ArgumentException("propertyExpression", $"The backing field for Property {propertyName} can not be found. Have you given the backing field a different name to the property? Tried: {string.Join(", ", fieldNamesToTry)}");
             }
 
             return field;
