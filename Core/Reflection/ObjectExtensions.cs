@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Contracts;
 using System.Linq.Expressions;
 using System.Reflection;
 
@@ -20,20 +19,10 @@ namespace Sfa.Core.Reflection
         /// <param name="expression">The property.</param>
         /// <returns>The property info for the expression provided.</returns>
         /// <exception cref="ArgumentNullException">Thrown if <paramref name="expression"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException">Thrown if the expression is not for a property.</exception>
         public static PropertyInfo GetPropertyInfo<TInstance, TProperty>(this TInstance instance, Expression<Func<TInstance, TProperty>> expression)
         {
-            if (expression == null)
-            {
-                throw new ArgumentNullException(nameof(expression));
-            }
-
-            var body = expression.Body as MemberExpression;
-            if (body == null)
-            {
-                throw new ArgumentException("The provided lambda expression must refer to a property of : " + typeof(TInstance).Name);
-            }
-
-            var member = body.Member as PropertyInfo;
+            var member = expression.EnsureProperty().Member as PropertyInfo;
             if (member == null)
             {
                 throw new ArgumentException("The provided lambda expression must refer to a property of : " + typeof(TInstance).Name);
@@ -51,16 +40,18 @@ namespace Sfa.Core.Reflection
         /// <param name="propertyGetExpression">The property get expression.</param>
         /// <param name="value">The value.</param>
         /// <returns>The instance.</returns>
+        /// <exception cref="ArgumentNullException">Thrown if <paramref name="propertyGetExpression"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException">Thrown if the expression is not for a property.</exception>
         public static TInstance SetPropertyValue<TInstance, TProperty>(this TInstance instance, Expression<Func<TInstance, TProperty>> propertyGetExpression, TProperty value)
         {
             propertyGetExpression.EnsureProperty();
 
             // if the property is nested, i.e. target.level1.level2...levelN.Property
-            // then we need to recurse through the property to get to LevelN so the we can se the value on this 
+            // then we need to recurse through the property to get to LevelN so the we can see the value on this 
             // instance to the property value.
 
             // First, lets check that the lambda is indeed a property access
-            var memberSelectorExpression = propertyGetExpression.Body as MemberExpression;
+            var memberSelectorExpression = propertyGetExpression.EnsureProperty();
 
             // we have our top level member access which is (target.level1.level2...levelN) pointing to Property
             var currentTarget = instance as object;
@@ -77,6 +68,11 @@ namespace Sfa.Core.Reflection
             {
                 var property = (PropertyInfo)stack.Pop().Member;
 
+                if (currentTarget == null)
+                {
+                    throw new ArgumentNullException(nameof(instance), "Some where in the chain is an unexpected null");
+                }
+
                 if (stack.Count != 0)
                 {
                     currentTarget = property.GetValue(currentTarget, null);
@@ -88,20 +84,6 @@ namespace Sfa.Core.Reflection
             }
 
             return instance;
-
-
-
-
-            //var entityParameterExpression = (ParameterExpression)(((MemberExpression)(propertyGetExpression.Body)).Expression);
-            //var valueParameterExpression = Expression.Parameter(typeof(TProperty));
-
-            //var setter = Expression.Lambda<Action<TInstance, TProperty>>(
-            //    Expression.Assign(propertyGetExpression.Body, valueParameterExpression),
-            //    entityParameterExpression,
-            //    valueParameterExpression);
-
-            //setter.Compile().Invoke(instance, value);
-            //return instance;
         }
 
         /// <summary>
@@ -110,10 +92,16 @@ namespace Sfa.Core.Reflection
         /// <typeparam name="T">The <see ref="System.Type"/> of the <see ref="System.Attribute"> to find.</see></typeparam>
         /// <param name="target">The target.</param>
         /// <returns>A list of all the fields within the targets hierarchy that don't have the attribute defined.</returns>
+        /// <exception cref="ArgumentNullException">Thrown if <paramref name="target"/> is <c>null</c>.</exception>
         public static IEnumerable<FieldInfo> GetAllFieldsWithoutAttribute<T>(this object target)
             where T : Attribute
         {
-            return (target.GetType().GetAllFieldsWithoutAttribute<T>());
+            if (target == null)
+            {
+                throw new ArgumentNullException(nameof(target));
+            }
+
+            return target.GetType().GetAllFieldsWithoutAttribute<T>();
         }
 
 
@@ -125,10 +113,17 @@ namespace Sfa.Core.Reflection
         /// <remarks>Using hard coded strings and accessing fields by their names leads to brittle code. Use with caution"</remarks>
         /// <returns>The private field info for the provided name.</returns>
         /// <exception cref="ArgumentException">When no matching field can be found.</exception>
+        /// <exception cref="ArgumentNullException">Thrown if <paramref name="type"/> or <paramref name="fieldName"/> are <c>null</c>.</exception>
         public static FieldInfo GetPrivateField(this Type type, string fieldName)
         {
-            Contract.Requires(type != null);
-            Contract.Requires(fieldName != null);
+            if (type == null)
+            {
+                throw new ArgumentNullException(nameof(type));
+            }
+            if (fieldName == null)
+            {
+                throw new ArgumentNullException(nameof(fieldName));
+            }
 
             var fieldInfo = type.GetField(fieldName, BindingFlags.Instance | BindingFlags.FlattenHierarchy | BindingFlags.NonPublic);
             if (fieldInfo == null)
@@ -145,8 +140,14 @@ namespace Sfa.Core.Reflection
         /// <param name="owner">The instance whose value we want to find from a private field.</param>
         /// <param name="fieldName">The name of the private field to get the value from.</param>
         /// <returns>The value from the matching field.</returns>
+        /// <exception cref="ArgumentNullException">Thrown if <paramref name="owner"/> or <paramref name="fieldName"/> are <c>null</c>.</exception>
         public static object GetPrivateFieldValue(this object owner, string fieldName)
         {
+            if (owner == null)
+            {
+                throw new ArgumentNullException(nameof(owner));
+            }
+
             return owner.GetType().GetPrivateField(fieldName).GetValue(owner);
         }
 
@@ -158,8 +159,18 @@ namespace Sfa.Core.Reflection
         /// <param name="fieldName">The name of the private field to set.</param>
         /// <param name="value">The value to be set in the field.</param>
         /// <returns>The owner instance.</returns>
+        /// <exception cref="ArgumentNullException">Thrown if <paramref name="owner"/> or <paramref name="fieldName"/> are <c>null</c>.</exception>
         public static T SetPrivateFieldValue<T>(this T owner, string fieldName, object value)
         {
+            if (owner == null)
+            {
+                throw new ArgumentNullException(nameof(owner));
+            }
+            if (fieldName == null)
+            {
+                throw new ArgumentNullException(nameof(fieldName));
+            }
+
             owner.GetType().GetPrivateField(fieldName).SetValue(owner, value);
             return owner;
         }
