@@ -41,7 +41,7 @@ namespace Sfa.Core
             if (!EnumValueAttributes.ContainsKey(type))
             {
                 var list = new List<EnumAttributeMap>();
-                foreach (var enumValue in Enum.GetValues(type))
+                foreach (Enum enumValue in Enum.GetValues(type))
                 {
                     var attributes = enumValue.GetType().GetField(enumValue.ToString()).GetCustomAttributes(true).OfType<Attribute>().ToList();
                     list.Add(new EnumAttributeMap(enumValue, attributes));

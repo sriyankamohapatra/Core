@@ -89,6 +89,8 @@
     <Compile Include="Data\ResultListTests.cs" />
     <Compile Include="Diagnostics\DebugTextWriterTests.cs" />
     <Compile Include="Diagnostics\HealthCheckTests.cs" />
+    <Compile Include="EnumAttributeMapTests.cs" />
+    <Compile Include="EnumDescriptorTests.cs" />
     <Compile Include="EnumTranslatorTests.cs" />
     <Compile Include="Equality\FieldValueEqualityComparerTests.cs" />
     <Compile Include="Equality\ReferenceEqualityComparerTests.cs" />

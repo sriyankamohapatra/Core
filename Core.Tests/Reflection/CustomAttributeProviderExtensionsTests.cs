@@ -189,7 +189,7 @@ namespace Sfa.Core.Reflection
         #endregion
 
 
-        #region GetAttribute
+        #region GetFirstAttribute
 
         [TestMethod, TestCategory("Unit")]
         [ExpectedException(typeof(ArgumentNullException))]

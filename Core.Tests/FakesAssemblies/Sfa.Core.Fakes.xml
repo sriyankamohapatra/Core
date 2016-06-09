@@ -2725,8 +2725,11 @@
         <member name="P:Sfa.Core.Fakes.ShimEnumAttributeMap.AllInstances.EnumValueSetObject">
             <summary>Sets the shim of EnumAttributeMap.set_EnumValue(Object value)</summary>
         </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumAttributeMap.AllInstances.GetAttributeOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Sfa.Core.EnumAttributeMap,``0})">
-            <summary>Sets the shim of EnumAttributeMap.GetAttribute()</summary>
+        <member name="M:Sfa.Core.Fakes.ShimEnumAttributeMap.AllInstances.GetAttributesOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Sfa.Core.EnumAttributeMap,System.Collections.Generic.IEnumerable{``0}})">
+            <summary>Sets the shim of EnumAttributeMap.GetAttributes()</summary>
+        </member>
+        <member name="M:Sfa.Core.Fakes.ShimEnumAttributeMap.AllInstances.GetFirstAttributeOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Sfa.Core.EnumAttributeMap,``0})">
+            <summary>Sets the shim of EnumAttributeMap.GetFirstAttribute()</summary>
         </member>
         <member name="P:Sfa.Core.Fakes.ShimEnumAttributeMap.AttributesGet">
             <summary>Sets the shim of EnumAttributeMap.get_Attributes()</summary>
@@ -2743,8 +2746,8 @@
         <member name="P:Sfa.Core.Fakes.ShimEnumAttributeMap.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="P:Sfa.Core.Fakes.ShimEnumAttributeMap.ConstructorObjectIListOfAttribute">
-            <summary>Sets the shim of EnumAttributeMap.EnumAttributeMap(Object enumValue, IList`1&lt;Attribute&gt; attributes)</summary>
+        <member name="P:Sfa.Core.Fakes.ShimEnumAttributeMap.ConstructorEnumIEnumerableOfAttribute">
+            <summary>Sets the shim of EnumAttributeMap.EnumAttributeMap(Enum enumValue, IEnumerable`1&lt;Attribute&gt; attributes)</summary>
         </member>
         <member name="P:Sfa.Core.Fakes.ShimEnumAttributeMap.EnumValueGet">
             <summary>Sets the shim of EnumAttributeMap.get_EnumValue()</summary>
@@ -2752,8 +2755,11 @@
         <member name="P:Sfa.Core.Fakes.ShimEnumAttributeMap.EnumValueSetObject">
             <summary>Sets the shim of EnumAttributeMap.set_EnumValue(Object value)</summary>
         </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumAttributeMap.GetAttributeOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0})">
-            <summary>Sets the shim of EnumAttributeMap.GetAttribute()</summary>
+        <member name="M:Sfa.Core.Fakes.ShimEnumAttributeMap.GetAttributesOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Collections.Generic.IEnumerable{``0}})">
+            <summary>Sets the shim of EnumAttributeMap.GetAttributes()</summary>
+        </member>
+        <member name="M:Sfa.Core.Fakes.ShimEnumAttributeMap.GetFirstAttributeOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0})">
+            <summary>Sets the shim of EnumAttributeMap.GetFirstAttribute()</summary>
         </member>
         <member name="T:Sfa.Core.Fakes.ShimEnumAttributeMaps">
             <summary>Shim type of Sfa.Core.EnumAttributeMaps</summary>
@@ -2797,8 +2803,8 @@
         <member name="M:Sfa.Core.Fakes.ShimEnumDescriptor.GetEnumCustomAttributesOf1Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Object,System.Collections.Generic.IEnumerable{``0}})">
             <summary>Sets the shim of EnumDescriptor.GetEnumCustomAttributes(Object enumValue)</summary>
         </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDescriptor.GetEnumFromPropertyValueOf2StringFuncOfM1String``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,System.Func{``1,System.String},``0})">
-            <summary>Sets the shim of EnumDescriptor.GetEnumFromPropertyValue(String propertyValue, Func`2&lt;!!1,String&gt; property)</summary>
+        <member name="M:Sfa.Core.Fakes.ShimEnumDescriptor.GetEnumFromPropertyValueOf3M2FuncOfM1M2``3(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``2,System.Func{``1,``2},``0})">
+            <summary>Sets the shim of EnumDescriptor.GetEnumFromPropertyValue(!!2 propertyValue, Func`2&lt;!!1,!!2&gt; property)</summary>
         </member>
         <member name="M:Sfa.Core.Fakes.ShimEnumDescriptor.GetEnumValueAttributeOf1Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Object,``0})">
             <summary>Sets the shim of EnumDescriptor.GetEnumValueAttribute(Object enumValue)</summary>
@@ -2884,13 +2890,10 @@
         <member name="P:Sfa.Core.Fakes.ShimEnumTranslator.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumTranslator.TranslateOf1NullableOfInt32M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Nullable{System.Int32},``0,``0})">
-            <summary>Sets the shim of EnumTranslator.Translate(Nullable`1&lt;Int32&gt; value, !!0 default)</summary>
-        </member>
         <member name="T:Sfa.Core.Fakes.StubEnumAttributeMap">
             <summary>Stub type of Sfa.Core.EnumAttributeMap</summary>
         </member>
-        <member name="M:Sfa.Core.Fakes.StubEnumAttributeMap.#ctor(System.Object,System.Collections.Generic.IList{System.Attribute})">
+        <member name="M:Sfa.Core.Fakes.StubEnumAttributeMap.#ctor(System.Enum,System.Collections.Generic.IEnumerable{System.Attribute})">
             <summary>Initializes a new instance</summary>
         </member>
         <member name="P:Sfa.Core.Fakes.StubEnumAttributeMap.CallBase">
