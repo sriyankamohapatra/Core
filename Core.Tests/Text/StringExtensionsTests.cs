@@ -31,6 +31,16 @@ namespace Sfa.Core.Text
             }
         }
 
+        [TestMethod, TestCategory("Unit")]
+        public void IsValidEmail_EmptyEmail()
+        {
+            // Act
+            var actual = string.Empty.IsValidEmail();
+
+            // Assert
+            actual.ShouldHaveSameValueAs(false);
+        }
+
         #endregion
     }
 }

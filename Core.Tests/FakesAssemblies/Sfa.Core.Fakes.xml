@@ -4328,7 +4328,7 @@
             <summary>Sets the shim of ExpressionExtensions.EnsureProperty(Expression`1&lt;Func`2&lt;!!0,!!1&gt;&gt; propertyExpression)</summary>
         </member>
         <member name="M:Sfa.Core.Reflection.Fakes.ShimExpressionExtensions.GetPropertyBackingFieldOf2ExpressionOfFuncOfM0M1``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Reflection.FieldInfo})">
-            <summary>Sets the shim of ExpressionExtensions.GetPropertyBackingField(Expression`1&lt;Func`2&lt;!!0,!!1&gt;&gt; property)</summary>
+            <summary>Sets the shim of ExpressionExtensions.GetPropertyBackingField(Expression`1&lt;Func`2&lt;!!0,!!1&gt;&gt; propertyExpression)</summary>
         </member>
         <member name="M:Sfa.Core.Reflection.Fakes.ShimExpressionExtensions.GetPropertyNameOf2ExpressionOfFuncOfM0M1``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String})">
             <summary>Sets the shim of ExpressionExtensions.GetPropertyName(Expression`1&lt;Func`2&lt;!!0,!!1&gt;&gt; propertyExpression)</summary>
@@ -4435,8 +4435,8 @@
         <member name="M:Sfa.Core.Text.Fakes.ShimStringBuilderExtensions.#ctor">
             <summary>Initializes a new shim instance</summary>
         </member>
-        <member name="P:Sfa.Core.Text.Fakes.ShimStringBuilderExtensions.AppendCsvDataStringBuilderListOfStringListOfListOfString">
-            <summary>Sets the shim of StringBuilderExtensions.AppendCsvData(StringBuilder value, List`1&lt;String&gt; csvHeaders, List`1&lt;List`1&lt;String&gt;&gt; csvData)</summary>
+        <member name="P:Sfa.Core.Text.Fakes.ShimStringBuilderExtensions.AppendCsvDataStringBuilderIEnumerableOfStringIEnumerableOfIEnumerableOfString">
+            <summary>Sets the shim of StringBuilderExtensions.AppendCsvData(StringBuilder builder, IEnumerable`1&lt;String&gt; csvHeaders, IEnumerable`1&lt;IEnumerable`1&lt;String&gt;&gt; csvData)</summary>
         </member>
         <member name="P:Sfa.Core.Text.Fakes.ShimStringBuilderExtensions.AppendHtmlLineStringBuilder">
             <summary>Sets the shim of StringBuilderExtensions.AppendHtmlLine(StringBuilder value)</summary>
@@ -4465,8 +4465,8 @@
         <member name="P:Sfa.Core.Text.Fakes.ShimStringExtensions.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="P:Sfa.Core.Text.Fakes.ShimStringExtensions.DomainMapperMatch">
-            <summary>Sets the shim of StringExtensions.DomainMapper(Match match)</summary>
+        <member name="P:Sfa.Core.Text.Fakes.ShimStringExtensions.EmailDomainMapperMatch">
+            <summary>Sets the shim of StringExtensions.EmailDomainMapper(Match match)</summary>
         </member>
         <member name="P:Sfa.Core.Text.Fakes.ShimStringExtensions.IsValidEmailString">
             <summary>Sets the shim of StringExtensions.IsValidEmail(String email)</summary>

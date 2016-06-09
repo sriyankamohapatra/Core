@@ -25,7 +25,7 @@ namespace Sfa.Core.Text
             // Use IdnMapping class to convert Unicode domain names.
             try
             {
-                email = Regex.Replace(email, @"(@)(.+)$", DomainMapper, RegexOptions.None, TimeSpan.FromMilliseconds(200));
+                email = Regex.Replace(email, @"(@)(.+)$", EmailDomainMapper, RegexOptions.None, TimeSpan.FromMilliseconds(200));
             }
             catch(ArgumentException)
             {
@@ -50,11 +50,11 @@ namespace Sfa.Core.Text
             }
         }
 
-        private static string DomainMapper(Match match)
+        private static string EmailDomainMapper(Match match)
         {
             var idn = new IdnMapping();
 
-            string domainName = match.Groups[2].Value;
+            var domainName = match.Groups[2].Value;
             domainName = idn.GetAscii(domainName);
             return match.Groups[1].Value + domainName;
         }
