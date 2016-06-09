@@ -5,7 +5,7 @@ using System.Reflection;
 namespace Sfa.Core.Reflection
 {
     /// <summary>
-    /// Extensions for <see cref="ICustomAttributeProvider"/>.
+    /// Extensions available for <see cref="ICustomAttributeProvider"/>.
     /// </summary>
     public static class CustomAttributeProviderExtensions
     {

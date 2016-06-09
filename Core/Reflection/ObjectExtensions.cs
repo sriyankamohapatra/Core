@@ -6,7 +6,7 @@ using System.Reflection;
 namespace Sfa.Core.Reflection
 {
     /// <summary>
-    /// Extension available to all <see cref="Object"/>s
+    /// Extensions available for <see cref="Object"/>.
     /// </summary>
     public static class ObjectExtensions
     {

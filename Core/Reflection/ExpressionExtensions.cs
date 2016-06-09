@@ -5,7 +5,7 @@ using System.Reflection;
 namespace Sfa.Core.Reflection
 {
     /// <summary>
-    /// Extension available of the <see cref="Expression"/> class.
+    /// Extensions available for <see cref="Expression"/>.
     /// </summary>
     public static class ExpressionExtensions
     {

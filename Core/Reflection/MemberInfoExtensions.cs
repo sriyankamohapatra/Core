@@ -4,7 +4,7 @@ using System.Reflection;
 namespace Sfa.Core.Reflection
 {
     /// <summary>
-    /// A set of extensions based on Attribute and around getting attributes
+    /// Extensions available for <see cref="MemberInfo"/>.
     /// </summary>
     public static class MemberInfoExtensions
     {

@@ -6,7 +6,7 @@ using System.Reflection;
 namespace Sfa.Core.Reflection
 {
     /// <summary>
-    /// Extends the base Type class.
+    /// Extensions available for <see cref="Type"/>.
     /// </summary>
     public static class TypeExtensions
     {
