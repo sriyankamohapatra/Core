@@ -25,9 +25,6 @@ C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : C
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Reflection.TypeExtensions+<>c__1`1: type is not supported because of internal limitations.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Messaging.IMessage: type is an interface.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Messaging.IMessagingClient: type is an interface.
-C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Logging.AsyncLoggingWrapper+<>c__DisplayClass12_0: type is not supported because of internal limitations.
-C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Logging.AsyncLoggingWrapper+<>c__DisplayClass7_0: type is not supported because of internal limitations.
-C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Logging.AsyncLoggingWrapper+QueueLoggingParams: type is not visible to exported or assembly(Sfa.Core.Fakes).
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Logging.BaseLogger+<>c: type is not supported because of internal limitations.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Logging.BaseLogger+<>c__DisplayClass8_0: type is not supported because of internal limitations.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Logging.ILogger: type is an interface.

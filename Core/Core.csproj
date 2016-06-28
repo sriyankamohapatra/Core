@@ -93,7 +93,6 @@
     <Compile Include="Exceptions\MissingEntityException.cs" />
     <Compile Include="Exceptions\UnauthorizedException.cs" />
     <Compile Include="IO\StreamExtensions.cs" />
-    <Compile Include="Logging\AsyncLoggingWrapper.cs" />
     <Compile Include="Logging\BaseLogger.cs" />
     <Compile Include="Logging\LoggingConfigurationSettings.cs" />
     <Compile Include="Logging\ConsoleLogger.cs" />
