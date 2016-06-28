@@ -108,6 +108,7 @@
     <Compile Include="Reflection\MemberInfoExtensionsTests.cs" />
     <Compile Include="Reflection\ObjectExtensionsTests.cs" />
     <Compile Include="Reflection\TypeExtensionsTests.cs" />
+    <Compile Include="Security\Claims\ClaimsPrincipalExtensionsTests.cs" />
     <Compile Include="Text\StringBuilderExtensionsUnitTest.cs" />
     <Compile Include="Text\StringExtensionsTests.cs" />
   </ItemGroup>

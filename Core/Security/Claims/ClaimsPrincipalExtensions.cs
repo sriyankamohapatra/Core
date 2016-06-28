@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Security.Claims;
 
 namespace Sfa.Core.Security.Claims
@@ -30,7 +29,7 @@ namespace Sfa.Core.Security.Claims
         /// </summary>
         /// <param name="claimsPrincipal">The <c>ClaimsPrincipal</c> the claims are being cleared from.</param>
         /// <param name="type">The type of claims being cleared.</param>
-        public static void ClearAll(this ClaimsPrincipal claimsPrincipal, string type)
+        public static void RemoveClaimsOfType(this ClaimsPrincipal claimsPrincipal, string type)
         {
             foreach (var claimsIdentity in claimsPrincipal.Identities)
             {

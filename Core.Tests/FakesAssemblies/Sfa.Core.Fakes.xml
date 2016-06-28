@@ -4117,8 +4117,8 @@
         <member name="P:Sfa.Core.Security.Claims.Fakes.ShimClaimsPrincipalExtensions.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="P:Sfa.Core.Security.Claims.Fakes.ShimClaimsPrincipalExtensions.ClearAllClaimsPrincipalString">
-            <summary>Sets the shim of ClaimsPrincipalExtensions.ClearAll(ClaimsPrincipal claimsPrincipal, String type)</summary>
+        <member name="P:Sfa.Core.Security.Claims.Fakes.ShimClaimsPrincipalExtensions.RemoveClaimsOfTypeClaimsPrincipalString">
+            <summary>Sets the shim of ClaimsPrincipalExtensions.RemoveClaimsOfType(ClaimsPrincipal claimsPrincipal, String type)</summary>
         </member>
         <member name="T:Sfa.Core.Text.Fakes.ShimStringBuilderExtensions">
             <summary>Shim type of Sfa.Core.Text.StringBuilderExtensions</summary>
