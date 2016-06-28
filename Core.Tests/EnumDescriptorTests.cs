@@ -47,7 +47,7 @@ namespace Sfa.Core
         public void GetEnumValueAttribute_NullValue()
         {
             // Act
-            EnumDescriptor.GetEnumValueAttribute<SimpleAttribute>(null);
+            EnumAttributeHelper.GetEnumValueAttribute<SimpleAttribute>(null);
         }
 
         [TestMethod, TestCategory("Unit")]
@@ -57,7 +57,7 @@ namespace Sfa.Core
             var expected = new SimpleAttribute {MyInt = 1, MyString = "a"};
 
             // Act
-            var actual = EnumDescriptor.GetEnumValueAttribute<SimpleAttribute>(TestEnum.Value0);
+            var actual = EnumAttributeHelper.GetEnumValueAttribute<SimpleAttribute>(TestEnum.Value0);
 
             // Assert
             actual.ShouldHaveSameValueAs(expected);
@@ -67,7 +67,7 @@ namespace Sfa.Core
         public void GetEnumValueAttribute_NoAttribute()
         {
             // Act
-            var actual = EnumDescriptor.GetEnumValueAttribute<SimpleAttribute>(TestEnum.Value1);
+            var actual = EnumAttributeHelper.GetEnumValueAttribute<SimpleAttribute>(TestEnum.Value1);
 
             // Assert
             actual.ShouldHaveSameValueAs(null);
@@ -84,7 +84,7 @@ namespace Sfa.Core
         public void GetEnumFromPropertyValue_NullPropertyExpression()
         {
             // Act
-            EnumDescriptor.GetEnumFromPropertyValue<TestEnum, SimpleAttribute, int>(1, null);
+            EnumAttributeHelper.GetEnumFromPropertyValue<TestEnum, SimpleAttribute, int>(1, null);
         }
 
 
@@ -95,7 +95,7 @@ namespace Sfa.Core
             var expected = TestEnum.Value2;
 
             // Act
-            var actual = EnumDescriptor.GetEnumFromPropertyValue<TestEnum, SimpleAttribute, int>(3, o => o.MyInt);
+            var actual = EnumAttributeHelper.GetEnumFromPropertyValue<TestEnum, SimpleAttribute, int>(3, o => o.MyInt);
 
             // Assert
             actual.ShouldHaveSameValueAs(expected);
@@ -109,7 +109,7 @@ namespace Sfa.Core
             var expected = TestEnum.Value3;
 
             // Act
-            var actual = EnumDescriptor.GetEnumFromPropertyValue<TestEnum, SimpleAttribute, string>(null, o => o.MyString);
+            var actual = EnumAttributeHelper.GetEnumFromPropertyValue<TestEnum, SimpleAttribute, string>(null, o => o.MyString);
 
             // Assert
             actual.ShouldHaveSameValueAs(expected);
@@ -126,7 +126,7 @@ namespace Sfa.Core
         public void GetPropertyValue_NotAnEnum()
         {
             // Act
-            EnumDescriptor.GetPropertyValue<SimpleStruct, SimpleAttribute, string>(new SimpleStruct(), attribute => attribute.MyString);
+            EnumAttributeHelper.GetPropertyValue<SimpleStruct, SimpleAttribute, string>(new SimpleStruct(), attribute => attribute.MyString);
         }
 
         #endregion

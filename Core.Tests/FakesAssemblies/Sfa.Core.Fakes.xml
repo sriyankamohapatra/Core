@@ -2701,6 +2701,30 @@
         <member name="P:Sfa.Core.Fakes.ShimByteArrayExtensions.StructurallyEqualByteArrayByteArray">
             <summary>Sets the shim of ByteArrayExtensions.StructurallyEqual(Byte[] lhs, Byte[] rhs)</summary>
         </member>
+        <member name="T:Sfa.Core.Fakes.ShimEnumAttributeHelper">
+            <summary>Shim type of Sfa.Core.EnumAttributeHelper</summary>
+        </member>
+        <member name="M:Sfa.Core.Fakes.ShimEnumAttributeHelper.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sfa.Core.Fakes.ShimEnumAttributeHelper.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sfa.Core.Fakes.ShimEnumAttributeHelper.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sfa.Core.Fakes.ShimEnumAttributeHelper.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sfa.Core.Fakes.ShimEnumAttributeHelper.GetEnumCustomAttributesOf1Enum``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Enum,System.Collections.Generic.IEnumerable{``0}})">
+            <summary>Sets the shim of EnumAttributeHelper.GetEnumCustomAttributes(Enum enumValue)</summary>
+        </member>
+        <member name="M:Sfa.Core.Fakes.ShimEnumAttributeHelper.GetEnumFromPropertyValueOf3M2FuncOfM1M2``3(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``2,System.Func{``1,``2},``0})">
+            <summary>Sets the shim of EnumAttributeHelper.GetEnumFromPropertyValue(!!2 propertyValue, Func`2&lt;!!1,!!2&gt; property)</summary>
+        </member>
+        <member name="M:Sfa.Core.Fakes.ShimEnumAttributeHelper.GetEnumValueAttributeOf1Enum``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Enum,``0})">
+            <summary>Sets the shim of EnumAttributeHelper.GetEnumValueAttribute(Enum enumValue)</summary>
+        </member>
         <member name="T:Sfa.Core.Fakes.ShimEnumAttributeMap">
             <summary>Shim type of Sfa.Core.EnumAttributeMap</summary>
         </member>
@@ -2785,90 +2809,6 @@
         <member name="P:Sfa.Core.Fakes.ShimEnumAttributeMaps.StaticConstructor">
             <summary>Sets the shim of EnumAttributeMaps.EnumAttributeMaps()</summary>
         </member>
-        <member name="T:Sfa.Core.Fakes.ShimEnumDescriptor">
-            <summary>Shim type of Sfa.Core.EnumDescriptor</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDescriptor.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDescriptor.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDescriptor.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.ShimEnumDescriptor.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDescriptor.GetEnumCustomAttributesOf1Enum``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Enum,System.Collections.Generic.IEnumerable{``0}})">
-            <summary>Sets the shim of EnumDescriptor.GetEnumCustomAttributes(Enum enumValue)</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDescriptor.GetEnumFromPropertyValueOf3M2FuncOfM1M2``3(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``2,System.Func{``1,``2},``0})">
-            <summary>Sets the shim of EnumDescriptor.GetEnumFromPropertyValue(!!2 propertyValue, Func`2&lt;!!1,!!2&gt; property)</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDescriptor.GetEnumValueAttributeOf1Enum``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Enum,``0})">
-            <summary>Sets the shim of EnumDescriptor.GetEnumValueAttribute(Enum enumValue)</summary>
-        </member>
-        <member name="T:Sfa.Core.Fakes.ShimEnumDescriptorAttribute">
-            <summary>Shim type of Sfa.Core.EnumDescriptorAttribute</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDescriptorAttribute.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDescriptorAttribute.#ctor(Sfa.Core.EnumDescriptorAttribute)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="T:Sfa.Core.Fakes.ShimEnumDescriptorAttribute.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDescriptorAttribute.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDescriptorAttribute.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.ShimEnumDescriptorAttribute.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.ShimEnumDescriptorAttribute.Constructor">
-            <summary>Sets the shim of EnumDescriptorAttribute.EnumDescriptorAttribute()</summary>
-        </member>
-        <member name="T:Sfa.Core.Fakes.ShimEnumDisplayAttribute">
-            <summary>Shim type of Sfa.Core.EnumDisplayAttribute</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDisplayAttribute.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDisplayAttribute.#ctor(Sfa.Core.EnumDisplayAttribute)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="T:Sfa.Core.Fakes.ShimEnumDisplayAttribute.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.ShimEnumDisplayAttribute.AllInstances.DisplayTextGet">
-            <summary>Sets the shim of EnumDisplayAttribute.get_DisplayText()</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.ShimEnumDisplayAttribute.AllInstances.DisplayTextSetString">
-            <summary>Sets the shim of EnumDisplayAttribute.set_DisplayText(String value)</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDisplayAttribute.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.ShimEnumDisplayAttribute.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.ShimEnumDisplayAttribute.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.ShimEnumDisplayAttribute.Constructor">
-            <summary>Sets the shim of EnumDisplayAttribute.EnumDisplayAttribute()</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.ShimEnumDisplayAttribute.DisplayTextGet">
-            <summary>Sets the shim of EnumDisplayAttribute.get_DisplayText()</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.ShimEnumDisplayAttribute.DisplayTextSetString">
-            <summary>Sets the shim of EnumDisplayAttribute.set_DisplayText(String value)</summary>
-        </member>
         <member name="T:Sfa.Core.Fakes.ShimEnumTranslator">
             <summary>Shim type of Sfa.Core.EnumTranslator</summary>
         </member>
@@ -2901,102 +2841,6 @@
         </member>
         <member name="P:Sfa.Core.Fakes.StubEnumAttributeMap.InstanceObserver">
             <summary>Gets or sets the instance observer.</summary>
-        </member>
-        <member name="T:Sfa.Core.Fakes.StubEnumDescriptorAttribute">
-            <summary>Stub type of Sfa.Core.EnumDescriptorAttribute</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.StubEnumDescriptorAttribute.#ctor">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.StubEnumDescriptorAttribute.CallBase">
-            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.StubEnumDescriptorAttribute.Equals(System.Object)">
-            <summary>Sets the stub of Attribute.Equals(Object obj)</summary>
-        </member>
-        <member name="F:Sfa.Core.Fakes.StubEnumDescriptorAttribute.EqualsObject">
-            <summary>Sets the stub of Attribute.Equals(Object obj)</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.StubEnumDescriptorAttribute.GetHashCode">
-            <summary>Sets the stub of Attribute.GetHashCode()</summary>
-        </member>
-        <member name="F:Sfa.Core.Fakes.StubEnumDescriptorAttribute.GetHashCode01">
-            <summary>Sets the stub of Attribute.GetHashCode()</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.StubEnumDescriptorAttribute.InitializeStub">
-            <summary>Initializes a new instance of type StubEnumDescriptorAttribute</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.StubEnumDescriptorAttribute.InstanceBehavior">
-            <summary>Gets or sets the instance behavior.</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.StubEnumDescriptorAttribute.InstanceObserver">
-            <summary>Gets or sets the instance observer.</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.StubEnumDescriptorAttribute.IsDefaultAttribute">
-            <summary>Sets the stub of Attribute.IsDefaultAttribute()</summary>
-        </member>
-        <member name="F:Sfa.Core.Fakes.StubEnumDescriptorAttribute.IsDefaultAttribute01">
-            <summary>Sets the stub of Attribute.IsDefaultAttribute()</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.StubEnumDescriptorAttribute.Match(System.Object)">
-            <summary>Sets the stub of Attribute.Match(Object obj)</summary>
-        </member>
-        <member name="F:Sfa.Core.Fakes.StubEnumDescriptorAttribute.MatchObject">
-            <summary>Sets the stub of Attribute.Match(Object obj)</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.StubEnumDescriptorAttribute.TypeId">
-            <summary>Sets the stub of Attribute.get_TypeId()</summary>
-        </member>
-        <member name="F:Sfa.Core.Fakes.StubEnumDescriptorAttribute.TypeIdGet">
-            <summary>Sets the stub of Attribute.get_TypeId()</summary>
-        </member>
-        <member name="T:Sfa.Core.Fakes.StubEnumDisplayAttribute">
-            <summary>Stub type of Sfa.Core.EnumDisplayAttribute</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.StubEnumDisplayAttribute.#ctor">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.StubEnumDisplayAttribute.CallBase">
-            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.StubEnumDisplayAttribute.Equals(System.Object)">
-            <summary>Sets the stub of Attribute.Equals(Object obj)</summary>
-        </member>
-        <member name="F:Sfa.Core.Fakes.StubEnumDisplayAttribute.EqualsObject">
-            <summary>Sets the stub of Attribute.Equals(Object obj)</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.StubEnumDisplayAttribute.GetHashCode">
-            <summary>Sets the stub of Attribute.GetHashCode()</summary>
-        </member>
-        <member name="F:Sfa.Core.Fakes.StubEnumDisplayAttribute.GetHashCode01">
-            <summary>Sets the stub of Attribute.GetHashCode()</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.StubEnumDisplayAttribute.InitializeStub">
-            <summary>Initializes a new instance of type StubEnumDisplayAttribute</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.StubEnumDisplayAttribute.InstanceBehavior">
-            <summary>Gets or sets the instance behavior.</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.StubEnumDisplayAttribute.InstanceObserver">
-            <summary>Gets or sets the instance observer.</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.StubEnumDisplayAttribute.IsDefaultAttribute">
-            <summary>Sets the stub of Attribute.IsDefaultAttribute()</summary>
-        </member>
-        <member name="F:Sfa.Core.Fakes.StubEnumDisplayAttribute.IsDefaultAttribute01">
-            <summary>Sets the stub of Attribute.IsDefaultAttribute()</summary>
-        </member>
-        <member name="M:Sfa.Core.Fakes.StubEnumDisplayAttribute.Match(System.Object)">
-            <summary>Sets the stub of Attribute.Match(Object obj)</summary>
-        </member>
-        <member name="F:Sfa.Core.Fakes.StubEnumDisplayAttribute.MatchObject">
-            <summary>Sets the stub of Attribute.Match(Object obj)</summary>
-        </member>
-        <member name="P:Sfa.Core.Fakes.StubEnumDisplayAttribute.TypeId">
-            <summary>Sets the stub of Attribute.get_TypeId()</summary>
-        </member>
-        <member name="F:Sfa.Core.Fakes.StubEnumDisplayAttribute.TypeIdGet">
-            <summary>Sets the stub of Attribute.get_TypeId()</summary>
         </member>
         <member name="T:Sfa.Core.IO.Fakes.ShimStreamExtensions">
             <summary>Shim type of Sfa.Core.IO.StreamExtensions</summary>

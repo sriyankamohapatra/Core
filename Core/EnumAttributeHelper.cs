@@ -9,7 +9,7 @@ namespace Sfa.Core
     /// Provides a descriptive functionality for Enums through
     /// the use of a custom attribute.
     /// </summary>
-    public static class EnumDescriptor
+    public static class EnumAttributeHelper
     {
         /// <summary>
         /// Gets the value from the attribute based on the property.
@@ -133,6 +133,5 @@ namespace Sfa.Core
                 .Attributes
                 .OfType<T>();
         }
-
     }
 }

@@ -79,10 +79,8 @@
     <Compile Include="Diagnostics\HealthCheck.cs" />
     <Compile Include="Entities\IEntity.cs" />
     <Compile Include="EnumAttributeMaps.cs" />
-    <Compile Include="EnumDescriptor.cs" />
+    <Compile Include="EnumAttributeHelper.cs" />
     <Compile Include="EnumAttributeMap.cs" />
-    <Compile Include="EnumDescriptorAttribute.cs" />
-    <Compile Include="EnumDisplayAttribute.cs" />
     <Compile Include="EnumTranslator.cs" />
     <Compile Include="Equality\FieldValueEqualityComparer.cs" />
     <Compile Include="Equality\IFieldValueEqualityComparer.cs" />

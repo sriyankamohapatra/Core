@@ -57,11 +57,7 @@ namespace Sfa.Core.Web.Mvc
             {
                 return ((DisplayAttribute)attributes[0]).Name;
             }
-            else
-            {
-                attributes = memInfo[0].GetCustomAttributes(typeof(EnumDisplayAttribute), false);
-                return((EnumDisplayAttribute)attributes[0]).DisplayText;
-            }
+            return value.ToString();
         }
     }
 }
