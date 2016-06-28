@@ -1,8 +1,6 @@
 ﻿using System;
 using System.IO;
-using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Sfa.Core.Diagnostics;
 using Sfa.Core.Testing;
 
 namespace Sfa.Core.Logging
