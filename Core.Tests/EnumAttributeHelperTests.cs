@@ -5,7 +5,7 @@ using Sfa.Core.Testing;
 namespace Sfa.Core
 {
     [TestClass]
-    public class EnumDescriptorTests : BaseTest
+    public class EnumAttributeHelperTests : BaseTest
     {
         #region Test Classes
 
@@ -126,7 +126,74 @@ namespace Sfa.Core
         public void GetPropertyValue_NotAnEnum()
         {
             // Act
-            EnumAttributeHelper.GetPropertyValue<SimpleStruct, SimpleAttribute, string>(new SimpleStruct(), attribute => attribute.MyString);
+            EnumAttributeHelper.GetPropertyValue<SimpleStruct, SimpleAttribute>(new SimpleStruct(), null);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void GetPropertyValue_NullPropertyExpression()
+        {
+            // Act
+            EnumAttributeHelper.GetPropertyValue<TestEnum, SimpleAttribute>(TestEnum.Value3, null);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void GetPropertyValue()
+        {
+            // Act
+            var actual = EnumAttributeHelper.GetPropertyValue<TestEnum, SimpleAttribute>(TestEnum.Value3, attribute => attribute.MyString);
+
+            // Assert
+            actual.ShouldHaveSameValueAs("d");
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        [ExpectedException(typeof(NotImplementedException))]
+        public void GetPropertyValue_NoAttributeDefined()
+        {
+            // Act
+            EnumAttributeHelper.GetPropertyValue<TestEnum, SimpleAttribute>(TestEnum.Value1, attribute => attribute.MyString);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        [ExpectedException(typeof(ArgumentException))]
+        public void GetPropertyValue_String_NotAnEnum()
+        {
+            // Act
+            EnumAttributeHelper.GetPropertyValue<SimpleStruct, SimpleAttribute, string>(new SimpleStruct(), null);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void GetPropertyValue_String_NullPropertyExpression()
+        {
+            // Act
+            EnumAttributeHelper.GetPropertyValue<TestEnum, SimpleAttribute, string>(TestEnum.Value3, null);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void GetPropertyValue_String()
+        {
+            // Act
+            var actual = EnumAttributeHelper.GetPropertyValue<TestEnum, SimpleAttribute, string>(TestEnum.Value3, attribute => attribute.MyString);
+
+            // Assert
+            actual.ShouldHaveSameValueAs("d");
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        [ExpectedException(typeof(NotImplementedException))]
+        public void GetPropertyValue_String_NoAttributeDefined()
+        {
+            // Act
+            EnumAttributeHelper.GetPropertyValue<TestEnum, SimpleAttribute, string>(TestEnum.Value1, attribute => attribute.MyString);
         }
 
         #endregion

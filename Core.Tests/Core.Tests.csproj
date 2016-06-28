@@ -92,7 +92,7 @@
     <Compile Include="Diagnostics\HealthCheckTests.cs" />
     <Compile Include="EnumAttributeMapsTests.cs" />
     <Compile Include="EnumAttributeMapTests.cs" />
-    <Compile Include="EnumDescriptorTests.cs" />
+    <Compile Include="EnumAttributeHelperTests.cs" />
     <Compile Include="EnumTranslatorTests.cs" />
     <Compile Include="Equality\FieldValueEqualityComparerTests.cs" />
     <Compile Include="Equality\ReferenceEqualityComparerTests.cs" />

@@ -76,7 +76,6 @@ namespace Sfa.Core.Data
         /// Initializes a new instance of the <see cref="PagedList{T}"/> class.
         /// </summary>
         /// <param name="list">The list.</param>
-        /// <param name="truncated">if set to <c>true</c> [truncated].</param>
         /// <param name="totalNumberOfRecords">the total number of records</param>
         /// <param name="totalNumberOfPages">the total number of pages</param>
         /// <param name="pageSize">The requested page size.</param>
