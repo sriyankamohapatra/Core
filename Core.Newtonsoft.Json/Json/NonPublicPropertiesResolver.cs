@@ -17,14 +17,14 @@ namespace Sfa.Core.Json
         /// <returns>The created json property.</returns>
         protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)
         {
-            var prop = base.CreateProperty(member, memberSerialization);
-            var pi = member as PropertyInfo;
-            if (pi != null)
+            var property = base.CreateProperty(member, memberSerialization);
+            var propertyInfo = member as PropertyInfo;
+            if (propertyInfo != null)
             {
-                prop.Readable = (pi.GetMethod != null);
-                prop.Writable = (pi.SetMethod != null);
+                property.Readable = (propertyInfo.GetMethod != null);
+                property.Writable = (propertyInfo.SetMethod != null);
             }
-            return prop;
+            return property;
         }
     }
 }
