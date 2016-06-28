@@ -59,6 +59,7 @@
     <Reference Include="System.4.0.0.0.Fakes">
       <HintPath>FakesAssemblies\System.4.0.0.0.Fakes.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -96,6 +97,8 @@
     <Compile Include="Equality\FieldValueEqualityComparerTests.cs" />
     <Compile Include="Equality\ReferenceEqualityComparerTests.cs" />
     <Compile Include="IO\StreamExtensionsTests.cs" />
+    <Compile Include="Logging\BaseLoggerTests.cs" />
+    <Compile Include="Logging\LoggingConfigurationSettingsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection\CustomAttributeProviderExtensionsTests.cs" />
     <Compile Include="Reflection\ExpressionExtensionsTests.cs" />
@@ -126,6 +129,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Threading\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

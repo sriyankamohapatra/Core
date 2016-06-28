@@ -17,27 +17,31 @@ namespace Sfa.Core.Logging
 
         #endregion
 
+
         #region Constructors
 
         /// <summary>
         /// Set the Categories and levels from con fig file
         /// </summary>
-        public BaseLogger()
+        protected BaseLogger(string configSectionName = "loggingSettings")
         {
-           var applicationSettings = (BaseLoggerConfigurationSettings)ConfigurationManager.GetSection("baseLoggerConfigurationSettings");
-
-            if (applicationSettings != null)
+            if (!string.IsNullOrWhiteSpace(configSectionName))
             {
-                foreach (var setting in applicationSettings.Settings)
+                var applicationSettings = (LoggingConfigurationSettings) ConfigurationManager.GetSection(configSectionName);
+
+                if (applicationSettings != null)
                 {
-                    var logSetting = (LogSetting)setting;
-                    SetCategoryLogging(logSetting.category, logSetting.level);
+                    foreach (LogSetting logSetting in applicationSettings.Settings)
+                    {
+                        SetCategoryLogging(logSetting.Category, logSetting.Level);
+                    }
                 }
             }
         }
 
 
         #endregion
+
 
         #region Api
 
@@ -100,7 +104,7 @@ namespace Sfa.Core.Logging
         /// </summary>
         /// <param name="category">The category to set the logging of.</param>
         /// <param name="level">The level to log at.</param>
-        public virtual void SetCategoryLogging(string category, LoggingLevel level)
+        public void SetCategoryLogging(string category, LoggingLevel level)
         {
             _categoriesToLog[category] = level;
         }
@@ -112,7 +116,7 @@ namespace Sfa.Core.Logging
         /// <returns>True if should be written to the log.</returns>
         public virtual bool ShouldLog(LoggingLevel queryLevel, string category)
         {
-            Predicate<string> shouldLog = key => (_categoriesToLog.ContainsKey(key) 
+            Predicate<string> shouldLog = key => (_categoriesToLog.ContainsKey(key)
                              && _categoriesToLog[key] != LoggingLevel.None
                              && _categoriesToLog[key] <= queryLevel);
 

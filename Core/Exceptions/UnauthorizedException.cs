@@ -9,7 +9,7 @@ namespace Sfa.Core.Exceptions
     public class UnauthorizedException : BusinessLogicException
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="T:BuUnauthorizedExceptionsinessLogicException"/> class.
+        /// Initializes a new instance of the <see cref="T:UnauthorizedException"/> class.
         /// </summary>
         public UnauthorizedException()
             : base("The current user is not authorised to perform this action.")

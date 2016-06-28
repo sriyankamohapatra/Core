@@ -3145,8 +3145,8 @@
         <member name="M:Sfa.Core.Logging.Fakes.ShimBaseLogger.Bind(Sfa.Core.Logging.ILogger)">
             <summary>Binds the members of the interface to the shim.</summary>
         </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimBaseLogger.Constructor">
-            <summary>Sets the shim of BaseLogger.BaseLogger()</summary>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimBaseLogger.ConstructorString">
+            <summary>Sets the shim of BaseLogger.BaseLogger(String configSectionName)</summary>
         </member>
         <member name="P:Sfa.Core.Logging.Fakes.ShimBaseLogger.LogExceptionStringException">
             <summary>Sets the shim of BaseLogger.LogException(String category, Exception exception)</summary>
@@ -3165,42 +3165,6 @@
         </member>
         <member name="P:Sfa.Core.Logging.Fakes.ShimBaseLogger.ShouldLogLoggingLevelString">
             <summary>Sets the shim of BaseLogger.ShouldLog(LoggingLevel queryLevel, String category)</summary>
-        </member>
-        <member name="T:Sfa.Core.Logging.Fakes.ShimBaseLoggerConfigurationSettings">
-            <summary>Shim type of Sfa.Core.Logging.BaseLoggerConfigurationSettings</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.ShimBaseLoggerConfigurationSettings.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.ShimBaseLoggerConfigurationSettings.#ctor(Sfa.Core.Logging.BaseLoggerConfigurationSettings)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="T:Sfa.Core.Logging.Fakes.ShimBaseLoggerConfigurationSettings.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimBaseLoggerConfigurationSettings.AllInstances.SettingsGet">
-            <summary>Sets the shim of BaseLoggerConfigurationSettings.get_Settings()</summary>
-        </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimBaseLoggerConfigurationSettings.AllInstances.SettingsSetLogSettingCollection">
-            <summary>Sets the shim of BaseLoggerConfigurationSettings.set_Settings(LogSettingCollection value)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.ShimBaseLoggerConfigurationSettings.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.ShimBaseLoggerConfigurationSettings.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimBaseLoggerConfigurationSettings.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimBaseLoggerConfigurationSettings.Constructor">
-            <summary>Sets the shim of BaseLoggerConfigurationSettings.BaseLoggerConfigurationSettings()</summary>
-        </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimBaseLoggerConfigurationSettings.SettingsGet">
-            <summary>Sets the shim of BaseLoggerConfigurationSettings.get_Settings()</summary>
-        </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimBaseLoggerConfigurationSettings.SettingsSetLogSettingCollection">
-            <summary>Sets the shim of BaseLoggerConfigurationSettings.set_Settings(LogSettingCollection value)</summary>
         </member>
         <member name="T:Sfa.Core.Logging.Fakes.ShimConsoleLogger">
             <summary>Shim type of Sfa.Core.Logging.ConsoleLogger</summary>
@@ -3274,17 +3238,17 @@
         <member name="T:Sfa.Core.Logging.Fakes.ShimLogSetting.AllInstances">
             <summary>Define shims for all instances members</summary>
         </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.AllInstances.categoryGet">
-            <summary>Sets the shim of LogSetting.get_category()</summary>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.AllInstances.CategoryGet">
+            <summary>Sets the shim of LogSetting.get_Category()</summary>
         </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.AllInstances.categorySetString">
-            <summary>Sets the shim of LogSetting.set_category(String value)</summary>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.AllInstances.CategorySetString">
+            <summary>Sets the shim of LogSetting.set_Category(String value)</summary>
         </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.AllInstances.levelGet">
-            <summary>Sets the shim of LogSetting.get_level()</summary>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.AllInstances.LevelGet">
+            <summary>Sets the shim of LogSetting.get_Level()</summary>
         </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.AllInstances.levelSetLoggingLevel">
-            <summary>Sets the shim of LogSetting.set_level(LoggingLevel value)</summary>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.AllInstances.LevelSetLoggingLevel">
+            <summary>Sets the shim of LogSetting.set_Level(LoggingLevel value)</summary>
         </member>
         <member name="M:Sfa.Core.Logging.Fakes.ShimLogSetting.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
@@ -3295,20 +3259,20 @@
         <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.CategoryGet">
+            <summary>Sets the shim of LogSetting.get_Category()</summary>
+        </member>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.CategorySetString">
+            <summary>Sets the shim of LogSetting.set_Category(String value)</summary>
+        </member>
         <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.Constructor">
             <summary>Sets the shim of LogSetting.LogSetting()</summary>
         </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.categoryGet">
-            <summary>Sets the shim of LogSetting.get_category()</summary>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.LevelGet">
+            <summary>Sets the shim of LogSetting.get_Level()</summary>
         </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.categorySetString">
-            <summary>Sets the shim of LogSetting.set_category(String value)</summary>
-        </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.levelGet">
-            <summary>Sets the shim of LogSetting.get_level()</summary>
-        </member>
-        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.levelSetLoggingLevel">
-            <summary>Sets the shim of LogSetting.set_level(LoggingLevel value)</summary>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimLogSetting.LevelSetLoggingLevel">
+            <summary>Sets the shim of LogSetting.set_Level(LoggingLevel value)</summary>
         </member>
         <member name="T:Sfa.Core.Logging.Fakes.ShimLogSettingCollection">
             <summary>Shim type of Sfa.Core.Logging.LogSettingCollection</summary>
@@ -3381,6 +3345,42 @@
         </member>
         <member name="P:Sfa.Core.Logging.Fakes.ShimLogSettingCollection.ItemGetString">
             <summary>Sets the shim of LogSettingCollection.get_Item(String key)</summary>
+        </member>
+        <member name="T:Sfa.Core.Logging.Fakes.ShimLoggingConfigurationSettings">
+            <summary>Shim type of Sfa.Core.Logging.LoggingConfigurationSettings</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.ShimLoggingConfigurationSettings.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.ShimLoggingConfigurationSettings.#ctor(Sfa.Core.Logging.LoggingConfigurationSettings)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Sfa.Core.Logging.Fakes.ShimLoggingConfigurationSettings.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimLoggingConfigurationSettings.AllInstances.SettingsGet">
+            <summary>Sets the shim of LoggingConfigurationSettings.get_Settings()</summary>
+        </member>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimLoggingConfigurationSettings.AllInstances.SettingsSetLogSettingCollection">
+            <summary>Sets the shim of LoggingConfigurationSettings.set_Settings(LogSettingCollection value)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.ShimLoggingConfigurationSettings.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.ShimLoggingConfigurationSettings.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimLoggingConfigurationSettings.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimLoggingConfigurationSettings.Constructor">
+            <summary>Sets the shim of LoggingConfigurationSettings.LoggingConfigurationSettings()</summary>
+        </member>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimLoggingConfigurationSettings.SettingsGet">
+            <summary>Sets the shim of LoggingConfigurationSettings.get_Settings()</summary>
+        </member>
+        <member name="P:Sfa.Core.Logging.Fakes.ShimLoggingConfigurationSettings.SettingsSetLogSettingCollection">
+            <summary>Sets the shim of LoggingConfigurationSettings.set_Settings(LogSettingCollection value)</summary>
         </member>
         <member name="T:Sfa.Core.Logging.Fakes.ShimMultiLogger">
             <summary>Shim type of Sfa.Core.Logging.MultiLogger</summary>
@@ -3493,7 +3493,7 @@
         <member name="T:Sfa.Core.Logging.Fakes.StubBaseLogger">
             <summary>Stub type of Sfa.Core.Logging.BaseLogger</summary>
         </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLogger.#ctor">
+        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLogger.#ctor(System.String)">
             <summary>Initializes a new instance</summary>
         </member>
         <member name="P:Sfa.Core.Logging.Fakes.StubBaseLogger.CallBase">
@@ -3526,209 +3526,11 @@
         <member name="F:Sfa.Core.Logging.Fakes.StubBaseLogger.OnLogExceptionStringException">
             <summary>Sets the stub of BaseLogger.OnLogException(String category, Exception exception)</summary>
         </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLogger.SetCategoryLogging(System.String,Sfa.Core.Logging.LoggingLevel)">
-            <summary>Sets the stub of BaseLogger.SetCategoryLogging(String category, LoggingLevel level)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLogger.SetCategoryLoggingStringLoggingLevel">
-            <summary>Sets the stub of BaseLogger.SetCategoryLogging(String category, LoggingLevel level)</summary>
-        </member>
         <member name="M:Sfa.Core.Logging.Fakes.StubBaseLogger.ShouldLog(Sfa.Core.Logging.LoggingLevel,System.String)">
             <summary>Sets the stub of BaseLogger.ShouldLog(LoggingLevel queryLevel, String category)</summary>
         </member>
         <member name="F:Sfa.Core.Logging.Fakes.StubBaseLogger.ShouldLogLoggingLevelString">
             <summary>Sets the stub of BaseLogger.ShouldLog(LoggingLevel queryLevel, String category)</summary>
-        </member>
-        <member name="T:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings">
-            <summary>Stub type of Sfa.Core.Logging.BaseLoggerConfigurationSettings</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.#ctor">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="P:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.CallBase">
-            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.DeserializeElement(System.Xml.XmlReader,System.Boolean)">
-            <summary>Sets the stub of ConfigurationElement.DeserializeElement(XmlReader reader, Boolean serializeCollectionKey)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.DeserializeElementXmlReaderBoolean">
-            <summary>Sets the stub of ConfigurationElement.DeserializeElement(XmlReader reader, Boolean serializeCollectionKey)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.DeserializeSection(System.Xml.XmlReader)">
-            <summary>Sets the stub of ConfigurationSection.DeserializeSection(XmlReader reader)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.DeserializeSectionXmlReader">
-            <summary>Sets the stub of ConfigurationSection.DeserializeSection(XmlReader reader)</summary>
-        </member>
-        <member name="P:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.ElementProperty">
-            <summary>Sets the stub of ConfigurationElement.get_ElementProperty()</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.ElementPropertyGet">
-            <summary>Sets the stub of ConfigurationElement.get_ElementProperty()</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.Equals(System.Object)">
-            <summary>Sets the stub of ConfigurationElement.Equals(Object compareTo)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.EqualsObject">
-            <summary>Sets the stub of ConfigurationElement.Equals(Object compareTo)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.GetHashCode">
-            <summary>Sets the stub of ConfigurationElement.GetHashCode()</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.GetHashCode01">
-            <summary>Sets the stub of ConfigurationElement.GetHashCode()</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.GetRuntimeObject">
-            <summary>Sets the stub of ConfigurationSection.GetRuntimeObject()</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.GetRuntimeObject01">
-            <summary>Sets the stub of ConfigurationSection.GetRuntimeObject()</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.GetTransformedAssemblyString(System.String)">
-            <summary>Sets the stub of ConfigurationElement.GetTransformedAssemblyString(String assemblyName)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.GetTransformedAssemblyStringString">
-            <summary>Sets the stub of ConfigurationElement.GetTransformedAssemblyString(String assemblyName)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.GetTransformedTypeString(System.String)">
-            <summary>Sets the stub of ConfigurationElement.GetTransformedTypeString(String typeName)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.GetTransformedTypeStringString">
-            <summary>Sets the stub of ConfigurationElement.GetTransformedTypeString(String typeName)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.Init">
-            <summary>Sets the stub of ConfigurationElement.Init()</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.Init01">
-            <summary>Sets the stub of ConfigurationElement.Init()</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.InitializeDefault">
-            <summary>Sets the stub of ConfigurationElement.InitializeDefault()</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.InitializeDefault01">
-            <summary>Sets the stub of ConfigurationElement.InitializeDefault()</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.InitializeStub">
-            <summary>Initializes a new instance of type StubBaseLoggerConfigurationSettings</summary>
-        </member>
-        <member name="P:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.InstanceBehavior">
-            <summary>Gets or sets the instance behavior.</summary>
-        </member>
-        <member name="P:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.InstanceObserver">
-            <summary>Gets or sets the instance observer.</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.IsModified">
-            <summary>Sets the stub of ConfigurationSection.IsModified()</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.IsModified01">
-            <summary>Sets the stub of ConfigurationSection.IsModified()</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.IsReadOnly">
-            <summary>Sets the stub of ConfigurationElement.IsReadOnly()</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.IsReadOnly01">
-            <summary>Sets the stub of ConfigurationElement.IsReadOnly()</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.ListErrors(System.Collections.IList)">
-            <summary>Sets the stub of ConfigurationElement.ListErrors(IList errorList)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.ListErrorsIList">
-            <summary>Sets the stub of ConfigurationElement.ListErrors(IList errorList)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.OnDeserializeUnrecognizedAttribute(System.String,System.String)">
-            <summary>Sets the stub of ConfigurationElement.OnDeserializeUnrecognizedAttribute(String name, String value)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.OnDeserializeUnrecognizedAttributeStringString">
-            <summary>Sets the stub of ConfigurationElement.OnDeserializeUnrecognizedAttribute(String name, String value)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)">
-            <summary>Sets the stub of ConfigurationElement.OnDeserializeUnrecognizedElement(String elementName, XmlReader reader)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.OnDeserializeUnrecognizedElementStringXmlReader">
-            <summary>Sets the stub of ConfigurationElement.OnDeserializeUnrecognizedElement(String elementName, XmlReader reader)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.OnRequiredPropertyNotFound(System.String)">
-            <summary>Sets the stub of ConfigurationElement.OnRequiredPropertyNotFound(String name)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.OnRequiredPropertyNotFoundString">
-            <summary>Sets the stub of ConfigurationElement.OnRequiredPropertyNotFound(String name)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.PostDeserialize">
-            <summary>Sets the stub of ConfigurationElement.PostDeserialize()</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.PostDeserialize01">
-            <summary>Sets the stub of ConfigurationElement.PostDeserialize()</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.PreSerialize(System.Xml.XmlWriter)">
-            <summary>Sets the stub of ConfigurationElement.PreSerialize(XmlWriter writer)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.PreSerializeXmlWriter">
-            <summary>Sets the stub of ConfigurationElement.PreSerialize(XmlWriter writer)</summary>
-        </member>
-        <member name="P:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.Properties">
-            <summary>Sets the stub of ConfigurationElement.get_Properties()</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.PropertiesGet">
-            <summary>Sets the stub of ConfigurationElement.get_Properties()</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.Reset(System.Configuration.ConfigurationElement)">
-            <summary>Sets the stub of ConfigurationElement.Reset(ConfigurationElement parentElement)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.ResetConfigurationElement">
-            <summary>Sets the stub of ConfigurationElement.Reset(ConfigurationElement parentElement)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.ResetModified">
-            <summary>Sets the stub of ConfigurationSection.ResetModified()</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.ResetModified01">
-            <summary>Sets the stub of ConfigurationSection.ResetModified()</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.SerializeElement(System.Xml.XmlWriter,System.Boolean)">
-            <summary>Sets the stub of ConfigurationElement.SerializeElement(XmlWriter writer, Boolean serializeCollectionKey)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.SerializeElementXmlWriterBoolean">
-            <summary>Sets the stub of ConfigurationElement.SerializeElement(XmlWriter writer, Boolean serializeCollectionKey)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)">
-            <summary>Sets the stub of ConfigurationSection.SerializeSection(ConfigurationElement parentElement, String name, ConfigurationSaveMode saveMode)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.SerializeSectionConfigurationElementStringConfigurationSaveMode">
-            <summary>Sets the stub of ConfigurationSection.SerializeSection(ConfigurationElement parentElement, String name, ConfigurationSaveMode saveMode)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.SerializeToXmlElement(System.Xml.XmlWriter,System.String)">
-            <summary>Sets the stub of ConfigurationElement.SerializeToXmlElement(XmlWriter writer, String elementName)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.SerializeToXmlElementXmlWriterString">
-            <summary>Sets the stub of ConfigurationElement.SerializeToXmlElement(XmlWriter writer, String elementName)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.SetReadOnly">
-            <summary>Sets the stub of ConfigurationElement.SetReadOnly()</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.SetReadOnly01">
-            <summary>Sets the stub of ConfigurationElement.SetReadOnly()</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.ShouldSerializeElementInTargetVersion(System.Configuration.ConfigurationElement,System.String,System.Runtime.Versioning.FrameworkName)">
-            <summary>Sets the stub of ConfigurationSection.ShouldSerializeElementInTargetVersion(ConfigurationElement element, String elementName, FrameworkName targetFramework)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.ShouldSerializeElementInTargetVersionConfigurationElementStringFrameworkName">
-            <summary>Sets the stub of ConfigurationSection.ShouldSerializeElementInTargetVersion(ConfigurationElement element, String elementName, FrameworkName targetFramework)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.ShouldSerializePropertyInTargetVersion(System.Configuration.ConfigurationProperty,System.String,System.Runtime.Versioning.FrameworkName,System.Configuration.ConfigurationElement)">
-            <summary>Sets the stub of ConfigurationSection.ShouldSerializePropertyInTargetVersion(ConfigurationProperty property, String propertyName, FrameworkName targetFramework, ConfigurationElement parentConfigurationElement)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.ShouldSerializePropertyInTargetVersionConfigurationPropertyStringFrameworkNameConfigurationElement">
-            <summary>Sets the stub of ConfigurationSection.ShouldSerializePropertyInTargetVersion(ConfigurationProperty property, String propertyName, FrameworkName targetFramework, ConfigurationElement parentConfigurationElement)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.ShouldSerializeSectionInTargetVersion(System.Runtime.Versioning.FrameworkName)">
-            <summary>Sets the stub of ConfigurationSection.ShouldSerializeSectionInTargetVersion(FrameworkName targetFramework)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.ShouldSerializeSectionInTargetVersionFrameworkName">
-            <summary>Sets the stub of ConfigurationSection.ShouldSerializeSectionInTargetVersion(FrameworkName targetFramework)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)">
-            <summary>Sets the stub of ConfigurationElement.Unmerge(ConfigurationElement sourceElement, ConfigurationElement parentElement, ConfigurationSaveMode saveMode)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubBaseLoggerConfigurationSettings.UnmergeConfigurationElementConfigurationElementConfigurationSaveMode">
-            <summary>Sets the stub of ConfigurationElement.Unmerge(ConfigurationElement sourceElement, ConfigurationElement parentElement, ConfigurationSaveMode saveMode)</summary>
         </member>
         <member name="T:Sfa.Core.Logging.Fakes.StubConsoleLogger">
             <summary>Stub type of Sfa.Core.Logging.ConsoleLogger</summary>
@@ -3765,12 +3567,6 @@
         </member>
         <member name="F:Sfa.Core.Logging.Fakes.StubConsoleLogger.OnLogExceptionStringException">
             <summary>Sets the stub of BaseLogger.OnLogException(String category, Exception exception)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubConsoleLogger.SetCategoryLogging(System.String,Sfa.Core.Logging.LoggingLevel)">
-            <summary>Sets the stub of BaseLogger.SetCategoryLogging(String category, LoggingLevel level)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubConsoleLogger.SetCategoryLoggingStringLoggingLevel">
-            <summary>Sets the stub of BaseLogger.SetCategoryLogging(String category, LoggingLevel level)</summary>
         </member>
         <member name="M:Sfa.Core.Logging.Fakes.StubConsoleLogger.ShouldLog(Sfa.Core.Logging.LoggingLevel,System.String)">
             <summary>Sets the stub of BaseLogger.ShouldLog(LoggingLevel queryLevel, String category)</summary>
@@ -4198,6 +3994,198 @@
         <member name="F:Sfa.Core.Logging.Fakes.StubLogSettingCollection.UnmergeConfigurationElementConfigurationElementConfigurationSaveMode">
             <summary>Sets the stub of ConfigurationElementCollection.Unmerge(ConfigurationElement sourceElement, ConfigurationElement parentElement, ConfigurationSaveMode saveMode)</summary>
         </member>
+        <member name="T:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings">
+            <summary>Stub type of Sfa.Core.Logging.LoggingConfigurationSettings</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.DeserializeElement(System.Xml.XmlReader,System.Boolean)">
+            <summary>Sets the stub of ConfigurationElement.DeserializeElement(XmlReader reader, Boolean serializeCollectionKey)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.DeserializeElementXmlReaderBoolean">
+            <summary>Sets the stub of ConfigurationElement.DeserializeElement(XmlReader reader, Boolean serializeCollectionKey)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.DeserializeSection(System.Xml.XmlReader)">
+            <summary>Sets the stub of ConfigurationSection.DeserializeSection(XmlReader reader)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.DeserializeSectionXmlReader">
+            <summary>Sets the stub of ConfigurationSection.DeserializeSection(XmlReader reader)</summary>
+        </member>
+        <member name="P:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.ElementProperty">
+            <summary>Sets the stub of ConfigurationElement.get_ElementProperty()</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.ElementPropertyGet">
+            <summary>Sets the stub of ConfigurationElement.get_ElementProperty()</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.Equals(System.Object)">
+            <summary>Sets the stub of ConfigurationElement.Equals(Object compareTo)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.EqualsObject">
+            <summary>Sets the stub of ConfigurationElement.Equals(Object compareTo)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.GetHashCode">
+            <summary>Sets the stub of ConfigurationElement.GetHashCode()</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.GetHashCode01">
+            <summary>Sets the stub of ConfigurationElement.GetHashCode()</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.GetRuntimeObject">
+            <summary>Sets the stub of ConfigurationSection.GetRuntimeObject()</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.GetRuntimeObject01">
+            <summary>Sets the stub of ConfigurationSection.GetRuntimeObject()</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.GetTransformedAssemblyString(System.String)">
+            <summary>Sets the stub of ConfigurationElement.GetTransformedAssemblyString(String assemblyName)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.GetTransformedAssemblyStringString">
+            <summary>Sets the stub of ConfigurationElement.GetTransformedAssemblyString(String assemblyName)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.GetTransformedTypeString(System.String)">
+            <summary>Sets the stub of ConfigurationElement.GetTransformedTypeString(String typeName)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.GetTransformedTypeStringString">
+            <summary>Sets the stub of ConfigurationElement.GetTransformedTypeString(String typeName)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.Init">
+            <summary>Sets the stub of ConfigurationElement.Init()</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.Init01">
+            <summary>Sets the stub of ConfigurationElement.Init()</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.InitializeDefault">
+            <summary>Sets the stub of ConfigurationElement.InitializeDefault()</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.InitializeDefault01">
+            <summary>Sets the stub of ConfigurationElement.InitializeDefault()</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.InitializeStub">
+            <summary>Initializes a new instance of type StubLoggingConfigurationSettings</summary>
+        </member>
+        <member name="P:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.IsModified">
+            <summary>Sets the stub of ConfigurationSection.IsModified()</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.IsModified01">
+            <summary>Sets the stub of ConfigurationSection.IsModified()</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.IsReadOnly">
+            <summary>Sets the stub of ConfigurationElement.IsReadOnly()</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.IsReadOnly01">
+            <summary>Sets the stub of ConfigurationElement.IsReadOnly()</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.ListErrors(System.Collections.IList)">
+            <summary>Sets the stub of ConfigurationElement.ListErrors(IList errorList)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.ListErrorsIList">
+            <summary>Sets the stub of ConfigurationElement.ListErrors(IList errorList)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.OnDeserializeUnrecognizedAttribute(System.String,System.String)">
+            <summary>Sets the stub of ConfigurationElement.OnDeserializeUnrecognizedAttribute(String name, String value)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.OnDeserializeUnrecognizedAttributeStringString">
+            <summary>Sets the stub of ConfigurationElement.OnDeserializeUnrecognizedAttribute(String name, String value)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)">
+            <summary>Sets the stub of ConfigurationElement.OnDeserializeUnrecognizedElement(String elementName, XmlReader reader)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.OnDeserializeUnrecognizedElementStringXmlReader">
+            <summary>Sets the stub of ConfigurationElement.OnDeserializeUnrecognizedElement(String elementName, XmlReader reader)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.OnRequiredPropertyNotFound(System.String)">
+            <summary>Sets the stub of ConfigurationElement.OnRequiredPropertyNotFound(String name)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.OnRequiredPropertyNotFoundString">
+            <summary>Sets the stub of ConfigurationElement.OnRequiredPropertyNotFound(String name)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.PostDeserialize">
+            <summary>Sets the stub of ConfigurationElement.PostDeserialize()</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.PostDeserialize01">
+            <summary>Sets the stub of ConfigurationElement.PostDeserialize()</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.PreSerialize(System.Xml.XmlWriter)">
+            <summary>Sets the stub of ConfigurationElement.PreSerialize(XmlWriter writer)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.PreSerializeXmlWriter">
+            <summary>Sets the stub of ConfigurationElement.PreSerialize(XmlWriter writer)</summary>
+        </member>
+        <member name="P:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.Properties">
+            <summary>Sets the stub of ConfigurationElement.get_Properties()</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.PropertiesGet">
+            <summary>Sets the stub of ConfigurationElement.get_Properties()</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.Reset(System.Configuration.ConfigurationElement)">
+            <summary>Sets the stub of ConfigurationElement.Reset(ConfigurationElement parentElement)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.ResetConfigurationElement">
+            <summary>Sets the stub of ConfigurationElement.Reset(ConfigurationElement parentElement)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.ResetModified">
+            <summary>Sets the stub of ConfigurationSection.ResetModified()</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.ResetModified01">
+            <summary>Sets the stub of ConfigurationSection.ResetModified()</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.SerializeElement(System.Xml.XmlWriter,System.Boolean)">
+            <summary>Sets the stub of ConfigurationElement.SerializeElement(XmlWriter writer, Boolean serializeCollectionKey)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.SerializeElementXmlWriterBoolean">
+            <summary>Sets the stub of ConfigurationElement.SerializeElement(XmlWriter writer, Boolean serializeCollectionKey)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)">
+            <summary>Sets the stub of ConfigurationSection.SerializeSection(ConfigurationElement parentElement, String name, ConfigurationSaveMode saveMode)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.SerializeSectionConfigurationElementStringConfigurationSaveMode">
+            <summary>Sets the stub of ConfigurationSection.SerializeSection(ConfigurationElement parentElement, String name, ConfigurationSaveMode saveMode)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.SerializeToXmlElement(System.Xml.XmlWriter,System.String)">
+            <summary>Sets the stub of ConfigurationElement.SerializeToXmlElement(XmlWriter writer, String elementName)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.SerializeToXmlElementXmlWriterString">
+            <summary>Sets the stub of ConfigurationElement.SerializeToXmlElement(XmlWriter writer, String elementName)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.SetReadOnly">
+            <summary>Sets the stub of ConfigurationElement.SetReadOnly()</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.SetReadOnly01">
+            <summary>Sets the stub of ConfigurationElement.SetReadOnly()</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.ShouldSerializeElementInTargetVersion(System.Configuration.ConfigurationElement,System.String,System.Runtime.Versioning.FrameworkName)">
+            <summary>Sets the stub of ConfigurationSection.ShouldSerializeElementInTargetVersion(ConfigurationElement element, String elementName, FrameworkName targetFramework)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.ShouldSerializeElementInTargetVersionConfigurationElementStringFrameworkName">
+            <summary>Sets the stub of ConfigurationSection.ShouldSerializeElementInTargetVersion(ConfigurationElement element, String elementName, FrameworkName targetFramework)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.ShouldSerializePropertyInTargetVersion(System.Configuration.ConfigurationProperty,System.String,System.Runtime.Versioning.FrameworkName,System.Configuration.ConfigurationElement)">
+            <summary>Sets the stub of ConfigurationSection.ShouldSerializePropertyInTargetVersion(ConfigurationProperty property, String propertyName, FrameworkName targetFramework, ConfigurationElement parentConfigurationElement)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.ShouldSerializePropertyInTargetVersionConfigurationPropertyStringFrameworkNameConfigurationElement">
+            <summary>Sets the stub of ConfigurationSection.ShouldSerializePropertyInTargetVersion(ConfigurationProperty property, String propertyName, FrameworkName targetFramework, ConfigurationElement parentConfigurationElement)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.ShouldSerializeSectionInTargetVersion(System.Runtime.Versioning.FrameworkName)">
+            <summary>Sets the stub of ConfigurationSection.ShouldSerializeSectionInTargetVersion(FrameworkName targetFramework)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.ShouldSerializeSectionInTargetVersionFrameworkName">
+            <summary>Sets the stub of ConfigurationSection.ShouldSerializeSectionInTargetVersion(FrameworkName targetFramework)</summary>
+        </member>
+        <member name="M:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)">
+            <summary>Sets the stub of ConfigurationElement.Unmerge(ConfigurationElement sourceElement, ConfigurationElement parentElement, ConfigurationSaveMode saveMode)</summary>
+        </member>
+        <member name="F:Sfa.Core.Logging.Fakes.StubLoggingConfigurationSettings.UnmergeConfigurationElementConfigurationElementConfigurationSaveMode">
+            <summary>Sets the stub of ConfigurationElement.Unmerge(ConfigurationElement sourceElement, ConfigurationElement parentElement, ConfigurationSaveMode saveMode)</summary>
+        </member>
         <member name="T:Sfa.Core.Logging.Fakes.StubMultiLogger">
             <summary>Stub type of Sfa.Core.Logging.MultiLogger</summary>
         </member>
@@ -4251,12 +4239,6 @@
         </member>
         <member name="F:Sfa.Core.Logging.Fakes.StubTraceLogger.OnLogExceptionStringException">
             <summary>Sets the stub of BaseLogger.OnLogException(String category, Exception exception)</summary>
-        </member>
-        <member name="M:Sfa.Core.Logging.Fakes.StubTraceLogger.SetCategoryLogging(System.String,Sfa.Core.Logging.LoggingLevel)">
-            <summary>Sets the stub of BaseLogger.SetCategoryLogging(String category, LoggingLevel level)</summary>
-        </member>
-        <member name="F:Sfa.Core.Logging.Fakes.StubTraceLogger.SetCategoryLoggingStringLoggingLevel">
-            <summary>Sets the stub of BaseLogger.SetCategoryLogging(String category, LoggingLevel level)</summary>
         </member>
         <member name="M:Sfa.Core.Logging.Fakes.StubTraceLogger.ShouldLog(Sfa.Core.Logging.LoggingLevel,System.String)">
             <summary>Sets the stub of BaseLogger.ShouldLog(LoggingLevel queryLevel, String category)</summary>
