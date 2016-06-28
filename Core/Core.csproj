@@ -70,10 +70,10 @@
     <Compile Include="Data\IQuery.cs" />
     <Compile Include="Data\IReadOnlyRepository.cs" />
     <Compile Include="Data\IRepository.cs" />
-    <Compile Include="Data\IResultList.cs" />
+    <Compile Include="Data\IPagedEnumerable.cs" />
     <Compile Include="Data\ITransactional.cs" />
     <Compile Include="Data\Query.cs" />
-    <Compile Include="Data\ResultList.cs" />
+    <Compile Include="Data\PagedList.cs" />
     <Compile Include="Data\SortOrderDirection.cs" />
     <Compile Include="Diagnostics\DebugTextWriter.cs" />
     <Compile Include="Diagnostics\HealthCheck.cs" />

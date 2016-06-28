@@ -6,14 +6,14 @@ namespace Sfa.Core.Data
     /// Represents the result of a query execution.
     /// </summary>
     /// <typeparam name="T">The type of items in the list.</typeparam>
-    public interface IResultList<out T> : IEnumerable<T>, IResultList
+    public interface IPagedEnumerable<out T> : IEnumerable<T>, IPagedEnumerable
     {
     }
 
     /// <summary>
     /// Represents the result of a query execution.
     /// </summary>
-    public interface IResultList
+    public interface IPagedEnumerable
     {
         /// <summary>
         /// Gets a value indicating whether this instance is populated.

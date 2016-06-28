@@ -51,7 +51,7 @@ namespace Sfa.Core.Data
         /// Executes this instance.
         /// </summary>
         /// <returns>The results of executing the query.</returns>
-        public virtual IResultList<TReturn> GetResultList(int pageNumber, int pageSize)
+        public virtual IPagedEnumerable<TReturn> GetPagedList(int pageNumber, int pageSize)
         {
             PageNumber = pageNumber;
             PageSize = pageSize;
@@ -92,7 +92,7 @@ namespace Sfa.Core.Data
         /// <param name="queryable">The queryable to query against.</param>
         /// <returns></returns>
         /// <remarks>Intended for use only by test code.</remarks>
-        public virtual ResultList<TReturn> GetResultList(IQueryable<TQuery> queryable)
+        public virtual PagedList<TReturn> GetResultList(IQueryable<TQuery> queryable)
         {
             return ExecuteResultList(queryable);
         }
@@ -186,7 +186,7 @@ namespace Sfa.Core.Data
         /// </summary>
         /// <param name="queryable">The queryable to query against.</param>
         /// <returns></returns>
-        protected virtual ResultList<TReturn> ExecuteResultList(IQueryable<TQuery> queryable)
+        protected virtual PagedList<TReturn> ExecuteResultList(IQueryable<TQuery> queryable)
         {
             if (ShouldBeTruncated)
             {
@@ -199,12 +199,12 @@ namespace Sfa.Core.Data
                     PageNumber = totalNumberOfPages;
                 }
 
-                var executeGetList = ExecuteGetList(queryable);
+                var items = ExecuteGetList(queryable);
                 
-                return (new ResultList<TReturn>(executeGetList, PageNumber < totalNumberOfPages, totalNumberOfRecords, totalNumberOfPages + 1, PageSize, PageNumber));
+                return (new PagedList<TReturn>(items, totalNumberOfRecords, totalNumberOfPages + 1, PageSize, PageNumber));
             }
 
-            return new ResultList<TReturn>(ExecuteGetList(queryable));
+            return new PagedList<TReturn>(ExecuteGetList(queryable));
         }
 
         #endregion

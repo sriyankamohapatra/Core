@@ -754,6 +754,138 @@
         <member name="P:Sfa.Core.Data.Fakes.ShimCommand`2.ToString">
             <summary>Sets the shim of Command`2.ToString()</summary>
         </member>
+        <member name="T:Sfa.Core.Data.Fakes.ShimPagedList`1">
+            <summary>Shim type of Sfa.Core.Data.PagedList`1</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.ShimPagedList`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.ShimPagedList`1.#ctor(Sfa.Core.Data.PagedList{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Sfa.Core.Data.Fakes.ShimPagedList`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.AllInstances.CurrentPageGet">
+            <summary>Sets the shim of PagedList`1.get_CurrentPage()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.AllInstances.CurrentPageSetInt32">
+            <summary>Sets the shim of PagedList`1.set_CurrentPage(Int32 value)</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.AllInstances.IsPopulatedGet">
+            <summary>Sets the shim of PagedList`1.get_IsPopulated()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.AllInstances.IsPopulatedSetBoolean">
+            <summary>Sets the shim of PagedList`1.set_IsPopulated(Boolean value)</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.AllInstances.IsTruncatedGet">
+            <summary>Sets the shim of PagedList`1.get_IsTruncated()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.AllInstances.IsTruncatedSetBoolean">
+            <summary>Sets the shim of PagedList`1.set_IsTruncated(Boolean value)</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.AllInstances.PageSizeGet">
+            <summary>Sets the shim of PagedList`1.get_PageSize()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.AllInstances.PageSizeSetInt32">
+            <summary>Sets the shim of PagedList`1.set_PageSize(Int32 value)</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.AllInstances.TotalNumberOfPagesGet">
+            <summary>Sets the shim of PagedList`1.get_TotalNumberOfPages()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.AllInstances.TotalNumberOfPagesSetInt32">
+            <summary>Sets the shim of PagedList`1.set_TotalNumberOfPages(Int32 value)</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.AllInstances.TotalNumberOfRecordsGet">
+            <summary>Sets the shim of PagedList`1.get_TotalNumberOfRecords()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.AllInstances.TotalNumberOfRecordsSetInt32">
+            <summary>Sets the shim of PagedList`1.set_TotalNumberOfRecords(Int32 value)</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.ShimPagedList`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.ShimPagedList`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.ShimPagedList`1.Bind(Sfa.Core.Data.IPagedEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.ShimPagedList`1.Bind(Sfa.Core.Data.IPagedEnumerable{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.ShimPagedList`1.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.ShimPagedList`1.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.ShimPagedList`1.Bind(System.Collections.IList)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.ShimPagedList`1.Bind(System.Collections.Generic.ICollection{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.ShimPagedList`1.Bind(System.Collections.Generic.IEnumerable{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.ShimPagedList`1.Bind(System.Collections.Generic.IList{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.ShimPagedList`1.Bind(System.Collections.Generic.IReadOnlyCollection{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.ShimPagedList`1.Bind(System.Collections.Generic.IReadOnlyList{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.Constructor">
+            <summary>Sets the shim of PagedList`1.PagedList`1()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.ConstructorIEnumerableOfT0">
+            <summary>Sets the shim of PagedList`1.PagedList`1(IEnumerable`1&lt;!0&gt; list)</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.ConstructorIEnumerableOfT0Int32Int32Int32Int32">
+            <summary>Sets the shim of PagedList`1.PagedList`1(IEnumerable`1&lt;!0&gt; list, Int32 totalNumberOfRecords, Int32 totalNumberOfPages, Int32 pageSize, Int32 currentPage)</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.CurrentPageGet">
+            <summary>Sets the shim of PagedList`1.get_CurrentPage()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.CurrentPageSetInt32">
+            <summary>Sets the shim of PagedList`1.set_CurrentPage(Int32 value)</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.IsPopulatedGet">
+            <summary>Sets the shim of PagedList`1.get_IsPopulated()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.IsPopulatedSetBoolean">
+            <summary>Sets the shim of PagedList`1.set_IsPopulated(Boolean value)</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.IsTruncatedGet">
+            <summary>Sets the shim of PagedList`1.get_IsTruncated()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.IsTruncatedSetBoolean">
+            <summary>Sets the shim of PagedList`1.set_IsTruncated(Boolean value)</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.PageSizeGet">
+            <summary>Sets the shim of PagedList`1.get_PageSize()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.PageSizeSetInt32">
+            <summary>Sets the shim of PagedList`1.set_PageSize(Int32 value)</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.TotalNumberOfPagesGet">
+            <summary>Sets the shim of PagedList`1.get_TotalNumberOfPages()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.TotalNumberOfPagesSetInt32">
+            <summary>Sets the shim of PagedList`1.set_TotalNumberOfPages(Int32 value)</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.TotalNumberOfRecordsGet">
+            <summary>Sets the shim of PagedList`1.get_TotalNumberOfRecords()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimPagedList`1.TotalNumberOfRecordsSetInt32">
+            <summary>Sets the shim of PagedList`1.set_TotalNumberOfRecords(Int32 value)</summary>
+        </member>
         <member name="T:Sfa.Core.Data.Fakes.ShimQuery`2">
             <summary>Shim type of Sfa.Core.Data.Query`2</summary>
         </member>
@@ -790,11 +922,11 @@
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.GetList">
             <summary>Sets the shim of Query`2.GetList()</summary>
         </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.GetPagedListInt32Int32">
+            <summary>Sets the shim of Query`2.GetPagedList(Int32 pageNumber, Int32 pageSize)</summary>
+        </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.GetResultListIQueryableOfT1">
             <summary>Sets the shim of Query`2.GetResultList(IQueryable`1&lt;!1&gt; queryable)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.GetResultListInt32Int32">
-            <summary>Sets the shim of Query`2.GetResultList(Int32 pageNumber, Int32 pageSize)</summary>
         </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.AllInstances.GetResultListSizeIQueryableOfT1">
             <summary>Sets the shim of Query`2.GetResultListSize(IQueryable`1&lt;!1&gt; queryable)</summary>
@@ -859,11 +991,11 @@
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.GetList">
             <summary>Sets the shim of Query`2.GetList()</summary>
         </member>
+        <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.GetPagedListInt32Int32">
+            <summary>Sets the shim of Query`2.GetPagedList(Int32 pageNumber, Int32 pageSize)</summary>
+        </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.GetResultListIQueryableOfT1">
             <summary>Sets the shim of Query`2.GetResultList(IQueryable`1&lt;!1&gt; queryable)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.GetResultListInt32Int32">
-            <summary>Sets the shim of Query`2.GetResultList(Int32 pageNumber, Int32 pageSize)</summary>
         </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.GetResultListSizeIQueryableOfT1">
             <summary>Sets the shim of Query`2.GetResultListSize(IQueryable`1&lt;!1&gt; queryable)</summary>
@@ -891,147 +1023,6 @@
         </member>
         <member name="P:Sfa.Core.Data.Fakes.ShimQuery`2.ShouldBeTruncatedGet">
             <summary>Sets the shim of Query`2.get_ShouldBeTruncated()</summary>
-        </member>
-        <member name="T:Sfa.Core.Data.Fakes.ShimResultList`1">
-            <summary>Shim type of Sfa.Core.Data.ResultList`1</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimResultList`1.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimResultList`1.#ctor(Sfa.Core.Data.ResultList{`0})">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="T:Sfa.Core.Data.Fakes.ShimResultList`1.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.AllInstances.CurrentPageGet">
-            <summary>Sets the shim of ResultList`1.get_CurrentPage()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.AllInstances.CurrentPageSetInt32">
-            <summary>Sets the shim of ResultList`1.set_CurrentPage(Int32 value)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.AllInstances.IsPopulatedGet">
-            <summary>Sets the shim of ResultList`1.get_IsPopulated()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.AllInstances.IsPopulatedSetBoolean">
-            <summary>Sets the shim of ResultList`1.set_IsPopulated(Boolean value)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.AllInstances.IsTruncatedGet">
-            <summary>Sets the shim of ResultList`1.get_IsTruncated()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.AllInstances.IsTruncatedSetBoolean">
-            <summary>Sets the shim of ResultList`1.set_IsTruncated(Boolean value)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.AllInstances.PageSizeGet">
-            <summary>Sets the shim of ResultList`1.get_PageSize()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.AllInstances.PageSizeSetInt32">
-            <summary>Sets the shim of ResultList`1.set_PageSize(Int32 value)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.AllInstances.TotalNumberOfPagesGet">
-            <summary>Sets the shim of ResultList`1.get_TotalNumberOfPages()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.AllInstances.TotalNumberOfPagesSetInt32">
-            <summary>Sets the shim of ResultList`1.set_TotalNumberOfPages(Int32 value)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.AllInstances.TotalNumberOfRecordsGet">
-            <summary>Sets the shim of ResultList`1.get_TotalNumberOfRecords()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.AllInstances.TotalNumberOfRecordsSetInt32">
-            <summary>Sets the shim of ResultList`1.set_TotalNumberOfRecords(Int32 value)</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimResultList`1.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimResultList`1.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimResultList`1.Bind(Sfa.Core.Data.IResultList)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimResultList`1.Bind(Sfa.Core.Data.IResultList{`0})">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimResultList`1.Bind(System.Collections.ICollection)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimResultList`1.Bind(System.Collections.IEnumerable)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimResultList`1.Bind(System.Collections.IList)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimResultList`1.Bind(System.Collections.Generic.ICollection{`0})">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimResultList`1.Bind(System.Collections.Generic.IEnumerable{`0})">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimResultList`1.Bind(System.Collections.Generic.IList{`0})">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimResultList`1.Bind(System.Collections.Generic.IReadOnlyCollection{`0})">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.ShimResultList`1.Bind(System.Collections.Generic.IReadOnlyList{`0})">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.Constructor">
-            <summary>Sets the shim of ResultList`1.ResultList`1()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.ConstructorIEnumerableOfT0">
-            <summary>Sets the shim of ResultList`1.ResultList`1(IEnumerable`1&lt;!0&gt; list)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.ConstructorIEnumerableOfT0Boolean">
-            <summary>Sets the shim of ResultList`1.ResultList`1(IEnumerable`1&lt;!0&gt; list, Boolean truncated)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.ConstructorIEnumerableOfT0BooleanBoolean">
-            <summary>Sets the shim of ResultList`1.ResultList`1(IEnumerable`1&lt;!0&gt; list, Boolean truncated, Boolean populated)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.ConstructorIEnumerableOfT0BooleanInt32Int32Int32Int32">
-            <summary>Sets the shim of ResultList`1.ResultList`1(IEnumerable`1&lt;!0&gt; list, Boolean truncated, Int32 totalNumberOfRecords, Int32 totalNumberOfPages, Int32 pageSize, Int32 currentPage)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.ConstructorT0">
-            <summary>Sets the shim of ResultList`1.ResultList`1(!0 obj)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.CurrentPageGet">
-            <summary>Sets the shim of ResultList`1.get_CurrentPage()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.CurrentPageSetInt32">
-            <summary>Sets the shim of ResultList`1.set_CurrentPage(Int32 value)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.IsPopulatedGet">
-            <summary>Sets the shim of ResultList`1.get_IsPopulated()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.IsPopulatedSetBoolean">
-            <summary>Sets the shim of ResultList`1.set_IsPopulated(Boolean value)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.IsTruncatedGet">
-            <summary>Sets the shim of ResultList`1.get_IsTruncated()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.IsTruncatedSetBoolean">
-            <summary>Sets the shim of ResultList`1.set_IsTruncated(Boolean value)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.PageSizeGet">
-            <summary>Sets the shim of ResultList`1.get_PageSize()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.PageSizeSetInt32">
-            <summary>Sets the shim of ResultList`1.set_PageSize(Int32 value)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.TotalNumberOfPagesGet">
-            <summary>Sets the shim of ResultList`1.get_TotalNumberOfPages()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.TotalNumberOfPagesSetInt32">
-            <summary>Sets the shim of ResultList`1.set_TotalNumberOfPages(Int32 value)</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.TotalNumberOfRecordsGet">
-            <summary>Sets the shim of ResultList`1.get_TotalNumberOfRecords()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.ShimResultList`1.TotalNumberOfRecordsSetInt32">
-            <summary>Sets the shim of ResultList`1.set_TotalNumberOfRecords(Int32 value)</summary>
         </member>
         <member name="T:Sfa.Core.Data.Fakes.StubAsyncCommand`2">
             <summary>Stub type of Sfa.Core.Data.AsyncCommand`2</summary>
@@ -1291,6 +1282,102 @@
         <member name="M:Sfa.Core.Data.Fakes.StubIMaxEntityId.Sfa#Core#Data#IMaxEntityId#GetMaxId``2">
             <summary>Sets the stub of IMaxEntityId.GetMaxId()</summary>
         </member>
+        <member name="T:Sfa.Core.Data.Fakes.StubIPagedEnumerable">
+            <summary>Stub type of Sfa.Core.Data.IPagedEnumerable</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.StubIPagedEnumerable.#ctor">
+            <summary>Initializes a new instance of type StubIPagedEnumerable</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubIPagedEnumerable.Sfa#Core#Data#IPagedEnumerable#CurrentPage">
+            <summary>Sets the stub of IPagedEnumerable.get_CurrentPage()</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubIPagedEnumerable.CurrentPageGet">
+            <summary>Sets the stub of IPagedEnumerable.get_CurrentPage()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubIPagedEnumerable.Sfa#Core#Data#IPagedEnumerable#IsPopulated">
+            <summary>Sets the stub of IPagedEnumerable.get_IsPopulated()</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubIPagedEnumerable.IsPopulatedGet">
+            <summary>Sets the stub of IPagedEnumerable.get_IsPopulated()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubIPagedEnumerable.Sfa#Core#Data#IPagedEnumerable#IsTruncated">
+            <summary>Sets the stub of IPagedEnumerable.get_IsTruncated()</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubIPagedEnumerable.IsTruncatedGet">
+            <summary>Sets the stub of IPagedEnumerable.get_IsTruncated()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubIPagedEnumerable.Sfa#Core#Data#IPagedEnumerable#PageSize">
+            <summary>Sets the stub of IPagedEnumerable.get_PageSize()</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubIPagedEnumerable.PageSizeGet">
+            <summary>Sets the stub of IPagedEnumerable.get_PageSize()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubIPagedEnumerable.Sfa#Core#Data#IPagedEnumerable#TotalNumberOfPages">
+            <summary>Sets the stub of IPagedEnumerable.get_TotalNumberOfPages()</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubIPagedEnumerable.TotalNumberOfPagesGet">
+            <summary>Sets the stub of IPagedEnumerable.get_TotalNumberOfPages()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubIPagedEnumerable.Sfa#Core#Data#IPagedEnumerable#TotalNumberOfRecords">
+            <summary>Sets the stub of IPagedEnumerable.get_TotalNumberOfRecords()</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubIPagedEnumerable.TotalNumberOfRecordsGet">
+            <summary>Sets the stub of IPagedEnumerable.get_TotalNumberOfRecords()</summary>
+        </member>
+        <member name="T:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1">
+            <summary>Stub type of Sfa.Core.Data.IPagedEnumerable`1</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.#ctor">
+            <summary>Initializes a new instance of type StubIPagedEnumerable</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.Sfa#Core#Data#IPagedEnumerable#CurrentPage">
+            <summary>Sets the stub of IPagedEnumerable.get_CurrentPage()</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.CurrentPageGet">
+            <summary>Sets the stub of IPagedEnumerable.get_CurrentPage()</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.GetEnumerator">
+            <summary>Sets the stub of IEnumerable`1.GetEnumerator()</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.GetEnumerator01">
+            <summary>Sets the stub of IEnumerable.GetEnumerator()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.Sfa#Core#Data#IPagedEnumerable#IsPopulated">
+            <summary>Sets the stub of IPagedEnumerable.get_IsPopulated()</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.IsPopulatedGet">
+            <summary>Sets the stub of IPagedEnumerable.get_IsPopulated()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.Sfa#Core#Data#IPagedEnumerable#IsTruncated">
+            <summary>Sets the stub of IPagedEnumerable.get_IsTruncated()</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.IsTruncatedGet">
+            <summary>Sets the stub of IPagedEnumerable.get_IsTruncated()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.Sfa#Core#Data#IPagedEnumerable#PageSize">
+            <summary>Sets the stub of IPagedEnumerable.get_PageSize()</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.PageSizeGet">
+            <summary>Sets the stub of IPagedEnumerable.get_PageSize()</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+            <summary>Sets the stub of IEnumerable`1.GetEnumerator()</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>Sets the stub of IEnumerable.GetEnumerator()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.Sfa#Core#Data#IPagedEnumerable#TotalNumberOfPages">
+            <summary>Sets the stub of IPagedEnumerable.get_TotalNumberOfPages()</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.TotalNumberOfPagesGet">
+            <summary>Sets the stub of IPagedEnumerable.get_TotalNumberOfPages()</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.Sfa#Core#Data#IPagedEnumerable#TotalNumberOfRecords">
+            <summary>Sets the stub of IPagedEnumerable.get_TotalNumberOfRecords()</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubIPagedEnumerable`1.TotalNumberOfRecordsGet">
+            <summary>Sets the stub of IPagedEnumerable.get_TotalNumberOfRecords()</summary>
+        </member>
         <member name="T:Sfa.Core.Data.Fakes.StubIProjection">
             <summary>Stub type of Sfa.Core.Data.IProjection</summary>
         </member>
@@ -1312,8 +1399,8 @@
         <member name="F:Sfa.Core.Data.Fakes.StubIQuery`1.GetList">
             <summary>Sets the stub of IQuery`1.GetList()</summary>
         </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIQuery`1.GetResultListInt32Int32">
-            <summary>Sets the stub of IQuery`1.GetResultList(Int32 pageNumber, Int32 pageSize)</summary>
+        <member name="F:Sfa.Core.Data.Fakes.StubIQuery`1.GetPagedListInt32Int32">
+            <summary>Sets the stub of IQuery`1.GetPagedList(Int32 pageNumber, Int32 pageSize)</summary>
         </member>
         <member name="F:Sfa.Core.Data.Fakes.StubIQuery`1.GetSingle">
             <summary>Sets the stub of IQuery`1.GetSingle()</summary>
@@ -1330,8 +1417,8 @@
         <member name="M:Sfa.Core.Data.Fakes.StubIQuery`1.Sfa#Core#Data#IQuery{T}#GetList">
             <summary>Sets the stub of IQuery`1.GetList()</summary>
         </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubIQuery`1.Sfa#Core#Data#IQuery{T}#GetResultList(System.Int32,System.Int32)">
-            <summary>Sets the stub of IQuery`1.GetResultList(Int32 pageNumber, Int32 pageSize)</summary>
+        <member name="M:Sfa.Core.Data.Fakes.StubIQuery`1.Sfa#Core#Data#IQuery{T}#GetPagedList(System.Int32,System.Int32)">
+            <summary>Sets the stub of IQuery`1.GetPagedList(Int32 pageNumber, Int32 pageSize)</summary>
         </member>
         <member name="M:Sfa.Core.Data.Fakes.StubIQuery`1.Sfa#Core#Data#IQuery{T}#GetSingle">
             <summary>Sets the stub of IQuery`1.GetSingle()</summary>
@@ -1405,102 +1492,6 @@
         <member name="M:Sfa.Core.Data.Fakes.StubIRepository.UpdateOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,``0})">
             <summary>Sets stubs of Update(!!0 entity)</summary>
         </member>
-        <member name="T:Sfa.Core.Data.Fakes.StubIResultList">
-            <summary>Stub type of Sfa.Core.Data.IResultList</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubIResultList.#ctor">
-            <summary>Initializes a new instance of type StubIResultList</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubIResultList.Sfa#Core#Data#IResultList#CurrentPage">
-            <summary>Sets the stub of IResultList.get_CurrentPage()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIResultList.CurrentPageGet">
-            <summary>Sets the stub of IResultList.get_CurrentPage()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubIResultList.Sfa#Core#Data#IResultList#IsPopulated">
-            <summary>Sets the stub of IResultList.get_IsPopulated()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIResultList.IsPopulatedGet">
-            <summary>Sets the stub of IResultList.get_IsPopulated()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubIResultList.Sfa#Core#Data#IResultList#IsTruncated">
-            <summary>Sets the stub of IResultList.get_IsTruncated()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIResultList.IsTruncatedGet">
-            <summary>Sets the stub of IResultList.get_IsTruncated()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubIResultList.Sfa#Core#Data#IResultList#PageSize">
-            <summary>Sets the stub of IResultList.get_PageSize()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIResultList.PageSizeGet">
-            <summary>Sets the stub of IResultList.get_PageSize()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubIResultList.Sfa#Core#Data#IResultList#TotalNumberOfPages">
-            <summary>Sets the stub of IResultList.get_TotalNumberOfPages()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIResultList.TotalNumberOfPagesGet">
-            <summary>Sets the stub of IResultList.get_TotalNumberOfPages()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubIResultList.Sfa#Core#Data#IResultList#TotalNumberOfRecords">
-            <summary>Sets the stub of IResultList.get_TotalNumberOfRecords()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIResultList.TotalNumberOfRecordsGet">
-            <summary>Sets the stub of IResultList.get_TotalNumberOfRecords()</summary>
-        </member>
-        <member name="T:Sfa.Core.Data.Fakes.StubIResultList`1">
-            <summary>Stub type of Sfa.Core.Data.IResultList`1</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubIResultList`1.#ctor">
-            <summary>Initializes a new instance of type StubIResultList</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubIResultList`1.Sfa#Core#Data#IResultList#CurrentPage">
-            <summary>Sets the stub of IResultList.get_CurrentPage()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIResultList`1.CurrentPageGet">
-            <summary>Sets the stub of IResultList.get_CurrentPage()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIResultList`1.GetEnumerator">
-            <summary>Sets the stub of IEnumerable`1.GetEnumerator()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIResultList`1.GetEnumerator01">
-            <summary>Sets the stub of IEnumerable.GetEnumerator()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubIResultList`1.Sfa#Core#Data#IResultList#IsPopulated">
-            <summary>Sets the stub of IResultList.get_IsPopulated()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIResultList`1.IsPopulatedGet">
-            <summary>Sets the stub of IResultList.get_IsPopulated()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubIResultList`1.Sfa#Core#Data#IResultList#IsTruncated">
-            <summary>Sets the stub of IResultList.get_IsTruncated()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIResultList`1.IsTruncatedGet">
-            <summary>Sets the stub of IResultList.get_IsTruncated()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubIResultList`1.Sfa#Core#Data#IResultList#PageSize">
-            <summary>Sets the stub of IResultList.get_PageSize()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIResultList`1.PageSizeGet">
-            <summary>Sets the stub of IResultList.get_PageSize()</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubIResultList`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
-            <summary>Sets the stub of IEnumerable`1.GetEnumerator()</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubIResultList`1.System#Collections#IEnumerable#GetEnumerator">
-            <summary>Sets the stub of IEnumerable.GetEnumerator()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubIResultList`1.Sfa#Core#Data#IResultList#TotalNumberOfPages">
-            <summary>Sets the stub of IResultList.get_TotalNumberOfPages()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIResultList`1.TotalNumberOfPagesGet">
-            <summary>Sets the stub of IResultList.get_TotalNumberOfPages()</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubIResultList`1.Sfa#Core#Data#IResultList#TotalNumberOfRecords">
-            <summary>Sets the stub of IResultList.get_TotalNumberOfRecords()</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubIResultList`1.TotalNumberOfRecordsGet">
-            <summary>Sets the stub of IResultList.get_TotalNumberOfRecords()</summary>
-        </member>
         <member name="T:Sfa.Core.Data.Fakes.StubITransactional">
             <summary>Stub type of Sfa.Core.Data.ITransactional</summary>
         </member>
@@ -1530,6 +1521,30 @@
         </member>
         <member name="M:Sfa.Core.Data.Fakes.StubITransactional.Sfa#Core#Data#ITransactional#RollbackTransaction">
             <summary>Sets the stub of ITransactional.RollbackTransaction()</summary>
+        </member>
+        <member name="T:Sfa.Core.Data.Fakes.StubPagedList`1">
+            <summary>Stub type of Sfa.Core.Data.PagedList`1</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.StubPagedList`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.StubPagedList`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.StubPagedList`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubPagedList`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Sfa.Core.Data.Fakes.StubPagedList`1.InitializeStub">
+            <summary>Initializes a new instance of type StubPagedList</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubPagedList`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Sfa.Core.Data.Fakes.StubPagedList`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
         </member>
         <member name="T:Sfa.Core.Data.Fakes.StubQuery`2">
             <summary>Stub type of Sfa.Core.Data.Query`2</summary>
@@ -1582,17 +1597,17 @@
         <member name="F:Sfa.Core.Data.Fakes.StubQuery`2.GetList01">
             <summary>Sets the stub of Query`2.GetList()</summary>
         </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubQuery`2.GetResultList(System.Int32,System.Int32)">
-            <summary>Sets the stub of Query`2.GetResultList(Int32 pageNumber, Int32 pageSize)</summary>
+        <member name="M:Sfa.Core.Data.Fakes.StubQuery`2.GetPagedList(System.Int32,System.Int32)">
+            <summary>Sets the stub of Query`2.GetPagedList(Int32 pageNumber, Int32 pageSize)</summary>
+        </member>
+        <member name="F:Sfa.Core.Data.Fakes.StubQuery`2.GetPagedListInt32Int32">
+            <summary>Sets the stub of Query`2.GetPagedList(Int32 pageNumber, Int32 pageSize)</summary>
         </member>
         <member name="M:Sfa.Core.Data.Fakes.StubQuery`2.GetResultList(System.Linq.IQueryable{`1})">
             <summary>Sets the stub of Query`2.GetResultList(IQueryable`1&lt;!1&gt; queryable)</summary>
         </member>
         <member name="F:Sfa.Core.Data.Fakes.StubQuery`2.GetResultListIQueryableOfT1">
             <summary>Sets the stub of Query`2.GetResultList(IQueryable`1&lt;!1&gt; queryable)</summary>
-        </member>
-        <member name="F:Sfa.Core.Data.Fakes.StubQuery`2.GetResultListInt32Int32">
-            <summary>Sets the stub of Query`2.GetResultList(Int32 pageNumber, Int32 pageSize)</summary>
         </member>
         <member name="M:Sfa.Core.Data.Fakes.StubQuery`2.GetResultListSize(System.Linq.IQueryable{`1})">
             <summary>Sets the stub of Query`2.GetResultListSize(IQueryable`1&lt;!1&gt; queryable)</summary>
@@ -1626,39 +1641,6 @@
         </member>
         <member name="F:Sfa.Core.Data.Fakes.StubQuery`2.QueryableGet">
             <summary>Sets the stub of Query`2.get_Queryable()</summary>
-        </member>
-        <member name="T:Sfa.Core.Data.Fakes.StubResultList`1">
-            <summary>Stub type of Sfa.Core.Data.ResultList`1</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubResultList`1.#ctor">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubResultList`1.#ctor(`0)">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubResultList`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubResultList`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Boolean)">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubResultList`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Boolean,System.Boolean)">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubResultList`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubResultList`1.CallBase">
-            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
-        </member>
-        <member name="M:Sfa.Core.Data.Fakes.StubResultList`1.InitializeStub">
-            <summary>Initializes a new instance of type StubResultList</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubResultList`1.InstanceBehavior">
-            <summary>Gets or sets the instance behavior.</summary>
-        </member>
-        <member name="P:Sfa.Core.Data.Fakes.StubResultList`1.InstanceObserver">
-            <summary>Gets or sets the instance observer.</summary>
         </member>
         <member name="T:Sfa.Core.Diagnostics.Fakes.ShimDebugTextWriter">
             <summary>Shim type of Sfa.Core.Diagnostics.DebugTextWriter</summary>

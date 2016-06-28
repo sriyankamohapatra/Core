@@ -3,10 +3,10 @@
 namespace Sfa.Core.Data
 {
     /// <summary>
-    /// Default implementation of <see cref="IResultList{T}"/>.
+    /// Default implementation of <see cref="IPagedEnumerable{T}"/>.
     /// </summary>
     /// <typeparam name="T">The type of items in the list.</typeparam>
-    public class ResultList<T> : List<T>, IResultList<T>
+    public class PagedList<T> : List<T>, IPagedEnumerable<T>
     {
         #region Properties
 
@@ -53,37 +53,27 @@ namespace Sfa.Core.Data
 
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ResultList&lt;T&gt;"/> class.
+        /// Initializes a new instance of the <see cref="PagedList{T}"/> class.
         /// </summary>
-        public ResultList()
+        public PagedList()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ResultList&lt;T&gt;"/> class.
+        /// Initializes a new instance of the <see cref="PagedList{T}"/> class.
         /// </summary>
         /// <param name="list">The list that is wrapped by the new collection.</param>
         /// <exception cref="T:System.ArgumentNullException">list is null.</exception>
-        public ResultList(IEnumerable<T> list)
+        public PagedList(IEnumerable<T> list)
             : base(list)
         {
             IsPopulated = true;
+            TotalNumberOfRecords = Count;
+            TotalNumberOfPages = 1;
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ResultList&lt;T&gt;"/> class.
-        /// </summary>
-        /// <param name="list">The list.</param>
-        /// <param name="truncated">if set to <c>true</c> [truncated].</param>
-        public ResultList(IEnumerable<T> list, bool truncated)
-            : base(list)
-        {
-            IsPopulated = true;
-            IsTruncated = truncated;
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ResultList&lt;T&gt;"/> class.
+        /// Initializes a new instance of the <see cref="PagedList{T}"/> class.
         /// </summary>
         /// <param name="list">The list.</param>
         /// <param name="truncated">if set to <c>true</c> [truncated].</param>
@@ -91,38 +81,15 @@ namespace Sfa.Core.Data
         /// <param name="totalNumberOfPages">the total number of pages</param>
         /// <param name="pageSize">The requested page size.</param>
         /// <param name="currentPage">The current page if paging was requested.</param>
-        public ResultList(IEnumerable<T> list, bool truncated, int totalNumberOfRecords, int totalNumberOfPages, int pageSize, int currentPage)
+        public PagedList(IEnumerable<T> list, int totalNumberOfRecords, int totalNumberOfPages, int pageSize, int currentPage)
             : base(list)
         {
             IsPopulated = true;
-            IsTruncated = truncated;
+            IsTruncated = Count < totalNumberOfRecords;
             TotalNumberOfRecords = totalNumberOfRecords;
             TotalNumberOfPages = totalNumberOfPages;
             PageSize = pageSize;
             CurrentPage = currentPage;
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ResultList&lt;T&gt;"/> class.
-        /// </summary>
-        /// <param name="obj">The instance to add.</param>
-        public ResultList(T obj)
-        {
-            IsPopulated = true;
-            Add(obj);
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ResultList&lt;T&gt;"/> class.
-        /// </summary>
-        /// <param name="list">The list</param>
-        /// <param name="truncated">if set to <c>true</c> [truncated].</param>
-        /// <param name="populated">if set to <c>true</c> [populated].</param>
-        public ResultList(IEnumerable<T> list, bool truncated, bool populated)
-            : base(list)
-        {
-            IsPopulated = populated;
-            IsTruncated = truncated;
         }
 
         #endregion

@@ -9,10 +9,10 @@ namespace Sfa.Core.Data
     public interface IQuery<T>
     {
         /// <summary>
-        /// Returns a result list from the query.
+        /// Returns a paged list from the query.
         /// </summary>
-        /// <returns>The result list from executing the query.</returns>
-        IResultList<T> GetResultList(int pageNumber, int pageSize);
+        /// <returns>The paged list from executing the query.</returns>
+        IPagedEnumerable<T> GetPagedList(int pageNumber, int pageSize);
 
         /// <summary>
         /// Gets a list of all results from executing the query.

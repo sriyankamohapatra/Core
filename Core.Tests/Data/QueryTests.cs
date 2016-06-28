@@ -122,18 +122,18 @@ namespace Sfa.Core.Data
         #endregion
 
 
-        #region GetResultList
+        #region GetPagedList
 
 
         [TestMethod, TestCategory("Unit")]
-        public void GetResultList_NotPaged()
+        public void GetPagedList_NotPaged()
         {
             // Arrange
             var componentUnderTest = new DefaultQuery();
-            var expected = new ResultList<string>(new[] { "one", "two", "three" }, true, 3, 0, 0, 0);
+            var expected = new PagedList<string>(new[] { "one", "two", "three" }, 3, 0, 0, 0);
 
             // Act
-            var actual = componentUnderTest.GetResultList(0, 0);
+            var actual = componentUnderTest.GetPagedList(0, 0);
 
             // Assert
             actual.ShouldHaveSameValueAs(expected);
@@ -143,14 +143,14 @@ namespace Sfa.Core.Data
 
 
         [TestMethod, TestCategory("Unit")]
-        public void GetResultList_Page1_NoResults()
+        public void GetPagedList_Page1_NoResults()
         {
             // Arrange
             var componentUnderTest = new MatchQuery("xxx");
-            var expected = new ResultList<string>(new string[0], true, 0, 0, 2, 0);
+            var expected = new PagedList<string>(new string[0], 0, 0, 2, 0);
 
             // Act
-            var actual = componentUnderTest.GetResultList(0, 2);
+            var actual = componentUnderTest.GetPagedList(0, 2);
 
             // Assert
             actual.ShouldHaveSameValueAs(expected);
@@ -160,14 +160,14 @@ namespace Sfa.Core.Data
 
 
         [TestMethod, TestCategory("Unit")]
-        public void GetResultList_Page1()
+        public void GetPagedList_Page1()
         {
             // Arrange
             var componentUnderTest = new DefaultQuery();
-            var expected = new ResultList<string>(new[] { "one", "two"}, true, 3, 2, 2, 0);
+            var expected = new PagedList<string>(new[] { "one", "two"}, 3, 2, 2, 0);
 
             // Act
-            var actual = componentUnderTest.GetResultList(0, 2);
+            var actual = componentUnderTest.GetPagedList(0, 2);
 
             // Assert
             actual.ShouldHaveSameValueAs(expected);
@@ -177,14 +177,14 @@ namespace Sfa.Core.Data
 
 
         [TestMethod, TestCategory("Unit")]
-        public void GetResultList_Page2()
+        public void GetPagedList_Page2()
         {
             // Arrange
             var componentUnderTest = new DefaultQuery();
-            var expected = new ResultList<string>(new[] { "three" }, true, 3, 2, 2, 1);
+            var expected = new PagedList<string>(new[] { "three" }, 3, 2, 2, 1);
 
             // Act
-            var actual = componentUnderTest.GetResultList(1, 2);
+            var actual = componentUnderTest.GetPagedList(1, 2);
 
             // Assert
             actual.ShouldHaveSameValueAs(expected);
@@ -194,14 +194,14 @@ namespace Sfa.Core.Data
 
 
         [TestMethod, TestCategory("Unit")]
-        public void GetResultList_Page10of2()
+        public void GetPagedList_Page10of2()
         {
             // Arrange
             var componentUnderTest = new DefaultQuery();
-            var expected = new ResultList<string>(new[] { "three" }, true, 3, 2, 2, 1);
+            var expected = new PagedList<string>(new[] { "three" }, 3, 2, 2, 1);
 
             // Act
-            var actual = componentUnderTest.GetResultList(10, 2);
+            var actual = componentUnderTest.GetPagedList(10, 2);
 
             // Assert
             actual.ShouldHaveSameValueAs(expected);
@@ -425,10 +425,10 @@ namespace Sfa.Core.Data
             var componentUnderTest = new SimplePocoQuery<SimplePocoProjection>();
 
             // Act
-            var actual = componentUnderTest.GetResultList(0, 1);
+            var actual = componentUnderTest.GetPagedList(0, 1);
 
             // Assert
-            actual.ShouldHaveSameValueAs(new ResultList<SimplePocoProjection>(new[]
+            actual.ShouldHaveSameValueAs(new PagedList<SimplePocoProjection>(new[]
             {
                 new SimplePocoProjection
                 {

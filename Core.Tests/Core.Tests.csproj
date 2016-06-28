@@ -87,7 +87,7 @@
     <Compile Include="Data\AsyncCommandTests.cs" />
     <Compile Include="Data\CommandTests.cs" />
     <Compile Include="Data\QueryTests.cs" />
-    <Compile Include="Data\ResultListTests.cs" />
+    <Compile Include="Data\PagedListTests.cs" />
     <Compile Include="Diagnostics\DebugTextWriterTests.cs" />
     <Compile Include="Diagnostics\HealthCheckTests.cs" />
     <Compile Include="EnumAttributeMapsTests.cs" />
