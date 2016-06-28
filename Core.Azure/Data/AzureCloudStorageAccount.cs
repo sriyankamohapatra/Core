@@ -21,8 +21,8 @@ namespace Sfa.Core.Data
 
             if (string.IsNullOrWhiteSpace(connectionString))
             {
-                var message = "No connection string was found to be able to connect to the storage account";
-                ApplicationContext.Logger.Log(LoggingLevel.Error, AzureLoggingCategories.Azure, () => message);
+                const string message = "No connection string was found to be able to connect to the storage account";
+                ApplicationContext.Logger.Log(LoggingLevel.Error, CoreLoggingCategory.Diagnostics, () => message);
                 throw new StorageException(message);
             }
 

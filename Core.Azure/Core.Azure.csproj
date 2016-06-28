@@ -87,7 +87,6 @@
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Data\AzureCloudStorageAccount.cs" />
-    <Compile Include="Logging\AzureLoggingCategories.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
