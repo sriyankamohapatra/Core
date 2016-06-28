@@ -182,10 +182,11 @@ namespace Sfa.Core.Logging
         public void LogException_ShouldNotLog()
         {
             // Arrange
-            var componentUnderTest = new MyLogger("loggingLevels");
+            var componentUnderTest = new MyLogger("loggingEmpty");
+            var exception = new Exception("Test");
 
             // Act
-            componentUnderTest.Log(LoggingLevel.Debug, "", () => "");
+            componentUnderTest.LogException( "", exception);
 
             // Assert
             componentUnderTest.Messages.ShouldHaveSameValueAs(new List<LoggedMessage>());
@@ -200,9 +201,10 @@ namespace Sfa.Core.Logging
                 var componentUnderTest = new MyLogger("loggingLevels");
                 var expected = new DateTime(2000, 1, 2, 1, 2, 3);
                 System.Fakes.ShimDateTime.NowGet = () => expected;
-
+                var exception = new Exception("Test");
+                
                 // Act
-                componentUnderTest.Log(LoggingLevel.Info, "cat1", () => "My Message {0}", "arg1");
+                componentUnderTest.LogException("cat1", exception);
 
                 // Assert
                 componentUnderTest.Messages.ShouldHaveSameValueAs(new[]
@@ -210,11 +212,67 @@ namespace Sfa.Core.Logging
                     new LoggedMessage
                     {
                         Category = "cat1",
-                        Level = LoggingLevel.Info,
-                        Message = "When:02/01/2000 01:02:03 Level:Info Category:cat1 Message:My Message arg1"
+                        Level = LoggingLevel.Error,
+                        Message = "When:02/01/2000 01:02:03 Level:Error Category:cat1 Message:" + exception
                     }
                 });
             }
+        }
+
+        [TestMethod, TestCategory("Unit")]
+        public void LogException_ShouldLog_InnerException()
+        {
+            using (ShimsContext.Create())
+            {
+                // Arrange
+                var componentUnderTest = new MyLogger("loggingLevels");
+                var expected = new DateTime(2000, 1, 2, 1, 2, 3);
+                System.Fakes.ShimDateTime.NowGet = () => expected;
+                var exception = new Exception("Test");
+                var aggregateException = new AggregateException(exception);
+
+                // Act
+                componentUnderTest.LogException("cat1", aggregateException);
+
+                // Assert
+                componentUnderTest.Messages.ShouldHaveSameValueAs(new[]
+                {
+                    new LoggedMessage
+                    {
+                        Category = "cat1",
+                        Level = LoggingLevel.Error,
+                        Message = "When:02/01/2000 01:02:03 Level:Error Category:cat1 Message:" + exception
+                    }
+                });
+            }
+        }
+
+        #endregion
+
+
+        #region SetLayout
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void SetLayout()
+        {
+            // Arrange
+            var componentUnderTest = new MyLogger("loggingLevels");
+
+            // Act
+            componentUnderTest.SetLayout((level, category, message) => $"MyLevel:{level} MyCategtory:{category} MyMessage:{message}");
+            componentUnderTest.Log(LoggingLevel.Info, "cat1", () => "My Message {0}", "arg1");
+
+            // Assert
+            componentUnderTest.Messages.ShouldHaveSameValueAs(new[]
+            {
+                new LoggedMessage
+                {
+                    Category = "cat1",
+                    Level = LoggingLevel.Info,
+                    Message = "MyLevel:Info MyCategtory:cat1 MyMessage:My Message arg1"
+                }
+            });
         }
 
         #endregion
