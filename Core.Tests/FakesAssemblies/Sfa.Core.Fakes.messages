@@ -44,7 +44,6 @@ C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : C
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Entities.IEntity`1: type is an interface.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Diagnostics.HealthCheck+<>c: type is not supported because of internal limitations.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Diagnostics.HealthCheck+<>c__DisplayClass3_0: type is not supported because of internal limitations.
-C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Diagnostics.HealthCheck+<>c__DisplayClass4_0: type is not supported because of internal limitations.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.AsyncCommand`2+<AuthoriseAsync>d__8: type is not supported because of internal limitations.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.AsyncCommand`2+<ExecuteAsync>d__9: type is not supported because of internal limitations.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate shim for Sfa.Core.Data.Command`2+<get_PropertiesToIgnoreForToString>d__18: type is not supported because of internal limitations.

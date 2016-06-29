@@ -62,3 +62,6 @@
 /Core.Testing.LumiSoft.Net/obj
 /Core.Testing.LumiSoft.Net/bin
 /TestResults
+/Core.Net.Http/bin/Debug
+/Core.Net.Http/obj/Debug
+/Core.Net.Http/Core.Net.Http.csproj.user

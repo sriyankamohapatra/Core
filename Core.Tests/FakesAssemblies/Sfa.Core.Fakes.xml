@@ -1702,9 +1702,6 @@
         <member name="P:Sfa.Core.Diagnostics.Fakes.ShimHealthCheck.AllInstances.AllPassedGet">
             <summary>Sets the shim of HealthCheck.get_AllPassed()</summary>
         </member>
-        <member name="P:Sfa.Core.Diagnostics.Fakes.ShimHealthCheck.AllInstances.RunHealthCheckServiceTestStringStringString">
-            <summary>Sets the shim of HealthCheck.RunHealthCheckServiceTest(String baseUri, String serviceHealthCheckPath, String name)</summary>
-        </member>
         <member name="P:Sfa.Core.Diagnostics.Fakes.ShimHealthCheck.AllInstances.RunTestActionString">
             <summary>Sets the shim of HealthCheck.RunTest(Action test, String name)</summary>
         </member>
@@ -1722,9 +1719,6 @@
         </member>
         <member name="P:Sfa.Core.Diagnostics.Fakes.ShimHealthCheck.Constructor">
             <summary>Sets the shim of HealthCheck.HealthCheck()</summary>
-        </member>
-        <member name="P:Sfa.Core.Diagnostics.Fakes.ShimHealthCheck.RunHealthCheckServiceTestStringStringString">
-            <summary>Sets the shim of HealthCheck.RunHealthCheckServiceTest(String baseUri, String serviceHealthCheckPath, String name)</summary>
         </member>
         <member name="P:Sfa.Core.Diagnostics.Fakes.ShimHealthCheck.RunTestActionString">
             <summary>Sets the shim of HealthCheck.RunTest(Action test, String name)</summary>

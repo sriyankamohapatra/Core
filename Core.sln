@@ -71,6 +71,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildScripts", "BuildScript
 		BuildScripts\SetVersionNumbers.ps1 = BuildScripts\SetVersionNumbers.ps1
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Net.Http", "Core.Net.Http\Core.Net.Http.csproj", "{F9A72FB3-237A-49F5-BD63-0586B822AD91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{D9DD292F-738D-46FF-9E9A-8004B3095D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9DD292F-738D-46FF-9E9A-8004B3095D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9DD292F-738D-46FF-9E9A-8004B3095D3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A72FB3-237A-49F5-BD63-0586B822AD91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A72FB3-237A-49F5-BD63-0586B822AD91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A72FB3-237A-49F5-BD63-0586B822AD91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A72FB3-237A-49F5-BD63-0586B822AD91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

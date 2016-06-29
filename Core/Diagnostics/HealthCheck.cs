@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using Sfa.Core.Logging;
 using Sfa.Core.Context;
 using System.Linq;
-using System.Net.Http;
-using Sfa.Core.Threading;
 
 namespace Sfa.Core.Diagnostics
 {
@@ -43,29 +41,6 @@ namespace Sfa.Core.Diagnostics
                 ApplicationContext.Logger.LogException(CoreLoggingCategory.HealthCheck, exception);
                 _results.Add(false);
             }
-        }
-
-        /// <summary>
-        /// Run a health check test against another health check service.
-        /// </summary>
-        /// <param name="baseUri">The base uri of the health check service being tested.</param>
-        /// <param name="serviceHealthCheckPath">The path appended to the <paramref name="baseUri"/> of the health check service api call.</param>
-        /// <param name="name">The name of the health check test that gets written to the log.</param>
-        public void RunHealthCheckServiceTest(string baseUri, string serviceHealthCheckPath, string name)
-        {
-            RunTest(() =>
-            {
-                using (var client = new HttpClient())
-                {
-                    client.BaseAddress = new Uri(baseUri);
-                    client.DefaultRequestHeaders.Accept.Clear();
-                    var response = client.GetAsync(new Uri(baseUri + serviceHealthCheckPath)).GetSafeResult();
-                    if (!response.IsSuccessStatusCode)
-                    {
-                        throw new HttpRequestException($"Health check failed with status code {response.StatusCode}, {response.ReasonPhrase}.");
-                    }
-                }
-            }, name);
         }
     }
 }
