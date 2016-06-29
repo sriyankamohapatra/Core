@@ -61,7 +61,7 @@ namespace Sfa.Core.Equality
             public CircularReference Child { get; set; }
 
             public CircularReference Parent { get; set; }
-            
+
             public string MyString { get; set; }
 
             public CircularReference OtheReference { get; set; }
@@ -96,6 +96,11 @@ namespace Sfa.Core.Equality
             {
                 return lhsField is SimplePoco && rhsField is SimplePoco;
             }
+        }
+
+        public class GenericType<T>
+        {
+            public T Instance { get; set; }
         }
 
         #endregion
@@ -467,14 +472,14 @@ namespace Sfa.Core.Equality
             // Arrange
             var componentUnderTest = new FieldValueEqualityComparer();
             FieldValueEqualityComparer.SetAssembliesWithTypesToUseValueSemanticsOn(new[] { typeof(SimplePoco).Assembly });
-            var simplePoco = new SimplePoco {MyInt = 23};
+            var simplePoco = new SimplePoco { MyInt = 23 };
 
             // Act
             var actual = componentUnderTest.Equals(new ComplexPoco
             {
                 MyInt = 1,
-                MyStrings = new[] {"1", "2"},
-                SimplePocoArray = new[] {new SimplePoco(), simplePoco },
+                MyStrings = new[] { "1", "2" },
+                SimplePocoArray = new[] { new SimplePoco(), simplePoco },
                 SimplePocoDictionary = new Dictionary<string, SimplePoco>
                 {
                     {"1", new SimplePoco {MyString = "test"}},
@@ -484,7 +489,7 @@ namespace Sfa.Core.Equality
             }, new ComplexPoco
             {
                 MyInt = 1,
-                MyStrings = new[] {"1", "2"},
+                MyStrings = new[] { "1", "2" },
                 SimplePocoArray = new[] { new SimplePoco(), simplePoco },
                 SimplePocoDictionary = new Dictionary<string, SimplePoco>
                 {
@@ -567,7 +572,7 @@ namespace Sfa.Core.Equality
             var componentUnderTest = new FieldValueEqualityComparer();
             FieldValueEqualityComparer.SetAssembliesWithTypesToUseValueSemanticsOn(new[] { typeof(SimplePoco).Assembly });
 
-            var strings = new[] {"1", "2"};
+            var strings = new[] { "1", "2" };
 
             // Act
             var actual = componentUnderTest.Equals(new ComplexPoco
@@ -710,6 +715,157 @@ namespace Sfa.Core.Equality
 
 
         [TestMethod, TestCategory("Unit")]
+        public void Equals_True_ComplexPoco_InDictionary()
+        {
+            // Arrange
+            var componentUnderTest = new FieldValueEqualityComparer();
+            FieldValueEqualityComparer.SetAssembliesWithTypesToUseValueSemanticsOn(new[] { typeof(SimplePoco).Assembly });
+
+            var lhs = new Dictionary<string, ComplexPoco>
+            {
+                {"a", new ComplexPoco()},
+                {"b", new ComplexPoco()}
+            };
+            var rhs = new Dictionary<string, ComplexPoco>
+            {
+                {"a", new ComplexPoco()},
+                {"b", new ComplexPoco()}
+            };
+
+            // Act
+            var actual = componentUnderTest.Equals(lhs, rhs);
+
+            // Assert
+            Assert.AreEqual(true, actual);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void Equals_False_ComplexPoco_InDictionary_ValuesDifferent()
+        {
+            // Arrange
+            var componentUnderTest = new FieldValueEqualityComparer();
+            FieldValueEqualityComparer.SetAssembliesWithTypesToUseValueSemanticsOn(new[] { typeof(SimplePoco).Assembly });
+
+            var lhs = new Dictionary<string, ComplexPoco>
+            {
+                {"a", new ComplexPoco()},
+                {"b", new ComplexPoco {MyInt = 1} }
+            };
+            var rhs = new Dictionary<string, ComplexPoco>
+            {
+                {"a", new ComplexPoco()},
+                {"b", new ComplexPoco{MyInt = 2}}
+            };
+
+            // Act
+            var actual = componentUnderTest.Equals(lhs, rhs);
+
+            // Assert
+            Assert.AreEqual(false, actual);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void Equals_False_ComplexPoco_InDictionary_KeysDifferent()
+        {
+            // Arrange
+            var componentUnderTest = new FieldValueEqualityComparer();
+            FieldValueEqualityComparer.SetAssembliesWithTypesToUseValueSemanticsOn(new[] { typeof(SimplePoco).Assembly });
+
+            var lhs = new Dictionary<string, ComplexPoco>
+            {
+                {"a", new ComplexPoco()},
+                {"b", new ComplexPoco()}
+            };
+            var rhs = new Dictionary<string, ComplexPoco>
+            {
+                {"a", new ComplexPoco()},
+                {"c", new ComplexPoco()}
+            };
+
+            // Act
+            var actual = componentUnderTest.Equals(lhs, rhs);
+
+            // Assert
+            Assert.AreEqual(false, actual);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void Equals_False_ComplexPoco_InDictionary_RhsNull()
+        {
+            // Arrange
+            var componentUnderTest = new FieldValueEqualityComparer();
+            FieldValueEqualityComparer.SetAssembliesWithTypesToUseValueSemanticsOn(new[] { typeof(SimplePoco).Assembly });
+
+            var lhs = new Dictionary<string, ComplexPoco>
+            {
+                {"a", new ComplexPoco()},
+                {"b", new ComplexPoco()}
+            };
+
+            // Act
+            var actual = componentUnderTest.Equals(lhs, null);
+
+            // Assert
+            Assert.AreEqual(false, actual);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void Equals_True_ComplexPoco_InList()
+        {
+            // Arrange
+            var componentUnderTest = new FieldValueEqualityComparer();
+            FieldValueEqualityComparer.SetAssembliesWithTypesToUseValueSemanticsOn(new[] { typeof(SimplePoco).Assembly });
+
+            var lhs = new List<ComplexPoco>
+            {
+                new ComplexPoco(),
+                new ComplexPoco()
+            };
+            var rhs = new List <ComplexPoco>
+            {
+                new ComplexPoco(),
+                new ComplexPoco()
+            };
+
+            // Act
+            var actual = componentUnderTest.Equals(lhs, rhs);
+
+            // Assert
+            Assert.AreEqual(true, actual);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void Equals_False_ComplexPoco_InList_ValuesDifferent()
+        {
+            // Arrange
+            var componentUnderTest = new FieldValueEqualityComparer();
+            FieldValueEqualityComparer.SetAssembliesWithTypesToUseValueSemanticsOn(new[] { typeof(SimplePoco).Assembly });
+
+            var lhs = new List<ComplexPoco>
+            {
+                new ComplexPoco(),
+                new ComplexPoco { MyInt = 1}
+            };
+            var rhs = new List<ComplexPoco>
+            {
+                new ComplexPoco(),
+                new ComplexPoco { MyInt = 2}
+            };
+
+            // Act
+            var actual = componentUnderTest.Equals(lhs, rhs);
+
+            // Assert
+            Assert.AreEqual(false, actual);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
         public void Equals_False_ComplexPoco_DictionaryNotEqual_NullDictionary_Lhs()
         {
             // Arrange
@@ -750,6 +906,33 @@ namespace Sfa.Core.Equality
             }, new ComplexPoco
             {
                 SimplePocoDictionary = null
+            });
+
+            // Assert
+            Assert.AreEqual(false, actual);
+        }
+
+
+        [TestMethod, TestCategory("Unit")]
+        public void Equals_True_ComplexPoco_DictionaryNotEqual()
+        {
+            // Arrange
+            var componentUnderTest = new FieldValueEqualityComparer();
+            FieldValueEqualityComparer.SetAssembliesWithTypesToUseValueSemanticsOn(new[] { typeof(SimplePoco).Assembly });
+
+            // Act
+            var actual = componentUnderTest.Equals(new ComplexPoco
+            {
+                SimplePocoDictionary = new Dictionary<string, SimplePoco>
+                {
+                    {"1", new SimplePoco() }
+                }
+            }, new ComplexPoco
+            {
+                SimplePocoDictionary = new Dictionary<string, SimplePoco>
+                {
+                    {"2", new SimplePoco() }
+                }
             });
 
             // Assert
@@ -875,6 +1058,39 @@ namespace Sfa.Core.Equality
 
             // Assert
             Assert.AreEqual(false, actual);
+        }
+
+        #endregion
+
+
+        #region Generic Types
+
+        [TestMethod, TestCategory("Unit")]
+        public void Equals_False_GenericType_ComplexPoco()
+        {
+            // Arrange
+            var componentUnderTest = new FieldValueEqualityComparer();
+            FieldValueEqualityComparer.SetAssembliesWithTypesToUseValueSemanticsOn(new[] { typeof(SimplePoco).Assembly });
+
+            // Act
+            var actual = componentUnderTest.Equals(
+                new GenericType<ComplexPoco>
+                {
+                    Instance = new ComplexPoco
+                    {
+                        MyStrings = new[] { "1", "2" }
+                    }
+                },
+                new GenericType<ComplexPoco>
+                {
+                    Instance = new ComplexPoco
+                    {
+                        MyStrings = new[] { "1", "2" }
+                    }
+                });
+
+            // Assert
+            Assert.AreEqual(true, actual);
         }
 
         #endregion
