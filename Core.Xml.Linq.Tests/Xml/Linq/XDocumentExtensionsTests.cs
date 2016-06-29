@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Xml.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sfa.Core.Testing;
@@ -136,11 +137,19 @@ namespace Sfa.Core.Xml.Linq
   <Element Attribute=""blah"">Value</Element>
   <Element Attribute=""blah"">Value</Element>
 </testLargeObject>";
- 
+
         #endregion
 
 
         #region LowerCaseAllElementNames
+
+        [TestMethod, TestCategory("Unit")]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void LowerCaseAllElementNames_NullPassed()
+        {
+            // Act
+            XDocumentExtensions.LowerCaseAllElementNames(null);
+        }
 
         [TestMethod, TestCategory("Unit")]
         public void XmlLowerCaseNameExt_Success()
@@ -163,6 +172,14 @@ namespace Sfa.Core.Xml.Linq
         #region LowerCaseAllAttributeNames
 
         [TestMethod, TestCategory("Unit")]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void LowerCaseAllAttributeNames_NullPassed()
+        {
+            // Act
+            XDocumentExtensions.LowerCaseAllAttributeNames(null);
+        }
+
+        [TestMethod, TestCategory("Unit")]
         public void LowerCaseAllAttributeNames()
         {
             // Arrange
@@ -183,6 +200,14 @@ namespace Sfa.Core.Xml.Linq
         #region LowerCaseAllElementAndAttributeNames
 
         [TestMethod, TestCategory("Unit")]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void LowerCaseAllElementAndAttributeNames_NullPassed()
+        {
+            // Act
+            XDocumentExtensions.LowerCaseAllElementAndAttributeNames(null);
+        }
+
+        [TestMethod, TestCategory("Unit")]
         public void LowerCaseAllElementAndAttributeNames()
         {
             // Arrange
@@ -198,8 +223,7 @@ namespace Sfa.Core.Xml.Linq
         }
 
         #endregion
-
-
+        
 
         #region LowerCasePerformance
 
@@ -220,5 +244,32 @@ namespace Sfa.Core.Xml.Linq
 
         #endregion
 
+
+        #region CopyWithoutNamespaces
+
+        [TestMethod, TestCategory("Unit")]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void CopyWithoutNamespaces_NullPassed()
+        {
+            // Act
+            XDocumentExtensions.CopyWithoutNamespaces(null);
+        }
+
+        [TestMethod, TestCategory("Unit")]
+        public void CopyWithoutNamespaces()
+        {
+            // Arrange
+            var xml = "<xml xmlns:xs=\"www.madeup.com\"><xs:parent><xs:child attr1=\"some value\"/></xs:parent></xml>";
+            var expected = "<xml><parent><child attr1=\"some value\"></child></parent></xml>";
+            var doc = XDocument.Parse(xml);
+
+            // Act
+            var actual = doc.CopyWithoutNamespaces().ToString(SaveOptions.DisableFormatting);
+
+            // Assert
+            actual.ShouldHaveSameValueAs(expected);
+        }
+
+        #endregion
     }
 }

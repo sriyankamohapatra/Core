@@ -14,7 +14,7 @@ namespace Sfa.Core.Xml.Linq
         /// </summary>
         /// <param name="element">The element to remove namespaces from.</param>
         /// <returns>A new instance with all namespaces removed.</returns>
-        public static XElement CloneAndRemoveAllNamespaces(this XElement element)
+        public static XElement CopyWithoutNamespaces(this XElement element)
         {
             if (element == null)
             {
@@ -26,32 +26,45 @@ namespace Sfa.Core.Xml.Linq
                 var xElement = new XElement(element.Name.LocalName) { Value = element.Value };
 
                 foreach (var attribute in element.Attributes())
+                {
                     xElement.Add(attribute);
+                }
 
                 return xElement;
             }
-            return new XElement(element.Name.LocalName, element.Elements().Select(CloneAndRemoveAllNamespaces));
+            return new XElement(element.Name.LocalName, element.Elements().Select(CopyWithoutNamespaces));
         }
 
         /// <summary>
         /// Lower case the element name of the current element and all its child elements.
         /// </summary>
-        public static void LowerCaseAllElementNames(this XElement xElement)
+        public static XElement LowerCaseAllElementNames(this XElement xElement)
         {
+            if (xElement == null)
+            {
+                throw new ArgumentNullException(nameof(xElement));
+            }
+
             xElement.Name = xElement.Name.ToString().ToLower();
 
             foreach (var element in xElement.Elements())
             {
                 element.LowerCaseAllElementNames();
             }
+
+            return xElement;
         }
 
         /// <summary>
         /// Lower case the element name of the current element and all its child elements.
         /// </summary>
-        public static void LowerCaseAllAttributeNames(this XElement xElement)
+        public static XElement LowerCaseAllAttributeNames(this XElement xElement)
         {
-    
+            if (xElement == null)
+            {
+                throw new ArgumentNullException(nameof(xElement));
+            }
+
             // Replacing attributes here as XAttribute.Name has no setter.
             foreach (var attribute in xElement.Attributes())
             {
@@ -67,6 +80,8 @@ namespace Sfa.Core.Xml.Linq
             {
                 element.LowerCaseAllAttributeNames();
             }
+
+            return xElement;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Xml.Linq;
+﻿using System;
+using System.Xml.Linq;
 
 namespace Sfa.Core.Xml.Linq
 {
@@ -10,13 +11,18 @@ namespace Sfa.Core.Xml.Linq
         /// <summary>
         /// Parses the xml string into a new <see cref="XDocument"/> with all namespaces removed if specified within the xml string.
         /// </summary>
-        /// <param name="rawXml">The raw xml string.</param>
-        /// <returns>A new <see cref="XDocument"/> representation of the raw xml string.</returns>
-        public static XDocument ParseAndRemoveAllNamespaces(string rawXml)
+        /// <param name="xDoc">The <see cref="XDocument"/> instance to copy.</param>
+        /// <returns>A new copy of a <see cref="XDocument"/> with the namespaces removed.</returns>
+        public static XDocument CopyWithoutNamespaces(this XDocument xDoc)
         {
-            var xmlDocumentWithoutNs = XElement.Parse(rawXml).CloneAndRemoveAllNamespaces();
+            if (xDoc == null)
+            {
+                throw new ArgumentNullException(nameof(xDoc));
+            }
 
-            return new XDocument(xmlDocumentWithoutNs);
+            var copy = xDoc.Root.CopyWithoutNamespaces();
+
+            return new XDocument(copy);
         }
 
         /// <summary>
@@ -24,6 +30,11 @@ namespace Sfa.Core.Xml.Linq
         /// </summary>
         public static void LowerCaseAllElementNames(this XDocument xDoc)
         {
+            if (xDoc == null)
+            {
+                throw new ArgumentNullException(nameof(xDoc));
+            }
+
             foreach (var element in xDoc.Elements())
             {
                 element.LowerCaseAllElementNames();
@@ -35,6 +46,11 @@ namespace Sfa.Core.Xml.Linq
         /// </summary>
         public static void LowerCaseAllAttributeNames(this XDocument xDoc)
         {
+            if (xDoc == null)
+            {
+                throw new ArgumentNullException(nameof(xDoc));
+            }
+
             foreach (var element in xDoc.Elements())
             {
                 element.LowerCaseAllAttributeNames();

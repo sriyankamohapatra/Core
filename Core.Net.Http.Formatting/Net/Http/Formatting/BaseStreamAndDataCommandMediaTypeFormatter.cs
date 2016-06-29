@@ -157,7 +157,7 @@ namespace Sfa.Core.Net.Http.Formatting
                 var xml = await xmlContent.ReadAsStringAsync();
                 var xmlSerializer = new XmlSerializer(typeof(T));
 
-                var xmlDoc = XDocumentExtensions.ParseAndRemoveAllNamespaces(xml);
+                var xmlDoc = XDocument.Parse(xml).CopyWithoutNamespaces();
                 using (var reader = xmlDoc.CreateReader())
                 {
                     value = (T)xmlSerializer.Deserialize(reader);

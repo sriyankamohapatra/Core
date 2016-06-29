@@ -27,7 +27,7 @@ namespace Sfa.Core.Data
         #endregion
 
 
-        #region IAsyncRepository Implementation
+        #region IRepository Implementation
 
         /// <summary>
         /// Creates the entity in the Repository.
