@@ -71,7 +71,7 @@ namespace Sfa.Core.Xml.Linq
         public void LowerCaseAllAttributeNames_NullPassed()
         {
             // Act
-            XElementExtensions.LowerCaseAllElementNames(null);
+            XElementExtensions.LowerCaseAllAttributeNames(null);
         }
 
         [TestMethod, TestCategory("Unit")]
