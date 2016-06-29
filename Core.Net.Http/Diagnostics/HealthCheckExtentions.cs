@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Net.Http;
-using Sfa.Core.Threading;
 
 namespace Sfa.Core.Diagnostics
 {
@@ -21,7 +20,7 @@ namespace Sfa.Core.Diagnostics
                 {
                     client.BaseAddress = new Uri(baseUri);
                     client.DefaultRequestHeaders.Accept.Clear();
-                    var response = client.GetAsync(new Uri(baseUri + serviceHealthCheckPath)).GetSafeResult();
+                    var response = client.GetAsync(new Uri(baseUri + serviceHealthCheckPath)).Result;
                     if (!response.IsSuccessStatusCode)
                     {
                         throw new HttpRequestException($"Health check failed with status code {response.StatusCode}, {response.ReasonPhrase}.");

@@ -3,7 +3,6 @@ C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : C
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.EnumAttributeMaps: type is sealed.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.EnumAttributeHelper: type is sealed.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.EnumTranslator: type is sealed.
-C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Threading.TaskExtensions: type is sealed.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Text.StringBuilderExtensions: type is sealed.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Text.StringExtensions: type is sealed.
 C:\Users\Anthony\Source\Repos\Core\Core.Tests\Fakes\Sfa.Core.fakes : warning : Cannot generate stub for Sfa.Core.Security.Claims.ClaimsPrincipalExtensions: type is sealed.

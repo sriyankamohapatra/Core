@@ -110,7 +110,6 @@
     <Compile Include="Security\Claims\ClaimsPrincipalExtensions.cs" />
     <Compile Include="Text\StringBuilderExtensions.cs" />
     <Compile Include="Text\StringExtensions.cs" />
-    <Compile Include="Threading\TaskExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

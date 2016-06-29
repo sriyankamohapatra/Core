@@ -4156,23 +4156,5 @@
         <member name="P:Sfa.Core.Text.Fakes.ShimStringExtensions.IsValidEmailString">
             <summary>Sets the shim of StringExtensions.IsValidEmail(String email)</summary>
         </member>
-        <member name="T:Sfa.Core.Threading.Fakes.ShimTaskExtensions">
-            <summary>Shim type of Sfa.Core.Threading.TaskExtensions</summary>
-        </member>
-        <member name="M:Sfa.Core.Threading.Fakes.ShimTaskExtensions.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:Sfa.Core.Threading.Fakes.ShimTaskExtensions.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:Sfa.Core.Threading.Fakes.ShimTaskExtensions.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:Sfa.Core.Threading.Fakes.ShimTaskExtensions.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:Sfa.Core.Threading.Fakes.ShimTaskExtensions.GetSafeResultOf1TaskOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Threading.Tasks.Task{``0},``0})">
-            <summary>Sets the shim of TaskExtensions.GetSafeResult(Task`1&lt;!!0&gt; task)</summary>
-        </member>
     </members>
 </doc>
