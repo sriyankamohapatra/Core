@@ -65,3 +65,5 @@
 /Core.Net.Http/bin/Debug
 /Core.Net.Http/obj/Debug
 /Core.Net.Http/Core.Net.Http.csproj.user
+/Core.ComponentModel.DataAnnotations.Tests/obj/Debug
+/Core.ComponentModel.DataAnnotations.Tests/bin/Debug

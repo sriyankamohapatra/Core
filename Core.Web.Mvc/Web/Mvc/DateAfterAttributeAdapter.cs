@@ -17,7 +17,7 @@ namespace Sfa.Core.Web.Mvc
                 ValidationType = "dateafter"
             };
 
-            validationRule.ValidationParameters.Add("othername", Attribute.OtherPropertyNameToBeAfter);
+            validationRule.ValidationParameters.Add("othername", Attribute.OtherOtherPropertyName);
 
             yield return validationRule;
         }
