@@ -11,42 +11,56 @@ namespace Sfa.Core.Web.Mvc
         object IModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
         {
             var culture = CultureInfo.GetCultureInfo("en-GB");
+            var dateValue = bindingContext.ValueProvider.GetValue(bindingContext.ModelName);
             var dayValue = bindingContext.ValueProvider.GetValue(bindingContext.ModelName + ".Day");
             var monthValue = bindingContext.ValueProvider.GetValue(bindingContext.ModelName + ".Month");
             var yearValue = bindingContext.ValueProvider.GetValue(bindingContext.ModelName + ".Year");
+            var hourValue = bindingContext.ValueProvider.GetValue(bindingContext.ModelName + ".Hour");
+            var minuteValue = bindingContext.ValueProvider.GetValue(bindingContext.ModelName + ".Minute");
+            var secondValue = bindingContext.ValueProvider.GetValue(bindingContext.ModelName + ".Second");
+
+            DateTime value;
+            string attemptedDate;
 
             // Drop out here to the default if the known day, month year can't be found.
-            if (dayValue == null || monthValue == null || yearValue == null)
+            if (dayValue == null && monthValue == null && yearValue == null && dateValue == null)
             {
                 var defaultResult = new DefaultModelBinder().BindModel(controllerContext, bindingContext);
                 return defaultResult;
             }
 
-            var hourValue = bindingContext.ValueProvider.GetValue(bindingContext.ModelName + ".Hour");
-            var minuteValue = bindingContext.ValueProvider.GetValue(bindingContext.ModelName + ".Minute");
-            var secondValue = bindingContext.ValueProvider.GetValue(bindingContext.ModelName + ".Second");
-
-            var hourAttempted = "00";
-            if (hourValue != null)
+            if (dayValue != null || monthValue != null || yearValue != null)
             {
-                hourAttempted = hourValue.AttemptedValue;
-            }
+                var hourAttempted = "00";
+                if (IsDoubleDigitNumber(hourValue))
+                {
+                    hourAttempted = hourValue.AttemptedValue;
+                }
 
-            var minuteAttempted = "00";
-            if (minuteValue != null)
+                var minuteAttempted = "00";
+                if (IsDoubleDigitNumber(minuteValue))
+                {
+                    minuteAttempted = minuteValue.AttemptedValue;
+                }
+
+                var secondAttempted = "00";
+                if (IsDoubleDigitNumber(secondValue))
+                {
+                    secondAttempted = secondValue.AttemptedValue;
+                }
+
+                attemptedDate = $"{dayValue?.AttemptedValue.Trim()}/{monthValue?.AttemptedValue.Trim()}/{yearValue?.AttemptedValue.Trim()} {hourAttempted}:{minuteAttempted}:{secondAttempted}";
+
+                if (attemptedDate == "// 00:00:00")
+                {
+                    var defaultResult = new DefaultModelBinder().BindModel(controllerContext, bindingContext);
+                    return defaultResult;
+                }
+            }
+            else
             {
-                minuteAttempted = minuteValue.AttemptedValue;
+                attemptedDate = dateValue.AttemptedValue;
             }
-
-            var secondAttempted = "00";
-            if (secondValue != null)
-            {
-                secondAttempted = secondValue.AttemptedValue;
-            }
-
-            var attemptedDate = $"{dayValue.AttemptedValue}/{monthValue.AttemptedValue}/{yearValue.AttemptedValue} {hourAttempted}:{minuteAttempted}:{secondAttempted}";
-
-            DateTime value;
 
             if (DateTime.TryParse(attemptedDate, culture, DateTimeStyles.None, out value))
             {
@@ -55,16 +69,22 @@ namespace Sfa.Core.Web.Mvc
                     bindingContext.ModelState[bindingContext.ModelName] = new ModelState();
                 }
 
-                bindingContext.ModelState[bindingContext.ModelName].Value = new ValueProviderResult(attemptedDate, value.ToString(), culture);
+                bindingContext.ModelState[bindingContext.ModelName].Value = new ValueProviderResult(attemptedDate, value.ToString(culture), culture);
 
                 return value;
             }
 
-            bindingContext.ModelState.AddModelError(bindingContext.ModelName, $"{bindingContext.ModelName} is not a valid Date");
+            bindingContext.ModelState.AddModelError(bindingContext.ModelName, $"{bindingContext.ModelMetadata.DisplayName} is not a valid Date");
 
-            bindingContext.ModelState[bindingContext.ModelName].Value = new ValueProviderResult(attemptedDate, attemptedDate, CultureInfo.InvariantCulture);
+            bindingContext.ModelState[bindingContext.ModelName].Value = new ValueProviderResult(attemptedDate, attemptedDate, culture);
 
             return attemptedDate;
+        }
+
+        private bool IsDoubleDigitNumber(ValueProviderResult number)
+        {
+            int dummy;
+            return !string.IsNullOrWhiteSpace(number?.AttemptedValue) && number.AttemptedValue.Length == 2 && int.TryParse(number.AttemptedValue, out dummy);
         }
 
         #endregion
