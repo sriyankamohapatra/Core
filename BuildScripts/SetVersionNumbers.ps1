@@ -1,4 +1,5 @@
 # Enable -Verbose option
+#
 [CmdletBinding()]
 
 [Regex] $AssemblyFileVersionRegEx = '(AssemblyFileVersion\(\"\d+\.\d+\.\d+\.)(\d+)(\"\))'
