@@ -167,7 +167,7 @@ namespace Sfa.Core.Logging
                     {
                         Category = "cat1",
                         Level = LoggingLevel.Info,
-                        Message = "When:02/01/2000 01:02:03 Level:Info Category:cat1 Message:My Message arg1"
+                        Message = $"When:{expected} Level:Info Category:cat1 Message:My Message arg1"
                     }
                 });
             }
@@ -213,7 +213,7 @@ namespace Sfa.Core.Logging
                     {
                         Category = "cat1",
                         Level = LoggingLevel.Error,
-                        Message = "When:02/01/2000 01:02:03 Level:Error Category:cat1 Message:" + exception
+                        Message = $"When:{expected} Level:Error Category:cat1 Message:" + exception
                     }
                 });
             }
@@ -241,7 +241,7 @@ namespace Sfa.Core.Logging
                     {
                         Category = "cat1",
                         Level = LoggingLevel.Error,
-                        Message = "When:02/01/2000 01:02:03 Level:Error Category:cat1 Message:" + exception
+                        Message = $"When:{expected} Level:Error Category:cat1 Message:" + exception
                     }
                 });
             }
