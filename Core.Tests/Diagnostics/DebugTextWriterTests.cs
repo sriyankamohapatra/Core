@@ -19,15 +19,14 @@ namespace Sfa.Core.Diagnostics
 
             var stubListener = new System.Diagnostics.Fakes.StubConsoleTraceListener
             {
-                WriteString = s => { output = s; }
+                WriteString = s =>
+                {
+                    Console.WriteLine("method called");
+                    output = s;
+                }
             };
             
             Debug.Listeners.Add(stubListener);
-
-            foreach (var listener in Debug.Listeners)
-            {
-                Console.WriteLine(listener.GetType());
-            }
 
             // Act
             componentUnderTest.Write("test");
