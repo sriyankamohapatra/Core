@@ -21,6 +21,7 @@ namespace Sfa.Core.Diagnostics
                 WriteString = s => { output = s; }
             };
 
+            Debug.Listeners.Clear();
             Debug.Listeners.Add(stubListener);
 
             // Act
