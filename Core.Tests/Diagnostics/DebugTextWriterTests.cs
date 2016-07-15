@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sfa.Core.Testing;
 
@@ -20,9 +21,13 @@ namespace Sfa.Core.Diagnostics
             {
                 WriteString = s => { output = s; }
             };
-
-            Debug.Listeners.Clear();
+            
             Debug.Listeners.Add(stubListener);
+
+            foreach (var listener in Debug.Listeners)
+            {
+                Console.WriteLine(listener.GetType());
+            }
 
             // Act
             componentUnderTest.Write("test");
