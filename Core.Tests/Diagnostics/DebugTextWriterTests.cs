@@ -21,7 +21,6 @@ namespace Sfa.Core.Diagnostics
             {
                 WriteString = s =>
                 {
-                    Console.WriteLine("method called");
                     output = s;
                 }
             };
@@ -30,10 +29,14 @@ namespace Sfa.Core.Diagnostics
 
             // Act
             componentUnderTest.Write("test");
-            Debug.Flush();
 
             // Assert
+#if DEBUG
             output.ShouldHaveSameValueAs("test");
+#endif
+#if !DEBUG
+            output.ShouldHaveSameValueAs("");
+#endif
         }
 
         [TestMethod, TestCategory("Unit")]
@@ -56,7 +59,12 @@ namespace Sfa.Core.Diagnostics
             componentUnderTest.Write(buffer, 1, 2);
 
             // Assert
+#if DEBUG
             output.ShouldHaveSameValueAs("es");
+#endif
+#if !DEBUG
+            output.ShouldHaveSameValueAs("");
+#endif
         }
 
         #endregion
@@ -77,6 +85,6 @@ namespace Sfa.Core.Diagnostics
             actual.ShouldHaveSameValueAs(System.Text.Encoding.Default);
         }
 
-        #endregion
+#endregion
     }
 }
