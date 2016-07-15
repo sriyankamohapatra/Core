@@ -30,6 +30,7 @@ namespace Sfa.Core.Diagnostics
 
             // Act
             componentUnderTest.Write("test");
+            Debug.Flush();
 
             // Assert
             output.ShouldHaveSameValueAs("test");
