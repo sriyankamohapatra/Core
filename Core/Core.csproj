@@ -107,6 +107,7 @@
     <Compile Include="Reflection\MemberInfoExtensions.cs" />
     <Compile Include="Reflection\ObjectExtensions.cs" />
     <Compile Include="Reflection\TypeExtensions.cs" />
+    <Compile Include="Runtime\Caching\ICache.cs" />
     <Compile Include="Security\Claims\ClaimsPrincipalExtensions.cs" />
     <Compile Include="Text\StringBuilderExtensions.cs" />
     <Compile Include="Text\StringExtensions.cs" />

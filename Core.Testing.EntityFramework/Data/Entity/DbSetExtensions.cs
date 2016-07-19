@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace Sfa.Core.Data.Folder
+namespace Sfa.Core.Data.Entity
 {
     /// <summary>
     /// Extends the <see cref="DbSet{T}"/> class.
