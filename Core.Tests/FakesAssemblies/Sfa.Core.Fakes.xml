@@ -4099,14 +4099,14 @@
         <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.#ctor">
             <summary>Initializes a new instance of type StubICache</summary>
         </member>
-        <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.AddExactExpirationOf1StringM0DateTimeDateTimeKind``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.String,``0,System.DateTime,System.DateTimeKind})">
-            <summary>Sets stubs of AddExactExpiration(String key, !!0 value, DateTime expiresAt, DateTimeKind kind)</summary>
+        <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.AddExactExpirationOf1StringM0DateTime``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.String,``0,System.DateTime})">
+            <summary>Sets stubs of AddExactExpiration(String key, !!0 value, DateTime absoluteExpiration)</summary>
         </member>
         <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.AddOf1StringM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.String,``0})">
             <summary>Sets stubs of Add(String key, !!0 value)</summary>
         </member>
         <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.AddSlidingExpirationOf1StringM0TimeSpan``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.String,``0,System.TimeSpan})">
-            <summary>Sets stubs of AddSlidingExpiration(String key, !!0 value, TimeSpan expirationFromLastAccess)</summary>
+            <summary>Sets stubs of AddSlidingExpiration(String key, !!0 value, TimeSpan slidingExpiration)</summary>
         </member>
         <member name="F:Sfa.Core.Runtime.Caching.Fakes.StubICache.ContainsKeyString">
             <summary>Sets the stub of ICache.ContainsKey(String key)</summary>
@@ -4117,23 +4117,23 @@
         <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.GetOf1String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,``0})">
             <summary>Sets stubs of Get(String key)</summary>
         </member>
-        <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.GetOrAddAndGetExactExpirationOf1StringDateTimeDateTimeKindFuncOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,System.DateTime,System.DateTimeKind,System.Func{``0},``0})">
-            <summary>Sets stubs of GetOrAddAndGetExactExpiration(String key, DateTime expiresAt, DateTimeKind kind, Func`1&lt;!!0&gt; get)</summary>
+        <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.GetOrAddAndGetExactExpirationOf1StringDateTimeFuncOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,System.DateTime,System.Func{``0},``0})">
+            <summary>Sets stubs of GetOrAddAndGetExactExpiration(String key, DateTime absoluteExpiration, Func`1&lt;!!0&gt; get)</summary>
         </member>
         <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.GetOrAddAndGetOf1StringFuncOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,System.Func{``0},``0})">
             <summary>Sets stubs of GetOrAddAndGet(String key, Func`1&lt;!!0&gt; get)</summary>
         </member>
         <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.GetOrAddAndGetSlidingExpirationOf1StringTimeSpanFuncOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,System.TimeSpan,System.Func{``0},``0})">
-            <summary>Sets stubs of GetOrAddAndGetSlidingExpiration(String key, TimeSpan expirationFromLastAccess, Func`1&lt;!!0&gt; get)</summary>
+            <summary>Sets stubs of GetOrAddAndGetSlidingExpiration(String key, TimeSpan slidingExpiration, Func`1&lt;!!0&gt; get)</summary>
         </member>
         <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.Sfa#Core#Runtime#Caching#ICache#Add``1(System.String,``0)">
             <summary>Sets the stub of ICache.Add(String key, !!0 value)</summary>
         </member>
-        <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.Sfa#Core#Runtime#Caching#ICache#AddExactExpiration``1(System.String,``0,System.DateTime,System.DateTimeKind)">
-            <summary>Sets the stub of ICache.AddExactExpiration(String key, !!0 value, DateTime expiresAt, DateTimeKind kind)</summary>
+        <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.Sfa#Core#Runtime#Caching#ICache#AddExactExpiration``1(System.String,``0,System.DateTime)">
+            <summary>Sets the stub of ICache.AddExactExpiration(String key, !!0 value, DateTime absoluteExpiration)</summary>
         </member>
         <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.Sfa#Core#Runtime#Caching#ICache#AddSlidingExpiration``1(System.String,``0,System.TimeSpan)">
-            <summary>Sets the stub of ICache.AddSlidingExpiration(String key, !!0 value, TimeSpan expirationFromLastAccess)</summary>
+            <summary>Sets the stub of ICache.AddSlidingExpiration(String key, !!0 value, TimeSpan slidingExpiration)</summary>
         </member>
         <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.Sfa#Core#Runtime#Caching#ICache#ContainsKey(System.String)">
             <summary>Sets the stub of ICache.ContainsKey(String key)</summary>
@@ -4147,11 +4147,11 @@
         <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.Sfa#Core#Runtime#Caching#ICache#GetOrAddAndGet``1(System.String,System.Func{``0})">
             <summary>Sets the stub of ICache.GetOrAddAndGet(String key, Func`1&lt;!!0&gt; get)</summary>
         </member>
-        <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.Sfa#Core#Runtime#Caching#ICache#GetOrAddAndGetExactExpiration``1(System.String,System.DateTime,System.DateTimeKind,System.Func{``0})">
-            <summary>Sets the stub of ICache.GetOrAddAndGetExactExpiration(String key, DateTime expiresAt, DateTimeKind kind, Func`1&lt;!!0&gt; get)</summary>
+        <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.Sfa#Core#Runtime#Caching#ICache#GetOrAddAndGetExactExpiration``1(System.String,System.DateTime,System.Func{``0})">
+            <summary>Sets the stub of ICache.GetOrAddAndGetExactExpiration(String key, DateTime absoluteExpiration, Func`1&lt;!!0&gt; get)</summary>
         </member>
         <member name="M:Sfa.Core.Runtime.Caching.Fakes.StubICache.Sfa#Core#Runtime#Caching#ICache#GetOrAddAndGetSlidingExpiration``1(System.String,System.TimeSpan,System.Func{``0})">
-            <summary>Sets the stub of ICache.GetOrAddAndGetSlidingExpiration(String key, TimeSpan expirationFromLastAccess, Func`1&lt;!!0&gt; get)</summary>
+            <summary>Sets the stub of ICache.GetOrAddAndGetSlidingExpiration(String key, TimeSpan slidingExpiration, Func`1&lt;!!0&gt; get)</summary>
         </member>
         <member name="T:Sfa.Core.Security.Claims.Fakes.ShimClaimsPrincipalExtensions">
             <summary>Shim type of Sfa.Core.Security.Claims.ClaimsPrincipalExtensions</summary>

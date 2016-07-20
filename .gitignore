@@ -67,3 +67,7 @@
 /Core.Net.Http/Core.Net.Http.csproj.user
 /Core.ComponentModel.DataAnnotations.Tests/obj/Debug
 /Core.ComponentModel.DataAnnotations.Tests/bin/Debug
+/Core.Runtime.Caching/bin/Debug
+/Core.Runtime.Caching/obj/Debug
+/Core.Runtime.Caching.Tests/bin/Debug
+/Core.Runtime.Caching.Tests/obj/Debug

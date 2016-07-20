@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Azure", "Core.Azure\Core.Azure.csproj", "{199E3FE1-8AFE-4E3F-9BC0-E71E5F02FFC1}"
 EndProject
@@ -74,6 +74,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Net.Http", "Core.Net.Http\Core.Net.Http.csproj", "{F9A72FB3-237A-49F5-BD63-0586B822AD91}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.ComponentModel.DataAnnotations.Tests", "Core.ComponentModel.DataAnnotations.Tests\Core.ComponentModel.DataAnnotations.Tests.csproj", "{04CA991D-2D8A-4D94-995F-2E87ACE298B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Runtime.Caching", "Core.Runtime.Caching\Core.Runtime.Caching.csproj", "{1619E802-2857-403E-99B2-AB7EA8F3FFC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Runtime.Caching.Tests", "Core.Runtime.Caching.Tests\Core.Runtime.Caching.Tests.csproj", "{0A88D4EF-3058-405A-8F62-E9B5ED4CF122}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +205,14 @@ Global
 		{04CA991D-2D8A-4D94-995F-2E87ACE298B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04CA991D-2D8A-4D94-995F-2E87ACE298B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04CA991D-2D8A-4D94-995F-2E87ACE298B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1619E802-2857-403E-99B2-AB7EA8F3FFC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1619E802-2857-403E-99B2-AB7EA8F3FFC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1619E802-2857-403E-99B2-AB7EA8F3FFC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1619E802-2857-403E-99B2-AB7EA8F3FFC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A88D4EF-3058-405A-8F62-E9B5ED4CF122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A88D4EF-3058-405A-8F62-E9B5ED4CF122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A88D4EF-3058-405A-8F62-E9B5ED4CF122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A88D4EF-3058-405A-8F62-E9B5ED4CF122}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
