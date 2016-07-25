@@ -24,12 +24,14 @@ namespace Sfa.Core.Context
         /// <summary>
         /// The logged for the system.
         /// </summary>
-        public static ILogger Logger => _contextStorage.GetData<ILogger>(StorageKeyLogger);
+        /// <remarks>If the Application Context has not been configured then <c>null</c> will be returned.</remarks>
+        public static ILogger Logger => _contextStorage?.GetData<ILogger>(StorageKeyLogger);
 
         /// <summary>
         /// The network context for the system.
         /// </summary>
-        public static INetworkContext NetworkContext => _contextStorage.GetData<INetworkContext>(StorageKeyNetworkContext);
+        /// <remarks>If the Application Context has not been configured then <c>null</c> will be returned.</remarks>
+        public static INetworkContext NetworkContext => _contextStorage?.GetData<INetworkContext>(StorageKeyNetworkContext);
 
         #endregion
 
