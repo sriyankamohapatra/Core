@@ -18,13 +18,13 @@ namespace Sfa.Core.Data
 
         private IDbExecutionStrategy GetDefaultExecutionStrategy()
         {
-            ApplicationContext.Logger.Log(LoggingLevel.Debug, CoreLoggingCategory.Diagnostics, () => $"using the {typeof(DefaultExecutionStrategy)} for the executing strategy.");
+            ApplicationContext.Logger?.Log(LoggingLevel.Debug, CoreLoggingCategory.Diagnostics, () => $"using the {typeof(DefaultExecutionStrategy)} for the executing strategy.");
             return new DefaultExecutionStrategy();
         }
 
         private IDbExecutionStrategy GetSqlAzureExecutionStrategy()
         {
-            ApplicationContext.Logger.Log(LoggingLevel.Debug, CoreLoggingCategory.Diagnostics, () => $"using the {typeof(SqlAzureExecutionStrategy)} for the executing strategy.");
+            ApplicationContext.Logger?.Log(LoggingLevel.Debug, CoreLoggingCategory.Diagnostics, () => $"using the {typeof(SqlAzureExecutionStrategy)} for the executing strategy.");
             return new SqlAzureExecutionStrategy();
         }
 
