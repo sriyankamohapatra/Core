@@ -22,6 +22,7 @@ namespace Sfa.Core.Equality
         private static readonly HashSet<Type> _previouslyMatchedTypeThatShouldNotUseSemantics = new HashSet<Type>();
         private static readonly List<IFieldValueEqualityComparer> EqualityComparers = new List<IFieldValueEqualityComparer>();
         private static readonly List<IFieldValueTypeEqualityComparer> TypeEqualityComparers = new List<IFieldValueTypeEqualityComparer>();
+        private static IEqualityComparer<DateTime> _dateTimeEqualityComparer = new DefaultDateTimeEqualityComparer();
 
         #endregion
 
@@ -52,6 +53,16 @@ namespace Sfa.Core.Equality
             {
                 EqualityComparers.Add(comparer);
             }
+        }
+
+        /// <summary>
+        /// Override the use of the <see cref="DefaultDateTimeEqualityComparer"/> and use another implementation when comparing <see cref="DateTime"/>s.
+        /// </summary>
+        /// <param name="dateTimeEqualityComparer">The new comparer to use.</param>
+        /// <remarks>If <c>null</c> is supplied, then an instance of <see cref="DefaultDateTimeEqualityComparer"/> will be used.</remarks>
+        public static void UseDateTimeEqualityComparer(IEqualityComparer<DateTime> dateTimeEqualityComparer = null)
+        {
+            _dateTimeEqualityComparer = dateTimeEqualityComparer ?? new DefaultDateTimeEqualityComparer();
         }
 
         /// <summary>
@@ -319,13 +330,10 @@ namespace Sfa.Core.Equality
             }
             else
             {
-                // Compare with no milliseconds.
                 var dateTime1 = (DateTime)value1;
                 var dateTime2 = (DateTime)value2;
-                var dateTimeNoMilliSecs1 = new DateTime(dateTime1.Year, dateTime1.Month, dateTime1.Day, dateTime1.Hour, dateTime1.Minute, dateTime1.Second);
-                var dateTimeNoMilliSecs2 = new DateTime(dateTime2.Year, dateTime2.Month, dateTime2.Day, dateTime2.Hour, dateTime2.Minute, dateTime2.Second);
 
-                equals = dateTimeNoMilliSecs1.Equals(dateTimeNoMilliSecs2);
+                equals = _dateTimeEqualityComparer.Equals(dateTime1, dateTime2);
             }
 
             return equals;

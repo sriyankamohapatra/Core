@@ -77,6 +77,7 @@ namespace Sfa.Core.Testing
         /// </summary>
         protected virtual void SetUpEachTest()
         {
+            FieldValueEqualityComparer.UseDateTimeEqualityComparer();
             SetAssembliesWithTypesToPerformFieldValueEqualityOn();
             CreateApplicationContext();
             EnableLogging(typeof(BaseTest).FullName);

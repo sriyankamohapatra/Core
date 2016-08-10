@@ -82,11 +82,13 @@
     <Compile Include="EnumAttributeHelper.cs" />
     <Compile Include="EnumAttributeMap.cs" />
     <Compile Include="EnumTranslator.cs" />
+    <Compile Include="Equality\DefaultDateTimeEqualityComparer.cs" />
     <Compile Include="Equality\FieldValueEqualityComparer.cs" />
     <Compile Include="Equality\IFieldValueEqualityComparer.cs" />
     <Compile Include="Equality\IFieldValueTypeEqualityComparer.cs" />
     <Compile Include="Equality\NoValueCompareAttribute.cs" />
     <Compile Include="Equality\ReferenceEqualityComparer.cs" />
+    <Compile Include="Equality\SqlServerDateTimeEqualityComparer.cs" />
     <Compile Include="Exceptions\BusinessLogicException.cs" />
     <Compile Include="Exceptions\MissingEntityException.cs" />
     <Compile Include="Exceptions\UnauthorizedException.cs" />

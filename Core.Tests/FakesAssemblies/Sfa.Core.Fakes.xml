@@ -2029,6 +2029,45 @@
         <member name="F:Sfa.Core.Entities.Fakes.StubIEntity`1.IdGet">
             <summary>Sets the stub of IEntity`1.get_Id()</summary>
         </member>
+        <member name="T:Sfa.Core.Equality.Fakes.ShimDefaultDateTimeEqualityComparer">
+            <summary>Shim type of Sfa.Core.Equality.DefaultDateTimeEqualityComparer</summary>
+        </member>
+        <member name="M:Sfa.Core.Equality.Fakes.ShimDefaultDateTimeEqualityComparer.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sfa.Core.Equality.Fakes.ShimDefaultDateTimeEqualityComparer.#ctor(Sfa.Core.Equality.DefaultDateTimeEqualityComparer)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Sfa.Core.Equality.Fakes.ShimDefaultDateTimeEqualityComparer.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.ShimDefaultDateTimeEqualityComparer.AllInstances.EqualsDateTimeDateTime">
+            <summary>Sets the shim of DefaultDateTimeEqualityComparer.Equals(DateTime x, DateTime y)</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.ShimDefaultDateTimeEqualityComparer.AllInstances.GetHashCodeDateTime">
+            <summary>Sets the shim of DefaultDateTimeEqualityComparer.GetHashCode(DateTime obj)</summary>
+        </member>
+        <member name="M:Sfa.Core.Equality.Fakes.ShimDefaultDateTimeEqualityComparer.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sfa.Core.Equality.Fakes.ShimDefaultDateTimeEqualityComparer.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.ShimDefaultDateTimeEqualityComparer.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sfa.Core.Equality.Fakes.ShimDefaultDateTimeEqualityComparer.Bind(System.Collections.Generic.IEqualityComparer{System.DateTime})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.ShimDefaultDateTimeEqualityComparer.Constructor">
+            <summary>Sets the shim of DefaultDateTimeEqualityComparer.DefaultDateTimeEqualityComparer()</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.ShimDefaultDateTimeEqualityComparer.EqualsDateTimeDateTime">
+            <summary>Sets the shim of DefaultDateTimeEqualityComparer.Equals(DateTime x, DateTime y)</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.ShimDefaultDateTimeEqualityComparer.GetHashCodeDateTime">
+            <summary>Sets the shim of DefaultDateTimeEqualityComparer.GetHashCode(DateTime obj)</summary>
+        </member>
         <member name="T:Sfa.Core.Equality.Fakes.ShimFieldValueEqualityComparer">
             <summary>Shim type of Sfa.Core.Equality.FieldValueEqualityComparer</summary>
         </member>
@@ -2116,6 +2155,9 @@
         <member name="P:Sfa.Core.Equality.Fakes.ShimFieldValueEqualityComparer.StaticConstructor">
             <summary>Sets the shim of FieldValueEqualityComparer.FieldValueEqualityComparer()</summary>
         </member>
+        <member name="P:Sfa.Core.Equality.Fakes.ShimFieldValueEqualityComparer.UseDateTimeEqualityComparerIEqualityComparerOfDateTime">
+            <summary>Sets the shim of FieldValueEqualityComparer.UseDateTimeEqualityComparer(IEqualityComparer`1&lt;DateTime&gt; dateTimeEqualityComparer)</summary>
+        </member>
         <member name="T:Sfa.Core.Equality.Fakes.ShimNoValueCompareAttribute">
             <summary>Shim type of Sfa.Core.Equality.NoValueCompareAttribute</summary>
         </member>
@@ -2178,6 +2220,63 @@
         </member>
         <member name="P:Sfa.Core.Equality.Fakes.ShimReferenceEqualityComparer`1.GetHashCodeT0">
             <summary>Sets the shim of ReferenceEqualityComparer`1.GetHashCode(!0 obj)</summary>
+        </member>
+        <member name="T:Sfa.Core.Equality.Fakes.ShimSqlServerDateTimeEqualityComparer">
+            <summary>Shim type of Sfa.Core.Equality.SqlServerDateTimeEqualityComparer</summary>
+        </member>
+        <member name="M:Sfa.Core.Equality.Fakes.ShimSqlServerDateTimeEqualityComparer.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sfa.Core.Equality.Fakes.ShimSqlServerDateTimeEqualityComparer.#ctor(Sfa.Core.Equality.SqlServerDateTimeEqualityComparer)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Sfa.Core.Equality.Fakes.ShimSqlServerDateTimeEqualityComparer.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.ShimSqlServerDateTimeEqualityComparer.AllInstances.EqualsDateTimeDateTime">
+            <summary>Sets the shim of SqlServerDateTimeEqualityComparer.Equals(DateTime x, DateTime y)</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.ShimSqlServerDateTimeEqualityComparer.AllInstances.GetHashCodeDateTime">
+            <summary>Sets the shim of SqlServerDateTimeEqualityComparer.GetHashCode(DateTime obj)</summary>
+        </member>
+        <member name="M:Sfa.Core.Equality.Fakes.ShimSqlServerDateTimeEqualityComparer.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sfa.Core.Equality.Fakes.ShimSqlServerDateTimeEqualityComparer.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.ShimSqlServerDateTimeEqualityComparer.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sfa.Core.Equality.Fakes.ShimSqlServerDateTimeEqualityComparer.Bind(System.Collections.Generic.IEqualityComparer{System.DateTime})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.ShimSqlServerDateTimeEqualityComparer.ConstructorIEqualityComparerOfDateTime">
+            <summary>Sets the shim of SqlServerDateTimeEqualityComparer.SqlServerDateTimeEqualityComparer(IEqualityComparer`1&lt;DateTime&gt; innerComparer)</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.ShimSqlServerDateTimeEqualityComparer.EqualsDateTimeDateTime">
+            <summary>Sets the shim of SqlServerDateTimeEqualityComparer.Equals(DateTime x, DateTime y)</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.ShimSqlServerDateTimeEqualityComparer.GetHashCodeDateTime">
+            <summary>Sets the shim of SqlServerDateTimeEqualityComparer.GetHashCode(DateTime obj)</summary>
+        </member>
+        <member name="T:Sfa.Core.Equality.Fakes.StubDefaultDateTimeEqualityComparer">
+            <summary>Stub type of Sfa.Core.Equality.DefaultDateTimeEqualityComparer</summary>
+        </member>
+        <member name="M:Sfa.Core.Equality.Fakes.StubDefaultDateTimeEqualityComparer.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.StubDefaultDateTimeEqualityComparer.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Sfa.Core.Equality.Fakes.StubDefaultDateTimeEqualityComparer.InitializeStub">
+            <summary>Initializes a new instance of type StubDefaultDateTimeEqualityComparer</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.StubDefaultDateTimeEqualityComparer.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.StubDefaultDateTimeEqualityComparer.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
         </member>
         <member name="T:Sfa.Core.Equality.Fakes.StubFieldValueEqualityComparer">
             <summary>Stub type of Sfa.Core.Equality.FieldValueEqualityComparer</summary>
@@ -2303,6 +2402,24 @@
             <summary>Gets or sets the instance behavior.</summary>
         </member>
         <member name="P:Sfa.Core.Equality.Fakes.StubReferenceEqualityComparer`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Sfa.Core.Equality.Fakes.StubSqlServerDateTimeEqualityComparer">
+            <summary>Stub type of Sfa.Core.Equality.SqlServerDateTimeEqualityComparer</summary>
+        </member>
+        <member name="M:Sfa.Core.Equality.Fakes.StubSqlServerDateTimeEqualityComparer.#ctor(System.Collections.Generic.IEqualityComparer{System.DateTime})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.StubSqlServerDateTimeEqualityComparer.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Sfa.Core.Equality.Fakes.StubSqlServerDateTimeEqualityComparer.InitializeStub">
+            <summary>Initializes a new instance of type StubSqlServerDateTimeEqualityComparer</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.StubSqlServerDateTimeEqualityComparer.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Sfa.Core.Equality.Fakes.StubSqlServerDateTimeEqualityComparer.InstanceObserver">
             <summary>Gets or sets the instance observer.</summary>
         </member>
         <member name="T:Sfa.Core.Exceptions.Fakes.ShimBusinessLogicException">

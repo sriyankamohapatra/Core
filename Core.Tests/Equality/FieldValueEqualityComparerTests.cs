@@ -255,13 +255,40 @@ namespace Sfa.Core.Equality
                 MyInt = 1,
                 MyString = "test",
                 MyIgnoredString = "xxx",
-                MyDateTime = new DateTime(2000, 1, 1)
+                MyDateTime = new DateTime(2000, 1, 1).AddMilliseconds(999)
             }, new SimplePoco
             {
                 MyInt = 1,
                 MyString = "test",
                 MyIgnoredString = "xxx",
-                MyDateTime = new DateTime(2000, 1, 1)
+                MyDateTime = new DateTime(2000, 1, 1).AddMilliseconds(999)
+            });
+
+            // Assert
+            Assert.AreEqual(true, actual);
+        }
+
+        [TestMethod, TestCategory("Unit")]
+        public void Equals_True_SimplePoco_ValuesSet_SqlServerDateTimeEqualityComparer()
+        {
+            // Arrange
+            var componentUnderTest = new FieldValueEqualityComparer();
+            FieldValueEqualityComparer.SetAssembliesWithTypesToUseValueSemanticsOn(new[] { typeof(SimplePoco).Assembly });
+            FieldValueEqualityComparer.UseDateTimeEqualityComparer(new SqlServerDateTimeEqualityComparer());
+
+            // Act
+            var actual = componentUnderTest.Equals(new SimplePoco
+            {
+                MyInt = 1,
+                MyString = "test",
+                MyIgnoredString = "xxx",
+                MyDateTime = new DateTime(2000, 1, 1, 0, 0, 1).AddMilliseconds(999)
+            }, new SimplePoco
+            {
+                MyInt = 1,
+                MyString = "test",
+                MyIgnoredString = "xxx",
+                MyDateTime = new DateTime(2000, 1, 1, 0, 0, 2).AddMilliseconds(998)
             });
 
             // Assert
