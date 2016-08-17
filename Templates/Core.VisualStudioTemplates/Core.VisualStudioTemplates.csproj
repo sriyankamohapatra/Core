@@ -22,6 +22,14 @@
     <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
     <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
     <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+    <StartProgram Condition=
+    " '$(StartProgram)'=='' ">
+      $(DevEnvDir)\devenv.exe
+    </StartProgram>
+    <StartArguments Condition=
+    " '$(StartArguments)'=='' ">
+      /rootsuffix Exp
+    </StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
