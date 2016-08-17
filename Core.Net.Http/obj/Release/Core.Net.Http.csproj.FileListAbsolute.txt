@@ -1,0 +1,7 @@
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http\bin\Release\Sfa.Core.Net.Http.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http\bin\Release\Sfa.Core.Net.Http.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http\bin\Release\Sfa.Core.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http\bin\Release\Sfa.Core.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http\obj\Release\Core.Net.Http.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http\obj\Release\Sfa.Core.Net.Http.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Net.Http\obj\Release\Sfa.Core.Net.Http.pdb

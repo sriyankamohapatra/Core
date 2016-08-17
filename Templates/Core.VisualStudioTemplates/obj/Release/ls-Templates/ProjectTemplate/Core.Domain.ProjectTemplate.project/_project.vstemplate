@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Domain Project</Name>
+    <Description>Contains the Domain logic for your application and associated commands.</Description>
+    <DefaultName>Sfa.MyProject.Domain</DefaultName>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType></ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>sw-file-icon.png</Icon>
+    <TemplateID>$guid1$</TemplateID>
+    <!-- Indicates how many parent folders this item template should appear in -->
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+  </TemplateData>
+  <WizardExtension>
+    <Assembly>TemplateBuilder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>TemplateBuilder.RootWizard</FullClassName>
+  </WizardExtension>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="Core.Domain.ProjectTemplate.csproj" ReplaceParameters="true" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+      <Folder Name="Contexts" TargetFolderName="Contexts">
+        <ProjectItem ReplaceParameters="true" TargetFileName="DefaultDomainFactory.cs">DefaultDomainFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DomainContext.cs">DomainContext.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IDomainFactory.cs">IDomainFactory.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IQueryFactory.cs">IQueryFactory.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Data" TargetFolderName="Data">
+        <ProjectItem ReplaceParameters="true" TargetFileName="DomainCommand.cs">DomainCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DomainIdCommand.cs">DomainIdCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IDomainCommand.cs">IDomainCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RootCommand.cs">RootCommand.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Domain" TargetFolderName="Domain">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseDomainObject.cs">BaseDomainObject.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseEntity.cs">BaseEntity.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Root.cs">Root.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

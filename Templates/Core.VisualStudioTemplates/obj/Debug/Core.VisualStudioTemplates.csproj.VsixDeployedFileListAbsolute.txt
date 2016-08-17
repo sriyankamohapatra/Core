@@ -1,0 +1,13 @@
+C:\Users\Anthony\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Anthony Dewhirst\Core.VisualStudioTemplates\1.0\\extension.vsixmanifest
+C:\Users\Anthony\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Anthony Dewhirst\Core.VisualStudioTemplates\1.0\ProjectTemplates\CSharp\\1033\Core.Domain.ProjectTemplate.zip
+C:\Users\Anthony\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Anthony Dewhirst\Core.VisualStudioTemplates\1.0\Output\ProjectTemplates\CSharp\Web\SideWaffle\Core.Domain.ProjectTemplate.project.zip
+C:\Users\Anthony\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Anthony Dewhirst\Core.VisualStudioTemplates\1.0\\TemplateBuilder.dll
+C:\Users\Anthony\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Anthony Dewhirst\Core.VisualStudioTemplates\1.0\Output\ProjectTemplates\CSharp\SFA\Core.Domain.EntityFramework.ProjectTemplate.project.zip
+C:\Users\Anthony\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Anthony Dewhirst\Core.VisualStudioTemplates\1.0\Output\ProjectTemplates\CSharp\SFA\Core.Domain.Testing.ProjectTemplate.project.zip
+C:\Users\Anthony\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Anthony Dewhirst\Core.VisualStudioTemplates\1.0\Output\ProjectTemplates\CSharp\SFA\Core.Domain.ProjectTemplate.project.zip
+C:\Users\Anthony\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Anthony Dewhirst\Core.VisualStudioTemplates\1.0\Output\ProjectTemplates\CSharp\SFA; CSharp\Windows\SFA\Core.Domain.ProjectTemplate.project.zip
+C:\Users\Anthony\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\SFA\Core.VisualStudioTemplates\1.0\Output\ProjectTemplates\CSharp\SFA\Core.Domain.EntityFramework.ProjectTemplate.project.zip
+C:\Users\Anthony\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\SFA\Core.VisualStudioTemplates\1.0\Output\ProjectTemplates\CSharp\SFA\Core.Domain.ProjectTemplate.project.zip
+C:\Users\Anthony\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\SFA\Core.VisualStudioTemplates\1.0\Output\ProjectTemplates\CSharp\SFA\Core.Domain.Testing.ProjectTemplate.project.zip
+C:\Users\Anthony\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\SFA\Core.VisualStudioTemplates\1.0\\TemplateBuilder.dll
+C:\Users\Anthony\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\SFA\Core.VisualStudioTemplates\1.0\\extension.vsixmanifest

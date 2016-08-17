@@ -1,0 +1,14 @@
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.EntityFramework.ProjectTemplate\bin\Release\Sfa.MyProject.Domain.EntityFramework.ProjectTemplate.dll.config
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.EntityFramework.ProjectTemplate\bin\Release\Sfa.MyProject.Domain.EntityFramework.ProjectTemplate.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.EntityFramework.ProjectTemplate\bin\Release\Sfa.MyProject.Domain.EntityFramework.ProjectTemplate.pdb
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.EntityFramework.ProjectTemplate\bin\Release\EntityFramework.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.EntityFramework.ProjectTemplate\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.EntityFramework.ProjectTemplate\bin\Release\Sfa.Core.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.EntityFramework.ProjectTemplate\bin\Release\Sfa.Core.EntityFramework.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.EntityFramework.ProjectTemplate\bin\Release\Sfa.MyProject.Domain.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.EntityFramework.ProjectTemplate\bin\Release\Sfa.MyProject.Domain.pdb
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.EntityFramework.ProjectTemplate\bin\Release\EntityFramework.xml
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.EntityFramework.ProjectTemplate\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.EntityFramework.ProjectTemplate\obj\Release\Core.Domain.EntityFramework.ProjectTemplate.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.EntityFramework.ProjectTemplate\obj\Release\Sfa.MyProject.Domain.EntityFramework.ProjectTemplate.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.EntityFramework.ProjectTemplate\obj\Release\Sfa.MyProject.Domain.EntityFramework.ProjectTemplate.pdb

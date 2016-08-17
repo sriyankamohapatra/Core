@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TemplateReport>
+  <ItemTemplates />
+  <ProjectTemplates>
+    <ProjectTemplate Path="..\Core.Domain.EntityFramework.ProjectTemplate\_Definitions\_project.vstemplate.xml" Name="Domain Entity Framework Project" Description="Contains the Domain entity framework implementations for your application and associated commands." ProjectType="CSharp" ProjectSubType="" />
+    <ProjectTemplate Path="..\Core.Domain.ProjectTemplate\_Definitions\_project.vstemplate.xml" Name="Domain Project" Description="Contains the Domain logic for your application and associated commands." ProjectType="CSharp" ProjectSubType="" />
+    <ProjectTemplate Path="..\Core.Domain.Testing.ProjectTemplate\_Definitions\_project.vstemplate.xml" Name="Domain Testing" Description="Base project for all testing classes for your Domain." ProjectType="CSharp" ProjectSubType="" />
+  </ProjectTemplates>
+  <Snippets />
+</TemplateReport>

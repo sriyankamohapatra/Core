@@ -1,0 +1,13 @@
+C:\Users\Anthony\Source\Repos\Core\Core.Runtime.Caching.Tests\bin\Release\Sfa.Core.Runtime.Caching.Tests.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Runtime.Caching.Tests\bin\Release\Sfa.Core.Runtime.Caching.Tests.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Runtime.Caching.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Runtime.Caching.Tests\bin\Release\Sfa.Core.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Runtime.Caching.Tests\bin\Release\Sfa.Core.Runtime.Caching.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Runtime.Caching.Tests\bin\Release\Sfa.Core.Testing.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Runtime.Caching.Tests\bin\Release\Sfa.Core.Runtime.Caching.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Runtime.Caching.Tests\bin\Release\Sfa.Core.Testing.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Runtime.Caching.Tests\bin\Release\Sfa.Core.pdb
+C:\Users\Anthony\Source\Repos\Core\Core.Runtime.Caching.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Anthony\Source\Repos\Core\Core.Runtime.Caching.Tests\obj\Release\Core.Runtime.Caching.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Source\Repos\Core\Core.Runtime.Caching.Tests\obj\Release\Sfa.Core.Runtime.Caching.Tests.dll
+C:\Users\Anthony\Source\Repos\Core\Core.Runtime.Caching.Tests\obj\Release\Sfa.Core.Runtime.Caching.Tests.pdb

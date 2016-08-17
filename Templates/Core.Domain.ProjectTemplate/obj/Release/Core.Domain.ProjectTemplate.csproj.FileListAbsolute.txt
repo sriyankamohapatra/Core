@@ -1,0 +1,10 @@
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\bin\Release\Sfa.MyProject.Domain.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\bin\Release\Sfa.MyProject.Domain.pdb
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\bin\Release\Sfa.Core.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\bin\Release\TemplateBuilder.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\bin\Release\Microsoft.VisualStudio.TemplateWizardInterface.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\bin\Release\EnvDTE.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\bin\Release\stdole.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\bin\Release\Microsoft.VisualStudio.TemplateWizardInterface.xml
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\obj\Release\Sfa.MyProject.Domain.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\obj\Release\Sfa.MyProject.Domain.pdb

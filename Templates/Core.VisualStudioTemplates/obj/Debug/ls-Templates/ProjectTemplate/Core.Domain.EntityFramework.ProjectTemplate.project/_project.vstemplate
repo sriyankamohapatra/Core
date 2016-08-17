@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Domain Entity Framework Project</Name>
+    <Description>Contains the Domain entity framework implementations for your application and associated commands.</Description>
+    <DefaultName>&gt;Sfa.MyProject.Domain.EntityFramework</DefaultName>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType></ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>sw-file-icon.png</Icon>
+    <TemplateID>$guid1$</TemplateID>
+    <!-- Indicates how many parent folders this item template should appear in -->
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+  </TemplateData>
+  <WizardExtension>
+    <Assembly>TemplateBuilder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>TemplateBuilder.RootWizard</FullClassName>
+  </WizardExtension>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="Core.Domain.EntityFramework.ProjectTemplate.csproj" ReplaceParameters="true" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <Folder Name="Contexts" TargetFolderName="Contexts">
+        <ProjectItem ReplaceParameters="true" TargetFileName="EntityFrameworkQueryFactory.cs">EntityFrameworkQueryFactory.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Data" TargetFolderName="Data">
+        <ProjectItem ReplaceParameters="true" TargetFileName="DomainDbContext.cs">DomainDbContext.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DomainQuery.cs">DomainQuery.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Domain" TargetFolderName="Domain">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CommonQueries.cs">CommonQueries.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

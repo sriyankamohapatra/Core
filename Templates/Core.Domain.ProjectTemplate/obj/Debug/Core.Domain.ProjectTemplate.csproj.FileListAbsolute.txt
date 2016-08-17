@@ -1,0 +1,7 @@
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\obj\Debug\Core.Domain.ProjectTemplate.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\bin\Debug\Sfa.MyProject.Domain.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\bin\Debug\Sfa.MyProject.Domain.pdb
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\bin\Debug\Sfa.Core.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\obj\Debug\Sfa.MyProject.Domain.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\obj\Debug\Sfa.MyProject.Domain.pdb
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.ProjectTemplate\bin\Debug\Sfa.Core.EntityFramework.dll

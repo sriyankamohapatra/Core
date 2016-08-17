@@ -1,0 +1,1 @@
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.Domain.Testing.ProjectTemplate\obj\Release\Core.Domain.Testing.ProjectTemplate.csprojResolveAssemblyReference.cache
