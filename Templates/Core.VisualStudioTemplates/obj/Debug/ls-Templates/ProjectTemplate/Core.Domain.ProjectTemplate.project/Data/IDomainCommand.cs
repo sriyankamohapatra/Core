@@ -1,4 +1,4 @@
-﻿namespace $safeprojectname$.Data
+﻿namespace Sfa.$safeprojectname$.Data
 {
     /// <summary>
     /// Adds domain specific aspects to the command interface.

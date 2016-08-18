@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 using Sfa.Core.Data;
 using Sfa.Core.Entities;
 using Sfa.Core.Exceptions;
-using $safeprojectname$.Contexts;
+using Sfa.$safeprojectname$.Contexts;
 
-namespace $safeprojectname$.Data
+namespace Sfa.$safeprojectname$.Data
 {
     public abstract class DomainIdCommand<T, TId> : DomainIdCommand<T, TId, T>
         where T : class, IEntity<TId>

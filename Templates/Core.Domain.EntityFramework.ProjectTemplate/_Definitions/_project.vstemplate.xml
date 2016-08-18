@@ -2,22 +2,21 @@
   <TemplateData>
     <Name>Domain Entity Framework Project</Name>
     <Description>Contains the Domain entity framework implementations for your application and associated commands.</Description>
-    <DefaultName>>Sfa.MyProject.Domain.EntityFramework</DefaultName>
+    <DefaultName>MyProject</DefaultName>
     <ProjectType>CSharp</ProjectType>
-    <ProjectSubType>
-    </ProjectSubType>
+    <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
     <SortOrder>9000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
-    <Icon>sw-file-icon.png</Icon>
-    <TemplateID>$guid1$</TemplateID>
+    <Icon Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="4547" />
+    <TemplateID>Sfa.Core.Domain.EntityFramework</TemplateID>
     <!-- Indicates how many parent folders this item template should appear in -->
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
   </TemplateData>
   <TemplateContent>
-    <Project TargetFileName="Core.Domain.EntityFramework.ProjectTemplate.csproj" File="Core.Domain.EntityFramework.ProjectTemplate.csproj" ReplaceParameters="true">
+    <Project TargetFileName="Core.Domain.EntityFramework.csproj" File="Core.Domain.EntityFramework.csproj" ReplaceParameters="true">
     </Project>
     <!--
     <CustomParameters>

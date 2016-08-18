@@ -1,9 +1,8 @@
 ﻿using Sfa.Core.Data;
 using Sfa.Core.Entities;
-using Sfa.MyProject.Contexts;
-using Sfa.MyProject.Domain.EntityFramework.ProjectTemplate.Domain;
+using Sfa.MyProject.Domain;
 
-namespace Sfa.MyProject.Domain.EntityFramework.ProjectTemplate.Contexts
+namespace Sfa.MyProject.Contexts
 {
     public class EntityFrameworkQueryFactory : IQueryFactory
     {

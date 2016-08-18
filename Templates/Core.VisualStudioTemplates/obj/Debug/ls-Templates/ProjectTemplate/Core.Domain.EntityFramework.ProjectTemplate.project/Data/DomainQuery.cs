@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using Sfa.Core.Data;
 using Sfa.Core.Entities;
-using Sfa.MyProject.Contexts;
+using Sfa.$safeprojectname$.Contexts;
 
-namespace $safeprojectname$.Data
+namespace Sfa.$safeprojectname$.Data
 {
     public abstract class DomainQuery<TReturn, TQuery> : EntityFrameworkQuery<TReturn, TQuery>
         where TQuery : class, IEntity

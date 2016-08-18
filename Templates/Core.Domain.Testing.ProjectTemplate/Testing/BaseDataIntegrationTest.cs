@@ -5,9 +5,9 @@ using Sfa.Core.Data;
 using Sfa.Core.Equality;
 using Sfa.Core.Net.Mail;
 using Sfa.Core.Testing;
+using Sfa.MyProject.Data;
 using Sfa.MyProject.Domain;
 using Sfa.MyProject.Domain.Builders;
-using Sfa.MyProject.Domain.EntityFramework.ProjectTemplate.Data;
 
 namespace Sfa.MyProject.Testing
 {

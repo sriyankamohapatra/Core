@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using Sfa.Core.Entities;
-using $safeprojectname$.Data;
+using Sfa.$safeprojectname$.Data;
 
-namespace $safeprojectname$.Domain
+namespace Sfa.$safeprojectname$.Domain
 {
     public class CommonQueries
     {

@@ -1,7 +1,7 @@
 ﻿using Sfa.Core.Data;
 using Sfa.Core.Entities;
 
-namespace $safeprojectname$.Contexts
+namespace Sfa.$safeprojectname$.Contexts
 {
     /// <summary>
     /// Defines the implementation of the factory for creating queries of the domain objects.

@@ -83,11 +83,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.VisualStudioTemplates", "Templates\Core.VisualStudioTemplates\Core.VisualStudioTemplates.csproj", "{735EB206-9D85-499B-B24B-201767727BB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Domain.ProjectTemplate", "Templates\Core.Domain.ProjectTemplate\Core.Domain.ProjectTemplate.csproj", "{7563BDE9-432D-4305-A1E3-CEA865713B90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Domain", "Templates\Core.Domain.ProjectTemplate\Core.Domain.csproj", "{7563BDE9-432D-4305-A1E3-CEA865713B90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Domain.Testing.ProjectTemplate", "Templates\Core.Domain.Testing.ProjectTemplate\Core.Domain.Testing.ProjectTemplate.csproj", "{8DEE55E4-74BC-4548-8DC6-9AACE1289138}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Domain.Testing", "Templates\Core.Domain.Testing.ProjectTemplate\Core.Domain.Testing.csproj", "{8DEE55E4-74BC-4548-8DC6-9AACE1289138}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Domain.EntityFramework.ProjectTemplate", "Templates\Core.Domain.EntityFramework.ProjectTemplate\Core.Domain.EntityFramework.ProjectTemplate.csproj", "{0415002A-BFEC-4827-BA39-A6362C17D5C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Domain.EntityFramework", "Templates\Core.Domain.EntityFramework.ProjectTemplate\Core.Domain.EntityFramework.csproj", "{0415002A-BFEC-4827-BA39-A6362C17D5C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,8 +7,8 @@
     <ProjectGuid>{7563BDE9-432D-4305-A1E3-CEA865713B90}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sfa.MyProject</RootNamespace>
-    <AssemblyName>Sfa.MyProject.Domain</AssemblyName>
+    <RootNamespace>Sfa.$safeprojectname$</RootNamespace>
+    <AssemblyName>Sfa.$safeprojectname$.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

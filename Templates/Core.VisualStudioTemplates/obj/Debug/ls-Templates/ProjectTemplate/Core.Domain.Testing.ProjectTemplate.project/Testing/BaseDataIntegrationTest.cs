@@ -5,11 +5,11 @@ using Sfa.Core.Data;
 using Sfa.Core.Equality;
 using Sfa.Core.Net.Mail;
 using Sfa.Core.Testing;
-using $safeprojectname$.Domain;
-using $safeprojectname$.Domain.Builders;
-using $safeprojectname$.Domain.EntityFramework.ProjectTemplate.Data;
+using Sfa.$safeprojectname$.Data;
+using Sfa.$safeprojectname$.Domain;
+using Sfa.$safeprojectname$.Domain.Builders;
 
-namespace $safeprojectname$.Testing
+namespace Sfa.$safeprojectname$.Testing
 {
     /// <summary>
     /// Base class for all test that integrate with the azure emulator.

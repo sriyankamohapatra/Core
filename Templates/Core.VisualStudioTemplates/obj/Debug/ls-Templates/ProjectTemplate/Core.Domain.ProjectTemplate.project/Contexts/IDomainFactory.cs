@@ -1,4 +1,4 @@
-﻿namespace $safeprojectname$.Contexts
+﻿namespace Sfa.$safeprojectname$.Contexts
 {
     /// <summary>
     /// Defines the implementation of the factory for creating domain objects.

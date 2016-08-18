@@ -14,6 +14,5 @@
     <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="Output\ItemTemplates" />
     <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="Output\ProjectTemplates" />
     <Asset Type="Microsoft.VisualStudio.Assembly" Path="TemplateBuilder.dll" AssemblyName="TemplateBuilder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <!--<Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="LigerShark.Templates.dll" AssemblyName="LigerShark.Templates, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />-->
   </Assets>
 </PackageManifest>

@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
 using Sfa.Core.Data;
 
-namespace $safeprojectname$.Data
+namespace Sfa.$safeprojectname$.Data
 {
     /// <summary>
     /// Represents DB access wrapper for the Entity Framework.

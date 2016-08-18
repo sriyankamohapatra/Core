@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sfa.MyProject</RootNamespace>
-    <AssemblyName>Sfa.MyProject.Domain.Testing.ProjectTemplate</AssemblyName>
+    <AssemblyName>Sfa.MyProject.Domain.Testing</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -94,18 +94,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="sw-file-icon.png" />
     <Content Include="_Definitions\_project.vstemplate.xml" />
     <Content Include="_preprocess.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core.Domain.EntityFramework.ProjectTemplate\Core.Domain.EntityFramework.ProjectTemplate.csproj">
+    <ProjectReference Include="..\Core.Domain.EntityFramework.ProjectTemplate\Core.Domain.EntityFramework.csproj">
       <Project>{0415002A-BFEC-4827-BA39-A6362C17D5C5}</Project>
-      <Name>Core.Domain.EntityFramework.ProjectTemplate</Name>
+      <Name>Core.Domain.EntityFramework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Core.Domain.ProjectTemplate\Core.Domain.ProjectTemplate.csproj">
+    <ProjectReference Include="..\Core.Domain.ProjectTemplate\Core.Domain.csproj">
       <Project>{7563BDE9-432D-4305-A1E3-CEA865713B90}</Project>
-      <Name>Core.Domain.ProjectTemplate</Name>
+      <Name>Core.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

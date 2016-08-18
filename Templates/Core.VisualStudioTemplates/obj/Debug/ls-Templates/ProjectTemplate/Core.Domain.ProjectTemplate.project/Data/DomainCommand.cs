@@ -3,9 +3,9 @@ using Sfa.Core.Context;
 using Sfa.Core.Data;
 using Sfa.Core.Exceptions;
 using Sfa.Core.Logging;
-using $safeprojectname$.Contexts;
+using Sfa.$safeprojectname$.Contexts;
 
-namespace $safeprojectname$.Data
+namespace Sfa.$safeprojectname$.Data
 {
     /// <summary>
     /// Base class for all commands in the domain.

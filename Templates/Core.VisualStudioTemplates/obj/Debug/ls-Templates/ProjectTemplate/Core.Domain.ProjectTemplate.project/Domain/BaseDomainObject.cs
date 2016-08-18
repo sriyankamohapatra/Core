@@ -2,7 +2,7 @@
 using Sfa.Core.Context;
 using Sfa.Core.Logging;
 
-namespace $safeprojectname$.Domain
+namespace Sfa.$safeprojectname$.Domain
 {
     /// <summary>
     /// Base class for all objects within the current domain.

@@ -6,11 +6,11 @@ using Sfa.Core.Context;
 using Sfa.Core.Data;
 using Sfa.Core.Logging;
 using Sfa.Core.Testing;
-using $safeprojectname$.Contexts;
-using $safeprojectname$.Domain;
-using $safeprojectname$.Domain.Builders;
+using Sfa.$safeprojectname$.Contexts;
+using Sfa.$safeprojectname$.Domain;
+using Sfa.$safeprojectname$.Domain.Builders;
 
-namespace $safeprojectname$.Testing
+namespace Sfa.$safeprojectname$.Testing
 {
     /// <summary>
     /// Base class for all domain logic tests.

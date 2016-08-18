@@ -1,8 +1,8 @@
 ﻿using System;
 using Sfa.Core.Entities;
-using $safeprojectname$.Contexts;
+using Sfa.$safeprojectname$.Contexts;
 
-namespace $safeprojectname$.Domain
+namespace Sfa.$safeprojectname$.Domain
 {
     /// <summary>
     /// Represents the base class for all entities that are persisted.

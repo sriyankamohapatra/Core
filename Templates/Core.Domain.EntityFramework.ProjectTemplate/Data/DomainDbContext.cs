@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
 using Sfa.Core.Data;
 
-namespace Sfa.MyProject.Domain.EntityFramework.ProjectTemplate.Data
+namespace Sfa.MyProject.Data
 {
     /// <summary>
     /// Represents DB access wrapper for the Entity Framework.

@@ -66,14 +66,14 @@
     <Content Include="stylesheet.css" />
   </ItemGroup>
   <ItemGroup>
-    <TemplateReference Include="Core.Domain.EntityFramework.ProjectTemplate.csproj">
-      <PathToProject>../Core.Domain.EntityFramework.ProjectTemplate/Core.Domain.EntityFramework.ProjectTemplate.csproj</PathToProject>
+    <TemplateReference Include="Core.Domain.EntityFramework.csproj">
+      <PathToProject>../Core.Domain.EntityFramework.ProjectTemplate/Core.Domain.EntityFramework.csproj</PathToProject>
     </TemplateReference>
-    <TemplateReference Include="Core.Domain.ProjectTemplate.csproj">
-      <PathToProject>../Core.Domain.ProjectTemplate/Core.Domain.ProjectTemplate.csproj</PathToProject>
+    <TemplateReference Include="Core.Domain.csproj">
+      <PathToProject>../Core.Domain.ProjectTemplate/Core.Domain.csproj</PathToProject>
     </TemplateReference>
-    <TemplateReference Include="Core.Domain.Testing.ProjectTemplate.csproj">
-      <PathToProject>../Core.Domain.Testing.ProjectTemplate/Core.Domain.Testing.ProjectTemplate.csproj</PathToProject>
+    <TemplateReference Include="Core.Domain.Testing.csproj">
+      <PathToProject>../Core.Domain.Testing.ProjectTemplate/Core.Domain.Testing.csproj</PathToProject>
     </TemplateReference>
   </ItemGroup>
   <ItemGroup>

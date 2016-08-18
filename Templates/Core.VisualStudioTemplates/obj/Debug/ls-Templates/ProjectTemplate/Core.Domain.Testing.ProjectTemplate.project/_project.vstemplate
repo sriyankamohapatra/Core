@@ -3,16 +3,16 @@
   <TemplateData>
     <Name>Domain Testing</Name>
     <Description>Base project for all testing classes for your Domain.</Description>
-    <DefaultName>&gt;Sfa.MyProject.Domain.Testing</DefaultName>
+    <DefaultName>MyProject</DefaultName>
     <ProjectType>CSharp</ProjectType>
-    <ProjectSubType></ProjectSubType>
+    <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
     <SortOrder>7000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
-    <Icon>sw-file-icon.png</Icon>
-    <TemplateID>$guid1$</TemplateID>
+    <Icon Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="4547" />
+    <TemplateID>Sfa.Core.Domain.Testing</TemplateID>
     <!-- Indicates how many parent folders this item template should appear in -->
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
   </TemplateData>
@@ -21,7 +21,7 @@
     <FullClassName>TemplateBuilder.RootWizard</FullClassName>
   </WizardExtension>
   <TemplateContent>
-    <Project TargetFileName="$safeprojectname$.csproj" File="Core.Domain.Testing.ProjectTemplate.csproj" ReplaceParameters="true" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <Project TargetFileName="$safeprojectname$.csproj" File="Core.Domain.Testing.csproj" ReplaceParameters="true" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
       <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
       <Folder Name="Domain" TargetFolderName="Domain">
         <Folder Name="Builders" TargetFolderName="Builders">

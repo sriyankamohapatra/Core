@@ -7,8 +7,8 @@
     <ProjectGuid>{0415002A-BFEC-4827-BA39-A6362C17D5C5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sfa.MyProject.Domain.EntityFramework.ProjectTemplate</RootNamespace>
-    <AssemblyName>Sfa.MyProject.Domain.EntityFramework.ProjectTemplate</AssemblyName>
+    <RootNamespace>Sfa.$safeprojectname$</RootNamespace>
+    <AssemblyName>Sfa.$safeprojectname$.Domain.EntityFramework</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -64,9 +64,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core.Domain.ProjectTemplate\Core.Domain.ProjectTemplate.csproj">
+    <ProjectReference Include="..\Core.Domain.ProjectTemplate\Core.Domain.csproj">
       <Project>{7563BDE9-432D-4305-A1E3-CEA865713B90}</Project>
-      <Name>Core.Domain.ProjectTemplate</Name>
+      <Name>Core.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

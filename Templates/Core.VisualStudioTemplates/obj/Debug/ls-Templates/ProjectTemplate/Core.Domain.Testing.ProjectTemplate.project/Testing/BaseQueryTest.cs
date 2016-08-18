@@ -1,8 +1,7 @@
 ﻿using Sfa.Core.Data;
-using $safeprojectname$.Contexts;
-using $safeprojectname$.Domain.EntityFramework.ProjectTemplate.Contexts;
+using Sfa.$safeprojectname$.Contexts;
 
-namespace $safeprojectname$.Testing
+namespace Sfa.$safeprojectname$.Testing
 {
     public class BaseQueryTest : BaseDataIntegrationTest
     {

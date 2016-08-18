@@ -1,7 +1,7 @@
 ﻿using Sfa.Core.Context;
 using Sfa.Core.Data;
 
-namespace $safeprojectname$.Contexts
+namespace Sfa.$safeprojectname$.Contexts
 {
     /// <summary>
     /// Defines the contexts appropriate for the contracts domain.

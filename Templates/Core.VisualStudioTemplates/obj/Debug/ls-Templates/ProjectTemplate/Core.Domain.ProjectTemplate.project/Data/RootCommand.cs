@@ -1,6 +1,6 @@
-﻿using $safeprojectname$.Domain;
+﻿using Sfa.$safeprojectname$.Domain;
 
-namespace $safeprojectname$.Data
+namespace Sfa.$safeprojectname$.Data
 {
     /// <summary>
     /// Base class for all commands that have the root as the target. I.e., those that have no logical parent.

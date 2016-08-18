@@ -2,7 +2,7 @@
 using System.Data.Entity.SqlServer;
 using Sfa.Core.Data;
 
-namespace $safeprojectname$.Testing
+namespace Sfa.$safeprojectname$.Testing
 {
     public class BaseCommandTest : BaseQueryTest
     {

@@ -1,9 +1,5 @@
 C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\bin\Debug\Sfa.Core.VisualStudioTemplates.vsix
 C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\bin\Debug\extension.vsixmanifest
-C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\obj\Debug\Core.VisualStudioTemplates.csprojResolveAssemblyReference.cache
-C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\obj\Debug\Sfa.Core.VisualStudioTemplates.dll
-C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\obj\Debug\Sfa.Core.VisualStudioTemplates.pdb
-C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\obj\Debug\extension.vsixmanifest
 C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\bin\Debug\TemplateBuilder.dll
 C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
 C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\bin\Debug\EnvDTE.dll
@@ -52,3 +48,6 @@ C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\bin\Debu
 C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.12.0.xml
 C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\bin\Debug\Microsoft.VisualStudio.ImageCatalog.xml
 C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\bin\Debug\Microsoft.VisualStudio.CoreUtility.xml
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\obj\Debug\Sfa.Core.VisualStudioTemplates.dll
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\obj\Debug\Sfa.Core.VisualStudioTemplates.pdb
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\obj\Debug\extension.vsixmanifest

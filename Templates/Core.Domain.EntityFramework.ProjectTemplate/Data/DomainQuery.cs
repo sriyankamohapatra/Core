@@ -3,7 +3,7 @@ using Sfa.Core.Data;
 using Sfa.Core.Entities;
 using Sfa.MyProject.Contexts;
 
-namespace Sfa.MyProject.Domain.EntityFramework.ProjectTemplate.Data
+namespace Sfa.MyProject.Data
 {
     public abstract class DomainQuery<TReturn, TQuery> : EntityFrameworkQuery<TReturn, TQuery>
         where TQuery : class, IEntity

@@ -1,6 +1,6 @@
 ﻿using Sfa.Core.Reflection;
 
-namespace $safeprojectname$.Domain.Builders
+namespace Sfa.$safeprojectname$.Domain.Builders
 {
     public class RootBuilder : ObjectBuilder<Root>
     {

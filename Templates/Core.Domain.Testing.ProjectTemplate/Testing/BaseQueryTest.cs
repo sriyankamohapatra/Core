@@ -1,6 +1,5 @@
 ﻿using Sfa.Core.Data;
 using Sfa.MyProject.Contexts;
-using Sfa.MyProject.Domain.EntityFramework.ProjectTemplate.Contexts;
 
 namespace Sfa.MyProject.Testing
 {
