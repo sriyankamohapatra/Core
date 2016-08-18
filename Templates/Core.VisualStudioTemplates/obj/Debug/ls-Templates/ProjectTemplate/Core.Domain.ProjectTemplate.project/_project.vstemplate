@@ -6,7 +6,7 @@
     <DefaultName>Sfa.MyProject.Domain</DefaultName>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType></ProjectSubType>
-    <SortOrder>1000</SortOrder>
+    <SortOrder>10000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
@@ -39,6 +39,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="BaseEntity.cs">BaseEntity.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Root.cs">Root.cs</ProjectItem>
       </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="NuGetReferenceHintPathRewrite.targets">NuGetReferenceHintPathRewrite.targets</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>

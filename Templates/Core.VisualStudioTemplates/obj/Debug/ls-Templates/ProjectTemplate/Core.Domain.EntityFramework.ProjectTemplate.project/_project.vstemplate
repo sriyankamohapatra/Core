@@ -6,7 +6,7 @@
     <DefaultName>&gt;Sfa.MyProject.Domain.EntityFramework</DefaultName>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType></ProjectSubType>
-    <SortOrder>1000</SortOrder>
+    <SortOrder>9000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
@@ -33,6 +33,7 @@
       <Folder Name="Domain" TargetFolderName="Domain">
         <ProjectItem ReplaceParameters="true" TargetFileName="CommonQueries.cs">CommonQueries.cs</ProjectItem>
       </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="NuGetReferenceHintPathRewrite.targets">NuGetReferenceHintPathRewrite.targets</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
