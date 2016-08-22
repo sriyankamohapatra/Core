@@ -2,7 +2,7 @@
   <TemplateData>
     <Name>Domain Entity Framework Project</Name>
     <Description>Contains the Domain entity framework implementations for your application and associated commands.</Description>
-    <DefaultName>MyProject</DefaultName>
+    <DefaultName>MyProject.EntityFramework</DefaultName>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
     <SortOrder>9000</SortOrder>

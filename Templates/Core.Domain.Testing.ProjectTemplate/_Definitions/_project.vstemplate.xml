@@ -2,7 +2,7 @@
   <TemplateData>
     <Name>Domain Testing</Name>
     <Description>Base project for all testing classes for your Domain.</Description>
-    <DefaultName>MyProject</DefaultName>
+    <DefaultName>MyProject.Domain.Testing</DefaultName>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
     <SortOrder>7000</SortOrder>

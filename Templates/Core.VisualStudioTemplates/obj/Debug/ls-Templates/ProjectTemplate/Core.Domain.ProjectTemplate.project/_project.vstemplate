@@ -3,7 +3,7 @@
   <TemplateData>
     <Name>Domain Project</Name>
     <Description>Contains the Domain logic for your application and associated commands.</Description>
-    <DefaultName>MyProject</DefaultName>
+    <DefaultName>MyProject.Domain</DefaultName>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
     <SortOrder>10000</SortOrder>

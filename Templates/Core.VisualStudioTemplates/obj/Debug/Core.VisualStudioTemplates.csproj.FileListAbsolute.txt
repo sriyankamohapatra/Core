@@ -51,3 +51,4 @@ C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\bin\Debu
 C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\obj\Debug\Sfa.Core.VisualStudioTemplates.dll
 C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\obj\Debug\Sfa.Core.VisualStudioTemplates.pdb
 C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\obj\Debug\extension.vsixmanifest
+C:\Users\Anthony\Source\Repos\Core\Templates\Core.VisualStudioTemplates\obj\Debug\Core.VisualStudioTemplates.csprojResolveAssemblyReference.cache
