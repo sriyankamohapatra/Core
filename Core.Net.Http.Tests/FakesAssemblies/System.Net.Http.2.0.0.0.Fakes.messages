@@ -1,0 +1,100 @@
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.NclUtilities: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.ValidationHelper: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.ExceptionHelper: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.HttpKnownHeaderNames: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.ObjectCollection`1: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.HttpHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.BaseHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.GenericHeaderParser: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.HttpCompletionOption: type is a value type.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.DelegatingStream: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.HttpGeneralHeaders: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.SysSR: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Logging: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.Int32NumberHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.HttpContentHeaders: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.ByteArrayHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.UriHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.TimeSpanHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.HttpHeaderParserContract: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.CacheControlHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.TimerThread: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.ProductInfoHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.MediaTypeWithQualityHeaderValue: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.HttpStatusDescription: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.DateHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.WrSR: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.HttpRuleParser: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.HttpUtilities: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.HttpParseResult: type is a value type.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.MediaTypeHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.HttpResponseHeaders: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.HeaderUtilities: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.TransferCodingHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.ClientCertificateOption: type is a value type.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.HttpHeaderValueCollection`1: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.SR: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.TransferCodingWithQualityHeaderValue: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.Int64NumberHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.StreamToStreamCopy: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.HttpRequestHeaders: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for <PrivateImplementationDetails>{72BD8F9E-99DF-4E75-A5C7-2952F3A9348E}: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.NclUtilities: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.ValidationHelper: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.ExceptionHelper: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.HttpKnownHeaderNames: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpClient+<>c__DisplayClass10: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpClient+<>c__DisplayClass8`1: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpClient+<>c__DisplayClassd: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.ObjectCollection`1: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.HttpHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.BaseHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpContent+<>c__DisplayClass1: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpContent+<>c__DisplayClass12: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpContent+<>c__DisplayClass4: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpContent+<>c__DisplayClass7: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpContent+<>c__DisplayClassb: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpContent+<>c__DisplayClassf: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpContent+LimitMemoryStream: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.GenericHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpCompletionOption: type is an enum.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpClientHandler+<>c__DisplayClass3: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpClientHandler+<>c__DisplayClass6: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpClientHandler+<>c__DisplayClassa: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpClientHandler+RequestState: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpClientHandler+WebExceptionWrapperStream: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpClientHandler+WebRequestCreatorDelegate: type is a delegate.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.DelegatingStream: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.HttpGeneralHeaders: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.SysSR: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Logging: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.StreamContent+ReadOnlyStream: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.Int32NumberHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.HttpHeaders+<GetEnumerator>d__8: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.HttpHeaders+<GetHeaderStrings>d__0: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.HttpHeaders+HeaderStoreItemInfo: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.HttpHeaders+StoreLocation: type is an enum.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.ByteArrayHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.UriHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.TimeSpanHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.HttpHeaderParserContract: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.CacheControlHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.TimerThread: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.ProductInfoHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpRequestException+EmptyState: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.HttpStatusDescription: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.DateHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.WrSR: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.MessageProcessingHandler+<>c__DisplayClass2: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpRuleParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpUtilities: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.HttpParseResult: type is an enum.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.MediaTypeHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.HeaderUtilities: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.TransferCodingHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.ClientCertificateOption: type is an enum.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.HttpHeaderValueCollection`1+<GetEnumerator>d__0: type is not supported because of internal limitations.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.SR: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.Headers.Int64NumberHeaderParser: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for System.Net.Http.StreamToStreamCopy: type is not visible to exported or assembly(System.Net.Http.2.0.0.0.Fakes).
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.Http.fakes : warning : Cannot generate shim for <PrivateImplementationDetails>{72BD8F9E-99DF-4E75-A5C7-2952F3A9348E}: type is not supported because of internal limitations.

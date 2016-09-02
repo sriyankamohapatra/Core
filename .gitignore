@@ -71,3 +71,14 @@
 /Core.Runtime.Caching/obj/Debug
 /Core.Runtime.Caching.Tests/bin/Debug
 /Core.Runtime.Caching.Tests/obj/Debug
+/Core.Net.Http/bin
+/Core.Net.Http/obj
+/Core.Net.Http.Tests/bin/Debug
+/Core.Net.Http.Tests/obj/Debug
+/Core.ServiceModel/obj/
+/Core.ServiceModel.Tests/bin/Debug
+/Core.ServiceModel.Tests/obj/Debug
+/Core.ComponentModel.DataAnnotations.Tests/obj/Release
+/Core.Runtime.Caching/obj/Release
+/Core.Runtime.Caching.Tests/obj/Release
+/Core.Net.Http/obj/Release

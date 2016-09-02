@@ -1,0 +1,57 @@
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.INetworkProgress: type is obsolete.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.NetworkProgressChangedEventArgs: type is obsolete.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.IUnsafeWebRequestCreate: type is obsolete.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.UiSynchronizationContext: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.Sockets.UdpAnySourceMulticastClient: type is obsolete.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.Sockets.UdpSingleSourceMulticastClient: type is obsolete.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.Sockets.HttpPolicyDownloaderProtocol: type is obsolete.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.Sockets.SecurityCriticalAction: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.Sockets.SocketPolicy: type is obsolete.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.PeerNameType: type is a value type.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.PnrpPermissionAttribute: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.PnrpPermission: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.PnrpScope: type is a value type.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerPresenceStatus: type is a value type.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerScope: type is a value type.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType: type is a value type.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType: type is a value type.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerChangeType: type is a value type.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.SubscriptionType: type is a value type.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.CreateContactCompletedEventArgs: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.ContactManager: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerApplicationCollection: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerCollaboration: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerCollaborationPermissionAttribute: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission: type is sealed.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerContactCollection: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.NameChangedEventArgs: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerEndPointCollection: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerInvitationResponse: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerNearMeCollection: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate stub for System.Net.PeerToPeer.Collaboration.PeerObjectCollection: type has no family visible contructors.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.INetworkProgress: type is an interface.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.NetworkProgressChangedEventArgs: type is obsolete.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.IUnsafeWebRequestCreate: type is an interface.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.UiSynchronizationContext: type is obsolete.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.Sockets.UdpAnySourceMulticastClient: type is obsolete.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.Sockets.UdpSingleSourceMulticastClient: type is obsolete.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.Sockets.HttpPolicyDownloaderProtocol: type is obsolete.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.Sockets.SecurityCriticalAction: type is a delegate.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.Sockets.SocketPolicy: type is obsolete.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.PeerToPeer.PeerNameType: type is an enum.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.PeerToPeer.PnrpScope: type is an enum.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.PeerToPeer.Collaboration.PeerPresenceStatus: type is an enum.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.PeerToPeer.Collaboration.PeerScope: type is an enum.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType: type is an enum.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType: type is an enum.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.PeerToPeer.Collaboration.PeerChangeType: type is an enum.
+C:\CoreFork\Core.Net.Http.Tests\Fakes\System.Net.fakes : warning : Cannot generate shim for System.Net.PeerToPeer.Collaboration.SubscriptionType: type is an enum.

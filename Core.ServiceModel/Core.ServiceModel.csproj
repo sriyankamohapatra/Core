@@ -55,9 +55,19 @@
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceModel\Syndication\AtomFeedProcessor.cs" />
+    <Compile Include="ServiceModel\Syndication\Exceptions\BaseFeedReadException.cs" />
+    <Compile Include="ServiceModel\Syndication\Exceptions\EmptyPageOnFeedException.cs" />
+    <Compile Include="ServiceModel\Syndication\Exceptions\GuidBookmarkNotMatchedException.cs" />
+    <Compile Include="ServiceModel\Syndication\GuidItemIdBasedAtomFeedProcessor.cs" />
+    <Compile Include="ServiceModel\Syndication\SyndicationItemExtensions.cs" />
     <Compile Include="ServiceModel\WcfOperationContext.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Core.Xml.Linq\Core.Xml.Linq.csproj">
+      <Project>{ea91527f-b3cf-4339-b21a-0d08cb14fbf6}</Project>
+      <Name>Core.Xml.Linq</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Core\Core.csproj">
       <Project>{D9DD292F-738D-46FF-9E9A-8004B3095D3B}</Project>
       <Name>Core</Name>

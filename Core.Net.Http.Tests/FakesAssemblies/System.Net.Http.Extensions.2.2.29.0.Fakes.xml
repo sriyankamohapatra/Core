@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Net.Http.Extensions.2.2.29.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:System.Net.Http.Fakes.ShimHttpClientHandlerExtensions">
+            <summary>Shim type of System.Net.Http.HttpClientHandlerExtensions</summary>
+        </member>
+        <member name="M:System.Net.Http.Fakes.ShimHttpClientHandlerExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Net.Http.Fakes.ShimHttpClientHandlerExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Net.Http.Fakes.ShimHttpClientHandlerExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Net.Http.Fakes.ShimHttpClientHandlerExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Net.Http.Fakes.ShimHttpClientHandlerExtensions.SupportsAllowAutoRedirectHttpClientHandler">
+            <summary>Sets the shim of HttpClientHandlerExtensions.SupportsAllowAutoRedirect(HttpClientHandler handler)</summary>
+        </member>
+        <member name="P:System.Net.Http.Fakes.ShimHttpClientHandlerExtensions.SupportsPreAuthenticateHttpClientHandler">
+            <summary>Sets the shim of HttpClientHandlerExtensions.SupportsPreAuthenticate(HttpClientHandler handler)</summary>
+        </member>
+        <member name="P:System.Net.Http.Fakes.ShimHttpClientHandlerExtensions.SupportsProtocolVersionHttpClientHandler">
+            <summary>Sets the shim of HttpClientHandlerExtensions.SupportsProtocolVersion(HttpClientHandler handler)</summary>
+        </member>
+        <member name="P:System.Net.Http.Fakes.ShimHttpClientHandlerExtensions.SupportsTransferEncodingChunkedHttpClientHandler">
+            <summary>Sets the shim of HttpClientHandlerExtensions.SupportsTransferEncodingChunked(HttpClientHandler handler)</summary>
+        </member>
+        <member name="P:System.Net.Http.Fakes.ShimHttpClientHandlerExtensions.SupportsUseProxyHttpClientHandler">
+            <summary>Sets the shim of HttpClientHandlerExtensions.SupportsUseProxy(HttpClientHandler handler)</summary>
+        </member>
+    </members>
+</doc>
