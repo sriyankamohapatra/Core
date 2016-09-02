@@ -3,25 +3,21 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Net.Http;
 using System.Net.Http.Fakes;
 using System.Threading.Tasks;
-using System;
 using System.Linq;
-using System.Net.Http.Formatting;
+using Sfa.Core.Testing;
 
 namespace Core.Net.Http.Tests
 {
     [TestClass]
-    public class HttpClientExtensionsTests
+    public class HttpClientExtensionsTests : BaseTest
     {
         [TestMethod, TestCategory("Unit")]
         public void Get_Success()
         {
             using (ShimsContext.Create())
             {
-                // Arrange
-                MockLogger();
-
                 // Act
-                Sfa.Core.HttpClientExtensions.Get(Get_MockGetClient(successCode: true), "test");
+                Sfa.Core.Net.Http.HttpClientExtensions.Get(Get_MockGetClient(successCode: true), "test");
             }
         }
 
@@ -31,11 +27,8 @@ namespace Core.Net.Http.Tests
         {
             using (ShimsContext.Create())
             {
-                // Arrange
-                MockLogger();
-
                 // Act
-                Sfa.Core.HttpClientExtensions.Get(Get_MockGetClient(successCode: false), "test");
+                Sfa.Core.Net.Http.HttpClientExtensions.Get(Get_MockGetClient(successCode: false), "test");
             }
         }
 
@@ -45,17 +38,16 @@ namespace Core.Net.Http.Tests
             using (ShimsContext.Create())
             {
                 // Arrange
-                MockLogger();
                 var request = new HttpRequestMessage();
                 var client = new ShimHttpClient();
                 client.GetStringAsyncString = (uri) => Task.FromResult(GetMockSyndiactionFeed());
                 client.DefaultRequestHeadersGet = () => request.Headers;
 
                 // Act
-                var feed = Sfa.Core.HttpClientExtensions.GetAtomSyndicationFeed(client, "test");
+                var feed = Sfa.Core.Net.Http.HttpClientExtensions.GetAtomSyndicationFeed(client, "test");
 
                 // Assert
-                Assert.AreEqual("Signed Funding Claim Notifications", feed.Title.Text);
+                Assert.AreEqual("Sample Feed Title", feed.Title.Text);
                 Assert.AreEqual(1, feed.Items.Count());
             }
         }
@@ -73,31 +65,25 @@ namespace Core.Net.Http.Tests
             return client;
         }
 
-        private void MockLogger()
-        {
-            var logger = new Sfa.Core.Logging.Fakes.StubILogger();
-            Sfa.Core.Context.Fakes.ShimApplicationContext.LoggerGet = () => logger;
-        }
-
         private string GetMockSyndiactionFeed()
         {
             return "<feed xmlns=\"http://www.w3.org/2005/Atom\">" +
-                   "<title type=\"text\">Signed Funding Claim Notifications</title>" +
-                   "<id>uuid:74642edc-ed74-4c6f-9bb6-e6f76563c865;id=2</id>" +
+                   "<title type=\"text\">Sample Feed Title</title>" +
+                   "<id>uuid:00000000-0000-0000-0000-000000000002;id=2</id>" +
                    "<updated>2016-08-25T10:56:07Z</updated>" +
                    "<author>" +
-                   "<name>Funding Claims Management Service</name>" +
+                   "<name>Sample Feed Name</name>" +
                    "</author>" +
                    "<entry>" +
-                   "<id>uuid:fdcfcfcd-764a-46a7-b8cf-5b87d15906fa</id>" +
+                   "<id>uuid:00000000-0000-0000-0000-000000000002</id>" +
                    "<title type=\"text\"></title>" +
                    "<updated>2016-08-25T11:56:00+01:00</updated>" +
                    "<link rel=\"self\" type=\"application/atom+xml\" href=\"\"/>" +
                    "<content type=\"application/vnd.sfa.fundingclaim.v2+atom+xml\">" +
-                   "<FundingClaim>" +
-                   "<FundingClaimId>1516-Final_10000981_1</FundingClaimId>" +
-                   "<HasBeenSigned>true</HasBeenSigned>" +
-                   "</FundingClaim>" +
+                   "<Item>" +
+                   "<Element1>Element1Value</Element1>" +
+                   "<Element2>Element2Value</Element2>" +
+                   "</Item>" +
                    "</content>" +
                    "</entry>" +
                    "</feed>";

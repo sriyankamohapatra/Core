@@ -67,10 +67,11 @@ namespace Sfa.Core.ServiceModel.Syndication
 
                 previousUri = currentUri;
                 var link = feed.Links.SingleOrDefault(l => l.RelationshipType == "prev-archive");
+                var nextLink = feed.Links.SingleOrDefault(l => l.RelationshipType == "next-archive");
                 currentUri = link?.Uri.ToString();
 
                 // If we're not the first page and its empty, there is a problem with the feed
-                if (!feed.Items.Any() && link != null)
+                if (!feed.Items.Any() && nextLink != null)
                 {
                     throw new EmptyPageOnFeedException(previousUri);
                 }

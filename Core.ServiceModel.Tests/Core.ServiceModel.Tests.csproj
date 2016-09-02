@@ -70,6 +70,10 @@
       <Project>{39876d8a-600e-418f-8d68-d73d4f22b24b}</Project>
       <Name>Core.ServiceModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Core.Testing\Core.Testing.csproj">
+      <Project>{8D66E70B-E0ED-48A8-AAD2-2E47B0A4A557}</Project>
+      <Name>Core.Testing</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Core\Core.csproj">
       <Project>{d9dd292f-738d-46ff-9e9a-8004b3095d3b}</Project>
       <Name>Core</Name>

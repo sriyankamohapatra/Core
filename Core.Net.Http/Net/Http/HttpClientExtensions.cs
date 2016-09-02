@@ -10,8 +10,11 @@ using System.Xml.Linq;
 using Sfa.Core.Context;
 using Sfa.Core.Logging;
 
-namespace Sfa.Core
+namespace Sfa.Core.Net.Http
 {
+    /// <summary>
+    /// HttpClient extension class to read syndication feed and call get and posts.
+    /// </summary>
     public static class HttpClientExtensions
     {
         public static HttpResponseMessage Get(this HttpClient httpClient, string uri)
@@ -26,8 +29,6 @@ namespace Sfa.Core
                 return response;
             }
         }
-
-
 
         public static HttpResponseMessage PostAsXml<T>(this HttpClient httpClient, string uri, T objectToPost)
         {
